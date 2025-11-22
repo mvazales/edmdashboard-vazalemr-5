@@ -1,0 +1,145 @@
+# Practitioner Evidence: Methods & Acquisition Strategy
+# Document your approach to gathering expert insights and professional experience
+
+## Practitioner Evidence Goals
+**Primary Goal:** [Have practisioners experience difficulty with client retnetion?]
+**Secondary Goal:** [What methods have they tried so far? Have they ever tried a loyalty program and why?]
+
+## Target Practitioners
+
+### Industry Experts
+**Target Profile:** [Professions related to the beauty industry.]
+- Years of experience desired: [New-10+]
+- Industry/sector focus: [Beauty Industry]
+- Role/position types: [Management levels or employees]
+- Company size experience: [Startup --> large enterprise]
+- Geographic location: [Local - Harrisonburg, Staunton, Fishersville VA]
+
+### Specific Practitioners Identified
+1. **Molly Vazales**
+   - **Relevance:** [Licensed Esthetician with own studio]
+
+2. **Diana Rosinki**
+   - **Relevance:** [Licensed Esthetician]
+   - **Contact Method:** [phone]
+
+3. **Bloom Esthetics Co** 
+   - **Relevance:** [successful beauty buisness]
+   - **Contact Method:** [phone]
+
+## Acquisition Methods
+
+### Expert Interviews
+#### Interview Planning
+- **Target Number:** [3]
+- **Interview Length:** [5-10 minutes]
+- **Interview Method:** [Phone]
+- **Recording Plan:** [Writing down responses as questions are responded to]
+
+#### Interview Protocol
+**Opening Questions:**
+- Can you tell me about your experience with client retention?
+- How long have you been working in this field/role?
+
+**Problem-Focused Questions:**
+- Have you encountered difficulty in clients returning to the spa in your work?
+- What causes this type of problem in your experience?
+- How common is this problem in organizations you've worked with?
+
+**Solution-Focused Questions:**
+- What approaches have you seen work client retention?
+- What solutions have you tried or observed?
+- What would you recommend based on your experience?
+
+**Implementation Questions:**
+- What challenges would you expect when implementing a loyalty program?
+- What would you do differently if you were addressing this problem again?
+- What resources or support are critical for success?
+
+**Closing Questions:**
+- Who else would you recommend I speak with about this?
+- Is there anything important I haven't asked about?
+
+### Case Study Research
+
+#### Published Case Studies
+- **Target Sources:** [Harvard Business Review, industry publications, consulting reports]
+- **Search Strategy:** [Google Search, EBSCO]
+
+#### Company Examples
+- **Target Companies:** [Gloss Genius, Sephora]
+- **Information Sources:** [Annual reports, news articles, presentations]
+
+## Documentation Strategy
+
+### Interview Documentation
+- **Note-taking:** Real-time notes during text/phone conversations plus immediate post-conversation summary
+- **Transcription:** Copy and paste text message responses directly; write down phone conversation responses word-for-word during call
+- **Analysis:** Group responses by question topic, identify common themes across practitioners, note any contradictory viewpoints
+
+### Case Study Documentation
+- **Template:** Article title, publication source, date published, business examples featured, key retention strategies mentioned
+- **Key Elements:** Client retention challenges identified, solutions implemented, success rates/metrics, loyalty program case studies
+- **Source Tracking:** Article URL, publication name, author credentials, date accessed for citation purposes
+
+## Outreach Strategy
+
+### Contact Approach
+**Initial Contact Message Template:**
+"Hi [Name]! I'm working on a class project about client retention in the
+beauty industry and would love to get your professional perspective.
+Do you have 5-10 minutes to chat about your experience with keeping
+clients coming back? I'm specifically looking at whether loyalty programs
+might help businesses like yours. Would you be willing to share some 
+quick insights either over the phone or via text? Thanks so much!"
+
+**Follow-up Strategy:**
+[After 3 days with a friendly reminder]
+
+
+### Timing Plan
+- **Outreach Start Date:** [November 10th]
+- **Interview Window:** [Novemeber 15th-18th]
+
+## Ethical Considerations
+
+### Informed Consent
+- **Purpose Explanation:** Explain it's for a class project analyzing client retention in beauty industry
+- **Use of Information:** Their insights will be included in academic assignment analyzing loyalty program effectiveness
+- **Anonymity/Attribution:** Keep responses anonymous unless they specifically want to be credited
+- **Approval Process:** No formal review needed since responses will be anonymized
+
+### Professional Courtesy
+- **Time Respect:** Stick to promised 5-10 minute timeframe, don't go over
+- **Preparation:** Have questions ready and be familiar with their business background
+- **Follow-through:** Send thank you message after conversation
+
+## Expected Challenges
+
+### Access Challenges
+People might be busy with work or not respond to messages right away
+
+### Response Rate Concerns
+Will reach out to more people if some don't respond, use both text and phone calls
+
+### Quality Concerns
+Ask follow-up questions if answers are unclear, focus on specific examples from their experience
+
+### Time Constraints
+Keep conversations short and focused, prioritize most important questions first
+
+## Backup Plans
+
+### Alternative Sources
+[Rely on cse study sources]
+
+### Minimum Viable Evidence
+[2-3 sources]
+
+---
+INSTRUCTIONS:
+1. Start outreach early - practitioners are busy and may take time to respond
+2. Be professional and clear about your academic purpose
+3. Prepare thoroughly for interviews to make the most of practitioners' time
+4. Have backup sources in case your primary targets aren't available
+5. Consider offering something valuable in return for their time

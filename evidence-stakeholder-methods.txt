@@ -1,0 +1,252 @@
+# Stakeholder Evidence: Methods & Engagement Strategy
+# Document your approach to gathering stakeholder perspectives and feedback
+
+## Stakeholder Evidence Goals
+**Primary Goal:** Understand client perspectives on beauty service loyalty and what drives repeat visits
+**Secondary Goal:** Gather feedback on loyalty program features that would motivate clients to return
+
+## Relevant Stakeholder Evidence Sources (Options provided by Claude)
+
+### Company Reports & Industry Studies
+**Professional Beauty Association (PBA):** 
+- Annual Industry Survey: https://www.probeauty.org/industry-statistics
+- Member retention studies and client behavior reports
+
+**Beauty Industry Report by IBISWorld:**
+- Beauty salon industry market research: https://www.ibisworld.com/united-states/market-research-reports/beauty-salons-industry/
+
+**Mintel Beauty Reports:**
+- Consumer behavior in beauty services: https://www.mintel.com/beauty-and-personal-care
+
+**Salon Today Magazine Industry Reports:**
+- Annual salon business studies: https://www.salontoday.com/business
+
+### Press Releases & News Articles
+**Beauty Business News Sources:**
+- American Spa Magazine: https://www.americanspa.com/business
+- Professional Beauty Magazine: https://www.professionalbeauty.com/news
+- Salon & Spa News: https://www.salonandspanews.com/
+
+**Recent Loyalty Program Announcements:**
+- Search "beauty salon loyalty program launch" on Google News
+- Glossier, Ulta, Sally Beauty press releases about customer retention initiatives
+
+### Industry Surveys & Consumer Research
+**Consumer Beauty Behavior Studies:**
+- McKinsey Beauty Consumer Survey: https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/beauty-reimagined
+- Deloitte Beauty Industry Insights: https://www2.deloitte.com/us/en/pages/consumer-business/articles/beauty-industry-insights.html
+
+**Customer Loyalty Research:**
+- Bond Brand Loyalty Study (includes beauty sector): https://www.bondloyalty.com/
+- Accenture Customer Loyalty Research
+
+### Social Media & Online Reactions
+**Beauty Industry Social Listening:**
+- Instagram hashtags: #beautysalon #salonexperience #beautyloyalty #salonlife
+- Facebook Groups: "Salon Owners United," "Beauty Business Network"
+- Reddit communities: r/beauty, r/entrepreneur, r/smallbusiness
+- LinkedIn beauty industry professional groups
+
+**Review Platforms:**
+- Yelp beauty salon reviews for retention insights
+- Google Reviews for beauty businesses
+- StyleSeat client feedback and ratings
+
+### Public Testimony & Comments
+**Regulatory Filings:**
+- State cosmetology board public hearings and comments
+- Better Business Bureau complaints and resolutions for beauty services
+
+**Consumer Advocacy:**
+- Consumer Reports beauty service studies
+- Federal Trade Commission consumer protection resources for beauty services
+
+
+
+
+## Key Stakeholder Evidence from IBISWorld Industry Analysis
+
+### Market Stakeholder Insights (Source: IBISWorld Beauty, Cosmetics & Fragrance Stores Report 2025)
+
+**Industry Size & Growth Stakeholder Perspective:**
+- Market size: $68.6 billion (2025)
+- 5-year growth rate: 5.0% CAGR (2020-2025) 
+- 454,000 employees across 167,000 businesses
+- Strong economic recovery supporting consumer discretionary spending on beauty
+
+**Consumer Stakeholder Behavior Evidence:**
+- Beauty products viewed as both discretionary AND essential by different consumer segments
+- Pandemic boosted performance as consumers invested in wellness and beauty routines
+- Premiumization trend: customers willing to spend on luxury beauty products for long-term benefits
+- Skincare segment particularly resilient during economic volatility
+
+**Loyalty Program Stakeholder Evidence:**
+- Major players (Sephora, Ulta) succeed due to "broad product range, expertise and loyalty programs"
+- Customers value loyalty programs as key differentiator for beauty retailers
+- Strong customer retention drives 80% of sales for leading beauty retailers
+
+**Competitive Landscape Stakeholder Insights:**
+- High and increasing competition level in beauty retail
+- Online retailers disrupting traditional brick-and-mortar due to lower operating costs
+- Proximity to population hubs critical for foot traffic and sales success
+- Technology integration essential for competitive advantage
+
+**Geographic Stakeholder Considerations:**
+- Metropolitan areas generate highest foot traffic and sales
+- Location proximity to target demographics directly impacts customer retention
+- Regional market conditions significantly affect local business performance
+
+**Economic Stakeholder Pressures:**
+- Inflation impacts discretionary beauty spending
+- Economic uncertainty causes consumers to shift spending priorities
+- Per capita disposable income growth (2.2% CAGR through 2030) supports continued industry growth
+
+**Industry Stakeholder Challenges:**
+- Supply chain disruptions from potential tariffs on European imports
+- Rising operational costs difficult to pass to price-sensitive consumers
+- Need to balance online and brick-and-mortar customer experiences
+
+### Stakeholder Evidence Applications for Beauty Industry Loyalty Programs
+
+**Customer Stakeholder Insights:**
+- Consumers increasingly value experiential and premium beauty services
+- Loyalty programs are proven effective in major beauty retail success stories
+- Economic sensitivity requires demonstrating clear value proposition
+
+**Business Stakeholder Perspective:**
+- Loyalty programs essential for competing with major chains (Sephora/Ulta model)
+- Technology integration critical for operational efficiency and customer experience
+- Location and foot traffic directly correlate with retention success
+
+**Industry Stakeholder Trends:**
+- Growing market supports investment in customer retention initiatives
+- Premiumization trend favors quality service providers who can justify loyalty investments
+- Competitive pressure requires differentiation through customer experience and retention
+
+
+
+
+## Consumer Stakeholder Evidence from Mintel Personal Care Report 2025
+
+### Key Consumer Behavior Insights (Source: Mintel Personal Care Consumer US 2025)
+
+**Premium Spending & Loyalty Patterns:**
+- Consumers prioritize high spending on sunscreen, facial skincare, and bodycare
+- Women 55+ are key drivers of facial skincare premium spending
+- Men aged 35-54 and women under 55 represent future growth opportunities in facial skincare
+- "Skinification" trend fuels demand for premium products across multiple categories
+
+**Economic Sensitivity & Brand Loyalty:**
+- Only 30% of financially stable consumers willing to switch to lower-cost retailers/brands
+- 70% of financially stable consumers maintain brand loyalty despite economic pressures
+- Gen X and Baby Boomers show lowest brand loyalty, most price-sensitive behaviors
+- 30% of consumers shifting toward domestic brands due to economic/political uncertainties
+
+**Generational Stakeholder Differences:**
+- **Gen Z & Millennials:** Less motivated by basic hygiene, seek experiential benefits and mood enhancement
+- **Millennials:** 26% do more online research when money is tight, focus on broader product value beyond price
+- **Adults 18-44:** Drive non-hygiene motivations, value novelty and experimental features
+- **Gen X & Older:** Most motivated by price, employ price-shopping strategies
+
+**Value Perception & Purchase Motivations:**
+- Gentleness and "clean" ingredients top factors for hygiene products
+- Multi-benefit options prioritized for appearance-enhancing products
+- Younger demographics take "broader view of product value" beyond price tag
+- Online research crucial for value assessment, especially among Millennials
+
+**Customer Engagement Cadences:**
+- Adults 18-44 use personal care categories for stress relief and mood enhancement (up to 35%)
+- Experimental users seek novelty even from functionally rooted categories
+- Mood enhancement innovations include fragrance, sensorial benefits, and neurocosmetic formulas
+- Sample sizes and discovery sets valued by experimental users
+
+**Retention & Spending Behavior Evidence:**
+- Higher spending on bodycare strongly links to increased spending in other hygiene categories
+- Premiumization opportunities strongest with Gen Z and Millennials
+- "Total bodycare concept" creates boom for multiple categories
+- Cross-category spending behavior indicates potential for comprehensive loyalty programs
+
+### Stakeholder Evidence Applications for Beauty Service Loyalty Programs
+
+**Customer Value Proposition Evidence:**
+- 70% of financially stable consumers resist switching to lower-cost options
+- Multi-benefit offerings crucial for appearance-focused services
+- Experiential and mood-enhancement benefits drive engagement among younger demographics
+
+**Target Market Segmentation Evidence:**
+- **Premium Segment:** Women 55+ (current high spenders) + Men 35-54 & Women under 55 (growth opportunities)
+- **Experience-Driven Segment:** Adults 18-44 seeking stress relief and mood enhancement
+- **Value-Research Segment:** Millennials who research extensively before purchasing
+
+**Loyalty Program Design Evidence:**
+- Cross-category spending behavior supports comprehensive service offerings
+- Sample/discovery opportunities valued by experimental users
+- Brand loyalty strong among financially stable consumers (70% retention rate)
+- Domestic/local brand preference growing (30% shifting toward domestic)
+
+**Competitive Positioning Evidence:**
+- Premium positioning viable given consumer willingness to spend on quality
+- Experiential benefits and mood enhancement differentiate from basic service providers
+- Multi-benefit service packages align with consumer preferences
+- Local/domestic positioning advantage in current market environment
+
+
+
+**Practitioner Stakeholders**
+- Instagram provides many different theories on how to increase client re-booking
+- Clearly a common issue across the industry based on the amount of content allocated to fixing the problem 
+- Beauty industry professionals actively share retention strategies across social media platforms
+- Common practitioner-recommended retention tactics include:
+  * Pre-booking next appointment during current service
+  * Follow-up text reminders 24-48 hours after service
+  * Seasonal service promotions (holiday packages, summer prep)
+  * Referral incentive programs for existing clients
+  * Personalized service recommendations based on previous visits
+
+## Professional Industry Stakeholder Evidence
+
+### Beauty Professional Social Media Insights
+**Instagram Professional Content Analysis:**
+- #salonretention hashtag shows 15,000+ posts with retention strategies
+- #beautybusinesstips content consistently focuses on client loyalty challenges
+- Professional beauty educators regularly post about "client ghosting" prevention
+- Most-shared retention tips: consistent communication, value-added services, loyalty rewards
+
+
+## Target Stakeholder Groups
+
+### Internal Stakeholders
+#### Management/Leadership
+- **Target Participants:** Beauty salon owners and managers, consumers, clients, social media
+- **Engagement Method:** Secondary data 
+- **Key Questions Focus:** ROI expectations and operational challenges from existing industry surveys
+- **Expected Response Rate:** N/A (using existing published data)
+
+#### Employees/Staff
+- **Target Participants:** Front-line beauty service providers and staff
+- **Engagement Method:** Social media content analysis from practitioner stakeholders on Instagram 
+- **Key Questions Focus:** Client retention strategies and practical implementation insights from #salonretention posts
+- **Expected Response Rate:** N/A (using existing social media evidence)
+
+
+### External Stakeholders
+#### Customers/Clients
+- **Target Participants:** Three key segments from Mintel research: Premium spenders (Women 55+), Experience-driven users (Adults 18-44), and Value-research consumers (Millennials)
+- **Engagement Method:** Existing consumer behavior data from Mintel Personal Care Report and IBISWorld analysis
+- **Key Questions Focus:** Loyalty preferences and retention motivators from published consumer research
+- **Expected Response Rate:** N/A (using existing market research data)
+
+#### Partners/Suppliers
+- **Target Participants:** Industry suppliers and platform providers
+- **Engagement Method:** Published case studies from Sephora Beauty Insider and industry success stories
+- **Key Questions Focus:** Best practices and implementation strategies from existing loyalty program case studies
+- **Expected Response Rate:** N/A (using existing case study evidence)
+
+
+---
+INSTRUCTIONS:
+1. Start stakeholder engagement early - it often takes longer than expected
+2. Be respectful of stakeholder time and provide clear value for participation  
+3. Get appropriate permissions before engaging organizational stakeholders
+4. Plan for lower response rates than you hope for
+5. Have multiple methods to reach different types of stakeholders

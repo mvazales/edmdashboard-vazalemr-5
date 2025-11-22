@@ -1,0 +1,184 @@
+# Scientific Evidence: Methods & Acquisition Strategy
+# Document your systematic approach to finding research evidence
+
+## Research Question
+[Does the implementation of loyalty programs reduce customer churn rate?]
+
+**Primary Research Question:** [How do loyalty programs affect client retention?]
+**Secondary Research Question:** [What other factors drive client retention?]
+
+## Search Strategy
+
+### Databases Searched
+- [ ] **PubMed/MEDLINE** [For health/organizational behavior research]
+- [ ] **Business Source Premier** [For business and management research] 
+- [x] **Google Scholar** [For multidisciplinary academic content]
+- [ ] **JSTOR** [For established academic journals]
+- [ ] **SSRN** [For business and social science working papers]
+- [x] **EBSCO**
+
+### Keywords and Search Terms
+
+#### Primary Keywords
+<table class="markdown-table">
+<thead>
+<tr>
+<th>Keyword Category</th>
+<th>Terms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Loyalty & Retention</strong></td>
+<td>loyalty programs, client loyalty, customer loyalty, retention strategies</td>
+</tr>
+<tr>
+<td><strong>Churn Analysis</strong></td>
+<td>churn prediction, customer churn, client turnover, attrition</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Secondary Keywords
+<table class="markdown-table">
+<thead>
+<tr>
+<th>Keyword Category</th>
+<th>Terms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Customer Relationship Management</strong></td>
+<td>customer relationship management, CRM, client management</td>
+</tr>
+<tr>
+<td><strong>Relationship Marketing</strong></td>
+<td>relationship marketing, customer engagement, client engagement</td>
+</tr>
+</tbody>
+</table>
+
+#### Boolean Search Combinations
+[Document your search string combinations]
+- ("employee retention" OR "customer churn") AND ("beauty industry" OR "service industry")
+- ("loyalty programs" OR "customer loyalty") AND ("CLV" OR "customer lifetime value")
+
+### Search Filters Applied
+- **Date Range:** [Past 10 years]
+- **Language:** [English]
+- **Study Types:** [Peer Reviewed]
+- **Geographic Scope:** [USA] (limited research avaiable)
+- **Industry Focus:** [Beauty/Service sectors] (limited available for beauty industry)
+
+## Selection Criteria
+
+### Inclusion Criteria
+[Journal Articles, Case Study, Meta Analysis, Cross Sectional]
+- Study design requirements
+- Population/context requirements
+- Outcome measures
+- Quality thresholds
+
+### Exclusion Criteria  
+[What studies will you EXCLUDE?]
+- Study limitations
+- Context mismatches
+- Quality concerns
+- Accessibility issues
+
+## Search Results Summary
+
+### Initial Search Results
+- **Total Articles Found:** [200]
+- **After Removing Duplicates:** [N/A]
+- **After Title/Abstract Screening:** [94]
+- **Selected for Full Review:** [Final number for detailed analysis]
+
+### Search Documentation
+[Keep a record of what you searched and when]
+
+**Date:** [11/15/25]
+**Database:** [EBSCO]
+**Search Terms:** [("employee retention" OR "customer churn") AND ("beauty industry" OR "service industry")
+ ("loyalty programs" OR "customer loyalty") AND ("CLV" OR "customer lifetime value")]
+**Results:** [86]
+**Notes:** [Limited findings]
+
+**Date:** [11/16/25]
+**Database:** [EBSCO]
+**Search Terms:** [("customer churn") AND ("beauty industry" OR "service industry")
+ ("loyalty programs") AND ("customer lifetime value")]
+**Results:** [5]
+**Notes:** [1 helpful]
+
+**Date:** [11/17/25]
+**Database:** [Google Scholar]
+**Search Terms:** [meta analysis on loyalty and customer churn]
+**Results:** [23,700]
+**Notes:** [many irrelevent]]
+
+**Date:** [11/17/25]
+**Database:** [EBSCO]
+**Search Terms:** [meta analysis on customer loyalty]
+**Results:** [7]
+**Notes:** [1 helpful]
+
+## Quality Assessment Approach
+[Cat manager App]]
+
+### Research Design Hierarchy
+1. **Systematic Reviews/Meta-analyses** [Highest quality]
+2. **Randomized Controlled Trials** [High quality]
+3. **Quasi-experimental Studies** [Medium-high quality]
+4. **Cohort Studies** [Medium quality]
+5. **Cross-sectional Studies** [Medium-low quality]
+6. **Case Studies** [Lower quality but valuable for context]
+
+### Quality Criteria Checklist
+- [ ] Clear research question
+- [ ] Appropriate methodology
+- [ ] Adequate sample size
+- [ ] Valid measurement tools
+- [ ] Appropriate statistical analysis
+- [ ] Clear reporting of results
+- [ ] Discussion of limitations
+- [ ] Peer-reviewed publication
+
+## Documentation Process
+[Saving relevant studies within EBSCO and taking notes on necessary qualitiative/quantitiative aspects.]
+
+### Reference Management
+[Citations will be pasted here: ]
+
+### Evidence Extraction Form
+[What information you'll record for each study]
+- Citation details
+- Study design and methodology
+- Sample characteristics
+- Key findings
+- Relevance to your problem/solution
+- Quality assessment
+
+## Challenges and Limitations
+[Extrmeley limited information on the problem framework in 
+regars to the beauty industry, still limited when looking outside of it, 
+almost none of the research is performed in the US. Limited metrics on current 
+state of the industry]
+
+### Search Limitations
+[Hardly any information on beauty industry related studies]
+
+### Resource Constraints
+[/]
+
+
+
+---
+INSTRUCTIONS:
+1. Be systematic and comprehensive in your approach
+2. Document everything so others could replicate your search
+3. Focus on research relevant to both your problem AND potential solutions
+4. Use library resources and ask librarians for help with database searches
+5. Keep detailed records of what you find and why you include/exclude studies

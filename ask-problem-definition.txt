@@ -1,0 +1,81 @@
+# Problem Definition Framework
+# Use this template to clearly define your management problem
+
+## X → Y Framework
+### Current State (X - What's happening now that's problematic?)
+[Service providers in the beauty industry face significant client retention 
+challenges, with limited published research on specific metrics. Industry 
+estimates suggest annual client churn rates vary widely (40-80% range reported 
+anecdotally). Initial retention appears particularly challenging based on 
+practitioner reports. Client lifetime values estimated at $150-300 per client 
+(industry estimates), indicating retention gaps create significant revenue loss, 
+poor client relationships, while increasing pressure on acquisition.] 
+
+
+### Desired State (Y - What outcome do we want to achieve?)
+[Improved client/customer retention]
+
+## PICOC Framework
+### Population (P - Who is affected by this problem?)
+[service providers (beauty industry)]
+
+### Intervention (I - What solution/action are we considering?)
+[Loyalty programs]
+
+### Comparison (C - What alternatives exist?)
+[Current methods:discounts, promotions, referal program,customer service
+Proposed: client loyalty programs, multi-tier loyalty progrms]
+
+### Outcomes (O - What will success look like?)
+[Create sustainable revenue growth through improved client retention, 
+resulting in increased repeat bookings, extended customer lifetime value, 
+and stronger long-term customer relationships.]
+
+### Context (C - Where/when does this apply?)
+[The beauty industry of USA: 812112
+CAGR = 7.8%
+Volatility = High (revenue changes based on market)
+Current Revenue per buisness = $63,940 (decliening by .4% 25-59)]
+
+## Clear Problem Statement
+[Beauty service providers in the USA are experiencing moderate to high client churn rates,
+struggling to convert initial bookings into recurring appointments, 
+which threatens business sustainability and growth in a competitive market.]
+
+## Why This Problem Matters
+### Impact on Organization
+[Unable to sustain business profitability, declining revenue growth, poor client/customer relationships, losing market share]
+
+### Stakeholder Impact
+[ Internal (account managers handling client
+ relationships, customer success teams, sales leadership,
+ executives seeing revenue impact, product/service delivery
+ teams) 
+ External (current clients at risk of churning, satisfied
+ clients who might stay, lost clients, potential new clients,
+ competitors trying to attract your clients)
+    The primary stakeholders, service providers, face financial stress and uncertainty.
+Clients may then face inconsistent service quality of fluctuating pricing.
+Owners and management are affected by reduced profitability.]
+
+### Strategic Alignment
+[Implementing loyalty programs to solve this problem is crucuial to strategic alignment
+for revenue growth, marketing, and opperational efficiency of businesses. ]
+
+## Evidence Questions to Explore
+### For the Problem (Step 2)
+- What evidence shows this problem exists?
+- How widespread is this problem?
+- What are the root causes?
+
+### For the Solution (Step 4)
+- What evidence supports our preferred solution?
+- Has this solution worked in similar contexts?
+- What are the potential risks and benefits?
+
+---
+INSTRUCTIONS: 
+1. Replace all bracketed placeholders with your specific content
+2. Use GitHub Copilot to help with writing and organization
+3. Reference Module 2 content for framework guidance
+4. Save frequently and commit to GitHub

@@ -1,0 +1,98 @@
+# Stakeholder Analysis
+# Identify and analyze all parties affected by your problem and solution
+
+## Internal Stakeholders
+
+### Senior Management: account managers, customer success
+ leadership, executives
+- **Interest in Problem:** [Senior management has an interest in adopting buisness methods that prioritize personalized client relationships, as this directly impacts long-term revenue sustainability and competitive positioning.]
+- **Interest in Solution:** [Increased and sustained business profitability.]
+- **Influence Level:** [High]
+- **Support Level:** [Strong]
+
+
+### Employees/Staff : front line service
+- **Interest in Problem:** [Low client retention is a result of relationships between service providers and clients. Improving this relationship through strategy would drive bookings and retention, increasing profits for providers.]
+- **Interest in Solution:** [Employees would earn more revenue and decrease uncertainty in bookings upon successful implementation. During transition period, employees may experience income instability, reduced tips if unsatisfied, or issues with current clients. (If the buisness is already struggling these are likely already exisiting issues)]
+- **Influence Level:** [Low]
+- **Support Level:** [Cautious]
+
+### Other Internal Groups
+[Add additional internal stakeholder groups as relevant]
+- **Department/Group:** [Name]
+- **Interest in Problem:** [How affected?]
+- **Interest in Solution:** [What's at stake?]
+- **Influence Level:** [High/Medium/Low]
+- **Support Level:** [Likely response]
+
+## External Stakeholders
+
+### Customers/Clients
+- **Interest in Problem:** [Clients do not return into repeat clients when they do not feel valued.]
+- **Interest in Solution:** [Clients would benefit from loyalty rewards or priority booking privileges that enhance their overall satisfaction and value.]
+- **Influence Level:** [Low influence]
+- **Support Level:** [Strong]
+
+### Suppliers/Partners/Operations
+- **Interest in Problem:** [Suppliers of business supplies are not recieving regular oders on products if business has irregularity in client bookings.]
+- **Interest in Solution:** [Suppliers would gain increased recurring sales volume and more reliable revenue forecasting through stable client retention, allowing better inventory planning and stronger business partnerships with beauty service providers.]
+- **Influence Level:** [Low influence on solution]
+- **Support Level:** [neutral]
+
+### Regulatory Bodies
+- **Interest in Problem:** [State boards want to ensure client safety and service standards are represenented through any operational changes.]
+- **Interest in Solution:** [Any new practices or implementation must comply with lisencing requirements and professional standards.]
+- **Influence Level:** [High]
+- **Support Level:** [neutal]
+
+### Community/Society
+- **Interest in Problem:** [Poor retention could create economic instability or job losses.]
+- **Interest in Solution:** [Success would contribute to local community health and employment.]
+- **Influence Level:** [Low]
+- **Support Level:** [neutral]
+
+## Stakeholder Engagement Strategy
+
+### High Influence, High Interest (Manage Closely)
+[Senior managment -  account managers, customer success
+ leadership, executives]
+
+### High Influence, Low Interest (Keep Satisfied)
+[Regulatory bodies, suppliers, operations]
+
+### Low Influence, High Interest (Keep Informed)
+[frontline customer service, satisfied clients]
+
+### Low Influence, Low Interest (Monitor)
+[society, competitors]
+
+## Key Stakeholder Insights for Evidence Collection
+
+### Who to Interview/Survey
+[clients, managment, staff]
+
+### What Questions to Ask
+[ Magement/Staff
+What specific retention metrics do middle managers currently track? 
+What operational challenges do they face when clients don't return? 
+What would staff need to successfully implement retention strategies?
+What past change initiatives have succeeded or failed in their experience?
+How would they define successful client retention improvement? 
+
+Clients
+How often do they currently visit beauty service providers?
+What drives their choice to return or switch providers?
+What communication do they want between appointments?
+What would make them feel most valued as a client? 
+What frustrations have caused them to leave a beauty service provider?]
+
+### How to Engage
+[Management/ Staff - email, phone, senior managment visit 
+Clients - email, messaging, social media, speaking to current clients]
+
+---
+INSTRUCTIONS:
+1. Be specific about each stakeholder group's interests and influence
+2. Consider both obvious and hidden stakeholders
+3. Think about implementation challenges from stakeholder perspectives
+4. This analysis will guide your stakeholder evidence collection

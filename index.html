@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My EBM Dashboard | MGT357 - Fall 2025</title>
+    <style>
+        /* === CSS CUSTOM PROPERTIES === */
+        :root {
+            --primary-gradient: linear-gradient(135deg, #f7e7e7 0%, #e8d5d5 100%);
+            --tab-active: #d4a5a5;
+            --tab-inactive: #c5b8b8;
+            --step-green: #d4a5a5;
+            --step-blue: #b8a5a5;
+            --border-radius: 15px;
+            --transition-speed: 0.3s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--primary-gradient);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0 10px;
+                border-radius: 10px;
+            }
+            
+            body {
+                padding: 10px;
+            }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #a19999, #b8a5a5);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            line-height: 1.2;
+            word-wrap: break-word;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .header p {
+                font-size: 1.1em;
+            }
+        }
+
+        .student-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            font-size: 0.9em;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 768px) {
+            .student-info {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+
+        /* === SIMPLE TAB SYSTEM === */
+        .tab-nav {
+            display: flex;
+            background: #f5f1f1;
+            border-bottom: 3px solid #d4c4c4;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            background: var(--tab-inactive);
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all var(--transition-speed);
+            border: none;
+            border-right: 2px solid white;
+        }
+
+        .tab-button:last-child {
+            border-right: none;
+        }
+
+        .tab-button:hover {
+            background: #a89999;
+            transform: translateY(-2px);
+        }
+
+        .tab-button.active {
+            background: var(--tab-active);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(212, 165, 165, 0.3);
+        }
+
+        .tab-content {
+            position: relative;
+            min-height: 500px;
+        }
+
+        .tab-panel {
+            display: none;
+            padding: 40px;
+            animation: fadeIn 0.3s ease-in;
+            line-height: 1.6;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        @media (max-width: 768px) {
+            .tab-panel {
+                padding: 20px;
+            }
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* === FLOWCHART STYLING === */
+        .flowchart-step {
+            background: var(--step-green);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            margin: 15px 0;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 165, 165, 0.3);
+        }
+
+        .decision-diamond {
+            background: var(--step-blue);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: center;
+            position: relative;
+            transform: rotate(45deg);
+        }
+
+        .decision-diamond .text {
+            transform: rotate(-45deg);
+            font-weight: bold;
+        }
+
+        .content-file-preview {
+            background: #f8f9fa;
+            border: 2px dashed #bdc3c7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.6;
+        }
+
+        .content-file-preview:hover {
+            border-color: #b8a5a5;
+            background: #faf7f7;
+        }
+
+        .content-file-preview h4 {
+            color: #6b5555;
+            margin-bottom: 15px;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .content-file-preview pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.9em;
+            line-height: 1.5;
+            color: #555;
+            margin: 0;
+            padding: 0;
+        }
+
+        .edit-notice {
+            background: #f9f4f4;
+            border: 1px solid #e8d5d5;
+            color: #7a5d5d;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 0.8em;
+        }
+
+        .evidence-type {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .scientific { background: #c49999; }
+        .practitioner { background: #d4a5a5; }
+        .organizational { background: #b8a5a5; }
+        .stakeholder { background: #a89999; }
+
+        .evidence-section {
+            margin: 40px 0;
+            padding: 25px;
+            border-left: 5px solid #e8d5d5;
+            background: #faf8f8;
+            border-radius: 10px;
+        }
+
+        .evidence-section h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+        }
+
+        .evidence-section .content-file-preview {
+            margin: 15px 0;
+        }
+
+        .progress-indicator {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: linear-gradient(135deg, #faf8f8, #f1eded);
+            margin: 0;
+            border-bottom: 3px solid #e8d5d5;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .progress-step {
+            flex: 1;
+            text-align: center;
+            padding: 12px 8px;
+            margin: 0 5px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: all var(--transition-speed);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .progress-step.completed {
+            background: linear-gradient(135deg, #b8a5a5, #d4a5a5);
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(184, 165, 165, 0.3);
+        }
+
+        .progress-step.active {
+            background: linear-gradient(135deg, #a89999, #c49999);
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(168, 153, 153, 0.3);
+        }
+
+        .progress-step.pending {
+            background: #d4c4c4;
+            color: white;
+        }
+
+        .progress-step::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .progress-step.completed::after {
+            border-left-color: #b8a5a5;
+        }
+
+        .progress-step.active::after {
+            border-left-color: #a89999;
+        }
+
+        .progress-step.pending::after {
+            border-left-color: #d4c4c4;
+        }
+
+        .progress-step:last-child::after {
+            display: none;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #b8a5a5, #a89999);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: all var(--transition-speed);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(184, 165, 165, 0.4);
+        }
+
+        .milestone-tracker {
+            background: #f7f4f4;
+            border-left: 4px solid #b8a5a5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .milestone-tracker h4 {
+            color: #6b5555;
+            margin-bottom: 10px;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 5px 0;
+            color: #555;
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: #b8a5a5;
+            font-weight: bold;
+        }
+
+        /* === TABLE AND CHART STYLING === */
+        .content-file-preview table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(184, 165, 165, 0.1);
+        }
+
+        .content-file-preview th {
+            background: linear-gradient(135deg, #d4a5a5, #c49999);
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: bold;
+            border-bottom: 2px solid #b8a5a5;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .content-file-preview td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e8d5d5;
+            color: #6b5555;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.5;
+            vertical-align: top;
+        }
+
+        .content-file-preview tr:nth-child(even) {
+            background: #faf8f8;
+        }
+
+        .content-file-preview tr:hover {
+            background: #f7f4f4;
+        }
+
+        /* Data visualization containers */
+        .chart-container, .diagram-container {
+            background: #faf8f8;
+            border: 1px solid #e8d5d5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(184, 165, 165, 0.1);
+        }
+
+        /* Statistics and metrics styling */
+        .metric-highlight {
+            background: linear-gradient(135deg, #f9f4f4, #f7f4f4);
+            border-left: 4px solid #d4a5a5;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #6b5555;
+        }
+
+        /* Data reference tables */
+        .data-reference-table {
+            background: #faf8f8;
+            border: 1px solid #e8d5d5;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            overflow-x: auto;
+            word-wrap: break-word;
+        }
+
+        .data-reference-table h4 {
+            color: #6b5555;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #d4a5a5;
+            font-weight: 600;
+            font-size: 1.1em;
+            line-height: 1.4;
+        }
+
+        .data-reference-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(184, 165, 165, 0.1);
+            table-layout: auto;
+        }
+
+        .data-reference-table th {
+            background: linear-gradient(135deg, #d4a5a5, #c49999);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #b8a5a5;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.4;
+        }
+
+        .data-reference-table td {
+            padding: 12px;
+            border: 1px solid #e8d5d5;
+            color: #6b5555;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.5;
+            vertical-align: top;
+        }
+
+        .data-reference-table tr:nth-child(even) {
+            background: #faf8f8;
+        }
+
+        .data-reference-table tr:hover {
+            background: #f7f4f4;
+        }
+
+        /* General text improvements */
+        h2, h3, h4, h5, h6 {
+            line-height: 1.4;
+            margin-bottom: 15px;
+            word-wrap: break-word;
+            color: #6b5555;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        ul, ol {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* Prevent text overflow in all elements */
+        .text-wrap {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        /* Mobile responsive table improvements */
+        @media (max-width: 768px) {
+            .data-reference-table {
+                padding: 15px;
+                margin: 15px 0;
+            }
+            
+            .data-reference-table th,
+            .data-reference-table td {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+            
+            .content-file-preview th,
+            .content-file-preview td {
+                padding: 8px 10px;
+                font-size: 0.9em;
+            }
+        }
+
+        /* Enhanced markdown table styling */
+        .content-file-preview pre {
+            font-family: 'Segoe UI', sans-serif;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.6;
+        }
+
+        /* Markdown table detection and styling */
+        .markdown-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(184, 165, 165, 0.1);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .markdown-table th {
+            background: linear-gradient(135deg, #d4a5a5, #c49999);
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #b8a5a5;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .markdown-table td {
+            padding: 12px 15px;
+            border: 1px solid #e8d5d5;
+            color: #6b5555;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.5;
+            vertical-align: top;
+        }
+
+        .markdown-table tr:nth-child(even) {
+            background: #faf8f8;
+        }
+
+        .markdown-table tr:hover {
+            background: #f7f4f4;
+        }
+
+        /* Pre-formatted text styling for better table readability */
+        .content-file-preview pre {
+            tab-size: 4;
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            font-variant-numeric: tabular-nums;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 My Evidence-Based Management Dashboard</h1>
+            <p>MGT357 - Fall 2025 | Portfolio Project</p>
+            
+            <div class="student-info">
+                <div><strong>Student:</strong> [Molly Vazales]</div>
+                <div><strong>Problem Focus:</strong> [How can service providers increase their client retention rate? ]</div>
+                <div><strong>Repository:</strong> <a href="#" style="color: #d4a5a5;">[Your GitHub Link]</a></div>
+                <div><strong>Last Updated:</strong> [Today's Date]</div>
+            </div>
+        </div>
+
+        <!-- Persistent Progress Indicator -->
+        <div class="progress-indicator">
+            <div class="progress-step pending" onclick="showTab(1)">🎯 Framework</div>
+            <div class="progress-step pending" onclick="showTab(2)">🔍 Evidence</div>
+            <div class="progress-step pending" onclick="showTab(3)">⚖️ Synthesis</div>
+            <div class="progress-step pending" onclick="showTab(4)">🚀 Application</div>
+            <div class="progress-step pending" onclick="showTab(5)">📊 Assessment</div>
+        </div>
+
+        <div class="tab-container">
+            <!-- Tab Navigation -->
+            <div class="tab-nav">
+                <button class="tab-button active" onclick="showTab(1)">🎯 Problem & Solution Framework</button>
+                <button class="tab-button" onclick="showTab(2)">🔍 Evidence Hub</button>
+                <button class="tab-button" onclick="showTab(3)">⚖️ Aggregation</button>
+                <button class="tab-button" onclick="showTab(4)">🚀 Application</button>
+                <button class="tab-button" onclick="showTab(5)">📊 Assessment</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- TAB 1: Problem & Solution Framework -->
+                <div class="tab-panel active" id="tab-1">
+                    <h2>🎯 Problem & Solution Framework</h2>
+                    <p><strong>Following Module 2 Flowchart:</strong> Define the problem AND identify the preferred solution before collecting evidence.</p>
+                    
+                    <div class="milestone-tracker">
+                        <h4>📋 Milestone 1 Checklist (Due: Week 3)</h4>
+                        <ul class="checklist">
+                            <li>GitHub repository created and dashboard running</li>
+                            <li>Problem Definition completed using frameworks</li>
+                            <li>Stakeholder Analysis documented</li>
+                            <li>Success Criteria clearly defined</li>
+                            <li>Progress tracker updated</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flowchart-step">
+                        STEP 1: ASK - What is the assumed problem?
+                    </div>
+                    
+                    <div class="content-file-preview">
+                        <h4>📝 content/ask-problem-definition.txt</h4>
+                        <div class="edit-notice">🖊️ Content loaded successfully</div>
+                        <pre id="problem-definition-content"><strong>Problem Definition Framework</strong>
+
+<strong>X → Y Framework</strong>
+<strong>Current State (X):</strong> Service providers in the beauty industry face significant client retention challenges, with annual churn rates varying widely (40-80% range). Client lifetime values estimated at $150-300 per client, indicating retention gaps create significant revenue loss.
+
+<strong>Desired State (Y):</strong> Improved client/customer retention
+
+<strong>PICOC Framework</strong>
+<strong>Population:</strong> Service providers (beauty industry)
+<strong>Intervention:</strong> Loyalty programs  
+<strong>Comparison:</strong> Current methods (discounts, promotions, referral programs) vs. proposed multi-tier loyalty programs
+<strong>Outcomes:</strong> Sustainable revenue growth through improved client retention, increased repeat bookings, extended customer lifetime value
+<strong>Context:</strong> Beauty industry USA (NAICS 812112), CAGR = 7.8%, Current Revenue per business = $63,940
+
+<strong>Clear Problem Statement:</strong>
+Beauty service providers in the USA are experiencing moderate to high client churn rates, struggling to convert initial bookings into recurring appointments, which threatens business sustainability and growth in a competitive market.</pre>
+                    </div>
+
+                    <div class="content-file-preview">
+                        <h4>📝 content/ask-stakeholder-analysis.txt</h4>
+                        <div class="edit-notice">🖊️ Content loaded successfully</div>
+                        <pre id="stakeholder-analysis-content"><strong>Stakeholder Analysis</strong>
+
+<strong>Internal Stakeholders</strong>
+
+<strong>Senior Management:</strong> Account managers, customer success leadership, executives
+- Interest in Problem: Adopting business methods that prioritize personalized client relationships, impacting long-term revenue sustainability
+- Interest in Solution: Increased and sustained business profitability
+- Influence Level: High | Support Level: Strong
+
+<strong>Employees/Staff:</strong> Front line service providers
+- Interest in Problem: Low client retention affects provider-client relationships, reducing bookings and profits
+- Interest in Solution: Increased revenue, decreased booking uncertainty, potential transition challenges
+- Influence Level: Low | Support Level: Cautious
+
+<strong>External Stakeholders</strong>
+
+<strong>Customers/Clients</strong>
+- Interest in Problem: Do not return when they don't feel valued
+- Interest in Solution: Benefit from loyalty rewards and priority booking privileges
+- Influence Level: Low | Support Level: Strong
+
+<strong>Suppliers/Partners</strong>
+- Interest in Problem: Irregular orders due to inconsistent client bookings
+- Interest in Solution: Increased recurring sales and reliable revenue forecasting
+- Influence Level: Low | Support Level: Neutral
+
+<strong>Stakeholder Engagement Strategy</strong>
+- High Influence, High Interest: Senior management
+- High Influence, Low Interest: Regulatory bodies, suppliers
+- Low Influence, High Interest: Frontline staff, clients
+- Low Influence, Low Interest: Society, competitors</pre>
+                    </div>
+
+                    <div class="content-file-preview">
+                        <h4>📝 content/ask-success-criteria.txt</h4>
+                        <div class="edit-notice">🖊️ Content loaded successfully</div>
+                        <pre id="success-criteria-content"><strong>SMART Success Criteria</strong>
+
+<strong>Criterion 1: Reduced Client Churn Rate</strong>
+- Specific: Annual client churn rate
+- Measurable: Decrease from 60% to 40% within 12 months
+- Achievable: Realistic given industry benchmarks
+- Relevant: Directly tied to business value
+- Time-bound: 12 months with checkpoints
+
+<strong>Criterion 2: Customer Lifetime Value</strong>
+- Specific: Average revenue per client over 12 months
+- Measurable: Increase current CLV ($150) by 30% within 12 months
+- Achievable: Realistic given industry benchmarks
+- Relevant: Directly relates to retention
+- Time-bound: 12 month period
+
+<strong>Criterion 3: Appointment Frequency</strong>
+- Specific: Average appointments per client per year
+- Measurable: Increase from 2 visits to 3 visits per year
+- Achievable: Realistic given resources
+- Relevant: Relates to retention
+- Time-bound: Twelve month period
+
+<strong>Baseline Measurements</strong>
+- Current Churn Rate: 60%
+- Current CLV: $150
+- Current Appointment Frequency: 2 visits per year
+
+<strong>Target Metrics</strong>
+- Customer satisfaction: 4 out of 5 average
+- CLV increase: 30%
+- Churn reduction: 60% to 40%</pre>
+                    </div>
+
+                    <div class="flowchart-step">
+                        STEP 2: ASK - What is the evidence for the assumed problem?
+                    </div>
+
+                    <div class="flowchart-step">
+                        STEP 3: ASK - What is the preferred solution?
+                    </div>
+
+                    <div class="flowchart-step">
+                        STEP 4: ASK - What is the evidence for the preferred solution?
+                    </div>
+
+                    <p><strong>Next Phase:</strong> Now that we have our problem framework defined, we move to the Evidence Hub to systematically collect and evaluate evidence from all four sources to answer Steps 2 & 4.</p>
+                </div>
+
+                <!-- TAB 2: Evidence Hub -->
+                <div class="tab-panel" id="tab-2">
+                    <h2>🔍 Evidence Hub</h2>
+                    <p><strong>Purpose:</strong> Systematically collect and critically evaluate evidence from all four sources.</p>
+
+                    <div class="milestone-tracker">
+                        <h4>📋 Milestone 2 & 3 Checkpoints</h4>
+                        <ul class="checklist">
+                            <li><strong>Milestone 2 (Week 6):</strong> Scientific & Practitioner Evidence Complete</li>
+                            <li><strong>Milestone 3 (Week 9):</strong> Organizational & Stakeholder Evidence Complete</li>
+                            <li>All acquisition methods documented</li>
+                            <li>Evidence sources collected and organized</li>
+                            <li>Quality appraisals completed for each evidence type</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                        <h4>🎯 Evidence Collection Goals:</h4>
+                        <ul>
+                            <li><strong>For Step 2:</strong> What evidence supports our assumed problem?</li>
+                            <li><strong>For Step 4:</strong> What evidence supports our preferred solution?</li>
+                        </ul>
+                    </div>
+
+                    <!-- Scientific Evidence Section -->
+                    <div class="evidence-section">
+                        <h3 class="evidence-type scientific">🔬 Scientific Evidence</h3>
+                        
+                        <div class="content-file-preview">
+                            <h4>📝 content/evidence-scientific-methods.txt</h4>
+                            <div class="edit-notice">🖊️ Content loaded successfully</div>
+                            <pre><strong>Research Strategy: Scientific Evidence</strong>
+
+<strong>Primary Research Question:</strong> How do loyalty programs affect client retention?
+<strong>Secondary Research Question:</strong> What other factors drive client retention?
+
+<strong>Databases Searched:</strong>
+- Google Scholar ✓
+- Business Source Premier ✓  
+- EBSCO ✓
+
+<strong>Search Terms Used:</strong>
+
+<table class="markdown-table">
+<thead>
+<tr>
+<th>Keyword Category</th>
+<th>Terms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Loyalty & Retention</strong></td>
+<td>loyalty programs, client loyalty, customer loyalty, retention strategies</td>
+</tr>
+<tr>
+<td><strong>Churn Analysis</strong></td>
+<td>churn prediction, customer churn, client turnover, attrition</td>
+</tr>
+<tr>
+<td><strong>Beauty Industry</strong></td>
+<td>beauty industry, service providers, salon customers, CLV</td>
+</tr>
+</tbody>
+</table>
+
+<strong>Studies Found:</strong> 3 high-quality studies
+<strong>Date Range:</strong> 2004-2021
+<strong>Quality Assessment:</strong> CATmanager framework used</pre>
+                        </div>
+
+                        <div class="content-file-preview">
+                            <h4>📝 content/evidence-scientific-sources.txt</h4>
+                            <div class="edit-notice">🖊️ Content loaded successfully</div>
+                            <pre><strong>Scientific Evidence: Research Studies</strong>
+
+<strong>Study 1: Non-Tiered Customer Loyalty Programs</strong>
+Author: Gopalakrishnan et al. (2021)
+Context: Hair salon chain, 5,544 customers, 30-month study
+Key Finding: 29.5% increase in Customer Lifetime Value
+Main Benefit: Reduced customer attrition (23.6% of CLV increase)
+Relevance: High - directly applicable to beauty service providers
+
+<strong>Study 2: Consumer-Brand Relationships Meta-Analysis</strong>
+Author: Khamitov et al. (2019)
+Context: 588 estimates from 290 studies over 24 years
+Key Finding: Brand attachment drives strongest loyalty outcomes
+Framework: 5 core constructs (Brand Attachment, Brand Love, Self-Brand Connection, Brand Identification, Brand Trust)
+Relevance: High - identifies key loyalty drivers across industries
+
+<strong>Study 3: Loyalty Programs vs Short-Term Promotions</strong>
+Author: Lewis (2004)
+Context: Online retailer, 1,058 customers, 13-month study
+Key Finding: Loyalty programs more effective than short-term promotions for retention
+Method: Dynamic programming model
+Relevance: Moderate - online retail context differs from service providers
+
+<strong>Key Insights for Beauty Service Providers:</strong>
+- Non-tiered loyalty programs most effective for service businesses
+- Emotional brand attachment crucial for long-term retention
+- Loyalty programs outperform discount-based promotions
+- Expected CLV increase: 29.5% based on hair salon evidence</pre>
+                        </div>
+
+                        <div class="content-file-preview">
+                            <h4>📝 content/evidence-scientific-appraisal.txt</h4>
+                            <div class="edit-notice">🖊️ Content loaded successfully</div>
+                            <pre><h3>CATmanager Critical Appraisal Summary</h3>
+
+<table class="markdown-table">
+<thead>
+<tr>
+<th>Study</th>
+<th>CATmanager Grade</th>
+<th>Clinical Relevance</th>
+<th>Applicability</th>
+<th>Transparency</th>
+<th>Overall Quality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Study 1: Non-Tiered Loyalty Programs (Hair Salon)</strong><br><em>Gopalakrishnan et al. (2021)</em></td>
+<td><strong>A</strong></td>
+<td>Excellent - Directly addresses service provider retention</td>
+<td>High - Hair salon context highly applicable to beauty services</td>
+<td>Excellent - Clear methodology, 30-month data, 5,544 customers</td>
+<td>High quality with strong statistical methods</td>
+</tr>
+<tr>
+<td><strong>Study 2: Consumer-Brand Relationships Meta-Analysis</strong><br><em>Khamitov et al. (2019)</em></td>
+<td><strong>A-</strong></td>
+<td>Good - Identifies key loyalty drivers across industries</td>
+<td>Moderate - Meta-analysis provides broad insights but less specific context</td>
+<td>Excellent - 588 estimates from 290 studies over 24 years</td>
+<td>High quality systematic review methodology</td>
+</tr>
+<tr>
+<td><strong>Study 3: Loyalty Programs & Promotions (Online Retailer)</strong><br><em>Lewis (2004)</em></td>
+<td><strong>B+</strong></td>
+<td>Good - Compares loyalty programs vs short-term promotions</td>
+<td>Moderate - Online retail context differs from service providers</td>
+<td>Good - Dynamic programming model with 1,058 customers</td>
+<td>Sound methodology though older study (2004)</td>
+</tr>
+</tbody>
+</table>
+
+<strong>CATmanager Grading Scale:</strong>
+- <strong>A</strong> = Excellent quality, highly applicable, transparent methodology
+- <strong>B+</strong> = Good quality with minor limitations
+- <strong>B</strong> = Adequate quality with some concerns
+- <strong>C</strong> = Poor quality or major limitations</pre>
+                        </div>
+                    </div>
+
+                    <!-- Practitioner Evidence Section -->
+                    <div class="evidence-section">
+                        <h3 class="evidence-type practitioner">👔 Practitioner Evidence</h3>
+                        
+                        <div class="content-file-preview">
+                            <h4>📝 content/evidence-practitioner-methods.txt</h4>
+                            <div class="edit-notice">🖊️ Content loaded successfully</div>
+                            <pre><strong># Practitioner Evidence: Methods & Acquisition Strategy</strong>
+
+<strong>## Target Practitioner Groups</strong>
+
+<strong>Group 1: Direct Beauty Service Practitioners</strong>
+- Target: Licensed estheticians with client retention experience
+- Geographic Focus: Local area (Harrisonburg, VA and surrounding)
+- Target Number: 3-5 practitioners
+- Interview Focus: Real-world retention challenges and solutions
+
+<strong>Group 2: Success Case Studies</strong>
+- Target: Established beauty businesses with proven retention strategies
+- Research Focus: Sephora Beauty Insider, Beautiful Co. Hair & Lashes
+- Documentation: Implementation details and quantifiable results
+
+<strong>## Interview Framework</strong>
+
+<strong>Key Questions for Beauty Practitioners:</strong>
+1. How long have you been working in the beauty industry?
+2. Have you experienced clients not returning after initial appointments?
+3. What strategies have you tried to improve client retention?
+4. Which methods have been most/least successful?
+5. What advice would you give to others facing this challenge?
+
+<strong>## Quality Assessment Criteria</strong>
+
+<strong>Practitioner Credibility Factors:</strong>
+- Years of experience in beauty industry
+- Direct experience with retention challenges
+- Implementation experience with retention strategies
+- Current role relevance to beauty services
+
+<strong>Target Participants Interviewed:</strong>
+- **Molly Vazales:** Licensed Esthetician, Studio Owner
+- **Diana Rosinski:** Licensed Esthetician, Lotus Wellness Spa
+- **Bloom Esthetics Co:** Successful beauty business case study</pre>
+                        </div>
+
+                        <div class="content-file-preview">
+                            <h4>📝 content/evidence-practitioner-sources.txt</h4>
+                            <div class="edit-notice">🖊️ Content loaded successfully</div>
+                            <pre><strong># Practitioner Evidence: Expert Insights & Professional Experience</strong>
+
+<strong>## Interview 1: Molly Vazales, Studio Owner</strong>
+
+<strong>Practitioner Profile:</strong>
+- **Organization:** Aesthetics by Molly Rose
+- **Experience:** 1 year esthetician, prior Sephora experience
+- **Problem Recognition:** Yes - clients not returning after initial appointment
+- **Problem Frequency:** Moderately common
+- **Root Causes:** Schedule issues, pricing concerns, competing priorities
+
+<strong>Solution Insights:</strong>
+- **Recommended Approaches:** Social media marketing, promotions, word-of-mouth programs
+- **Success Factors:** Personal connections, consistent follow-up, perceived value alignment
+- **Timeline Expectations:** 2-3 months for initial improvements, 6+ months for strong base
+
+<strong>## Interview 2: Diana Rosinski, Esthetician</strong>
+
+<strong>Practitioner Profile:</strong>
+- **Organization:** Lotus Wellness Spa
+- **Experience:** 6 months at spa, additional home practice
+- **Retention Results:** 75% retention at home practice vs. lower spa retention
+
+<strong>Key Success Strategies:</strong>
+- **Service Extras:** Scalp massages during treatments, double cleansing lashes
+- **Loyalty Programs:** Planning lash loyalty cards (10% off), pre-booking systems
+- **Quality Focus:** Extreme cleanliness and sanitation standards
+
+<strong>## Case Study 1: Sephora Beauty Insider Program</strong>
+
+<strong>Program Results:</strong>
+- **Members:** 17 million North American, 25 million globally
+- **Business Impact:** 80% of sales from loyalty members
+- **Retention Rate:** 95% member retention
+- **Revenue Impact:** 22% increase in cross-sell, 13-51% increase in upsell
+
+<strong>Success Factors:**
+- Three-tier structure creates aspirational goals
+- Personalization builds emotional connections
+- Omnichannel integration (online + in-store)
+- Continuous program evolution since 2007
+
+<strong>## Case Study 2: Beautiful Co. Hair & Lashes Salon</strong>
+
+<strong>Business Profile:</strong>
+- **Size:** 16 team members, 1 location (Greenville, SC)
+- **Achievement:** 95% customer retention rate
+- **Revenue:** $8,000 weekly from lash services alone
+
+<strong>Success Strategy:</strong>
+- Luxury experience focus with personal touches
+- Technology integration for seamless operations
+- Staff training emphasis on hospitality
+- Service diversification and retail integration
+
+<strong>## Cross-Expert Analysis</strong>
+
+<strong>Consensus Views:</strong>
+- Personal touches and relationship building are crucial
+- Consistency in follow-up communication drives retention
+- Small service details make significant impact
+- Both large corporations and small salons can achieve 95% retention</pre>
+                        </div>
+
+                        <div class="content-file-preview">
+                            <h4>📝 content/evidence-practitioner-appraisal.txt</h4>
+                            <div class="edit-notice">🖊️ Content loaded successfully</div>
+                            <pre><strong># Practitioner Evidence: Credibility & Relevance Assessment</strong>
+
+<strong>## Individual Practitioner Credibility</strong>
+
+<strong>Expert 1: Molly Vazales</strong>
+- **Professional Credibility:** 1 year as esthetician, prior beauty industry experience
+- **Expertise Assessment:** Moderate - experiences retention challenges directly
+- **Context Relevance:** Highly relevant - owns studio in beauty industry
+- **Bias Assessment:** No conflicts - independent practitioner, transparent about challenges
+
+<strong>Expert 2: Diana Rosinski</strong>
+- **Professional Credibility:** 6 months at spa, 75% home practice retention rate
+- **Expertise Assessment:** Extensive - deals with retention challenges daily
+- **Context Relevance:** Highly relevant - dual context (spa and home practice)
+- **Bias Assessment:** High investment in solutions, very open about learning process
+
+<strong>## Case Study Credibility Assessment</strong>
+
+<strong>Sephora Beauty Insider Program:</strong>
+- **Source:** LoyaltyLion industry publication - moderately reliable
+- **Context Relevance:** Same industry but very different scale (large corporation vs. small business)
+- **Outcome Verification:** Well documented with specific metrics over 16+ years
+- **Applicability:** Principles applicable, scale differences noted
+
+<strong>Beautiful Co. Hair & Lashes:</strong>
+- **Source:** Square company case study - moderately reliable
+- **Context Relevance:** Similar scale small business with team, same industry
+- **Outcome Verification:** Good detail on implementation and 95% retention results
+- **Applicability:** High relevance for small beauty business context
+
+<strong>## Evidence Quality Assessment</strong>
+
+<strong>Consistent Messages:</strong>
+- Personal touches drive retention
+- Loyalty programs help when implemented properly
+- Consistency in service and follow-up matters
+- Cleanliness and professionalism are non-negotiable
+
+<strong>Evidence Limitations:</strong>
+- Sample size: Only 2 practitioner interviews completed
+- Geographic limitation: Local area only
+- Experience level: Focus on newer practitioners (under 1 year)
+- Missing perspectives: No experienced practitioners (10+ years) or failed program examples
+
+<strong>Overall Confidence Level:</strong>
+- **High Confidence:** Personal service touches, relationship building importance
+- **Medium Confidence:** Specific loyalty program implementations
+- **Areas Needing More Evidence:** Long-term effectiveness, implementation challenges</pre>
+                        </div>
+                    </div>
+
+                    <!-- Organizational Evidence Section -->
+                    <div class="evidence-section">
+                        <h3 class="evidence-type organizational">🏢 Organizational Evidence</h3>
+                        
+                        <div class="content-file-preview">
+                            <h4>📝 content/evidence-organizational-methods.txt</h4>
+                            <div class="edit-notice">🖊️ Content loaded successfully</div>
+                            <pre><strong># Organizational Evidence: Data Collection Methods</strong>
+
+<strong>## Data Collection Strategy</strong>
+**Collection Period:** 2020-2024 (5-year analysis)
+**Data Quality Assessment:** High overall quality - Government datasets provide reliable foundation
+
+<strong>## Primary Data Sources</strong>
+
+<strong>1. Bureau of Labor Statistics QCEW Data</strong>
+- **Content:** Employment and wage data for beauty services (NAICS 8121)
+- **Reliability:** High - government statistical reporting
+- **Time Period:** 2023-2024 annual comparison
+- **Key Metrics:** Employment growth, wage trends, industry stability
+
+<strong>2. Bizminer Industry Financial Analysis</strong>
+- **Content:** Comprehensive industry financial performance
+- **Reliability:** High - systematic industry tracking
+- **Time Period:** 2020-2024 five-year trends
+- **Key Metrics:** Revenue trends, operating expenses, profit margins
+
+<strong>3. Industry Research & Benchmarks</strong>
+- **Content:** Customer retention and performance benchmarks
+- **Reliability:** Medium - industry association research
+- **Sources:** Professional Beauty Association, market research
+- **Key Metrics:** Retention rates, customer lifetime values, spending patterns
+
+<strong>## Key Performance Indicators Tracked</strong>
+
+<strong>Financial Performance Metrics:</strong>
+- Industry revenue: -6.0% decline ($275.7B to $259.1B)
+- Operating expenses: Increased from 67.73% to 68.78% of revenue
+- Gross profit margin: 75.82% (strong capacity for investment)
+- Customer lifetime value: $1,200-$3,500 range
+
+<strong>Market & Customer Metrics:</strong>
+- First-time client attrition: 67% don't return after initial visit
+- Target retention rates: 60-75% within 12 months
+- Annual household spending: $768 on personal care services
+- Industry employment: 1.8% growth (743,964 employees)</pre>
+                        </div>
+
+                        <div class="content-file-preview">
+                            <h4>📝 content/evidence-organizational-sources.txt</h4>
+                            <div class="edit-notice">🖊️ Content loaded successfully</div>
+                            <pre><strong># Organizational Evidence: Industry Performance Data & Metrics</strong>
+
+<strong>## Problem-Related Metrics</strong>
+
+<strong>Industry Revenue Decline:</strong>
+- **Current Impact:** -6.0% decline ($275,738M to $259,127M)
+- **Trend:** Declining significantly over 12 months
+- **Problem Connection:** Demonstrates urgent need for retention strategies as market shrinks
+- **Data Source:** Bizminer industry financial reports
+
+<strong>Customer Retention Crisis:</strong>
+- **Industry Benchmark:** 50-65% retention at 6 months, 60-75% at 12 months
+- **Critical Issue:** 67% of first-time clients don't return
+- **Problem Scale:** Major retention challenge confirmed industry-wide
+- **Financial Impact:** $1,200-$3,500 customer lifetime value at risk
+
+<strong>Operating Expense Pressure:</strong>
+- **Current State:** 68.78% of revenue (2024) vs. 67.73% (2023)
+- **Trend:** Worsening - expenses increasing as percentage of revenue
+- **Impact:** 1.05 percentage point unfavorable increase
+- **Implication:** Rising costs make retention more valuable than acquisition
+
+<strong>## Financial Capacity Analysis</strong>
+
+<div class="data-reference-table">
+<h4>📊 Industry Financial Performance Summary</h4>
+<table>
+<tr style="background: linear-gradient(135deg, #d4a5a5, #c49999);">
+<th style="border: 1px solid #b8a5a5; padding: 12px; color: white;">Financial Metric</th>
+<th style="border: 1px solid #b8a5a5; padding: 12px; color: white;">2023 Performance</th>
+<th style="border: 1px solid #b8a5a5; padding: 12px; color: white;">2024 Performance</th>
+<th style="border: 1px solid #b8a5a5; padding: 12px; color: white;">Change</th>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px;">Industry Revenue</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">$275,738M</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">$259,127M</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">-6.0%</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px;">Operating Expenses</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">67.73%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">68.78%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">+1.05pp</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px;">Gross Profit Margin</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">75.82%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">75.82%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">Stable</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px;">Employment Growth</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">732,121</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">743,964</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">+1.8%</td>
+</tr>
+</table>
+</div>
+
+<strong>## Investment Capacity Assessment</strong>
+
+<strong>Available Resources:</strong>
+- **Gross Profit Margin:** 75.82% provides strong investment capacity
+- **Industry Stability:** 1.8% employment growth indicates stable workforce
+- **Customer Value Potential:** $1,200-$3,500 CLV demonstrates ROI opportunity
+- **Market Size:** 154,244 establishments show expanding presence
+
+<strong>Financial Constraints:</strong>
+- **Operating Pressure:** Rising expense ratio (68.78%) requires careful ROI planning
+- **Revenue Decline:** -6.0% industry contraction creates urgency for efficiency
+- **Cost Structure:** Need to balance investment with expense management
+
+<strong>## Market Context Analysis</strong>
+
+<strong>Customer Spending Baseline:</strong>
+- **Annual Household Spending:** $768 on personal care services
+- **Market Growth Potential:** Consumer spending supports retention investment
+- **Geographic Distribution:** Urban areas show higher retention potential
+
+<strong>Competitive Landscape:</strong>
+- **Industry Competition:** 154,244 establishments (2.1% growth) creates need for differentiation
+- **Retention Imperative:** High competition makes customer retention critical advantage
+- **Market Saturation:** Established market requires efficiency over expansion</strong></pre>
+                        </div>
+
+                        <div class="content-file-preview">
+                            <h4>📝 content/evidence-organizational-appraisal.txt</h4>
+                            <div class="edit-notice">🖊️ Content loaded successfully</div>
+                            <pre><strong># Organizational Evidence: Quality Assessment</strong>
+
+<strong>## Data Source Reliability</strong>
+
+<strong>Bureau of Labor Statistics QCEW:</strong>
+- **Reliability Rating:** High
+- **Method:** Government statistical reporting, mandatory employer filings
+- **Strengths:** Comprehensive industry coverage, standardized methodology
+- **Limitations:** Industry-level aggregation, 2-3 quarter publication lag
+
+<strong>Bizminer Industry Financial Reports:</strong>
+- **Reliability Rating:** High  
+- **Method:** Comprehensive business financial data compilation
+- **Strengths:** 5-year trend analysis, detailed financial metrics
+- **Limitations:** Industry averages may not reflect individual business variations
+
+<strong>Industry Research & Benchmarks:</strong>
+- **Reliability Rating:** Medium
+- **Method:** Industry association surveys and market analysis
+- **Strengths:** Customer behavior insights, retention benchmarks
+- **Limitations:** Self-reported data, potential response bias
+
+<strong>## Evidence Quality Assessment - Nine Barriers Framework</strong>
+
+<strong>Barrier 1: No Clear Logic Model</strong>
+- **Risk Level:** Medium
+- **Issue:** Good industry data but limited proof loyalty programs solve retention
+- **Mitigation:** Combined with scientific evidence showing program effectiveness
+
+<strong>Barrier 2: Irrelevant Data</strong>
+- **Risk Level:** Low-Medium  
+- **Assessment:** Focused on relevant metrics (retention, revenue, costs)
+- **Strength:** Direct connection between data and business decisions
+
+<strong>Barrier 3: Inaccurate Data</strong>
+- **Risk Level:** Low
+- **Assessment:** Government data very reliable; industry reports fairly reliable
+- **Confidence:** High accuracy for financial and employment metrics
+
+<strong>Barrier 5: Measurement Error</strong>
+- **Risk Level:** Medium
+- **Issue:** Industry averages may not match individual business experiences
+- **Implication:** Need to adapt findings to specific business context
+
+<strong>## Bias Assessment</strong>
+
+<strong>Selection Bias:**
+- **Data Availability Bias:** Medium risk - industry data may not represent small businesses
+- **Survivorship Bias:** Low risk - government data captures broad representation
+
+<strong>Temporal Bias:**
+- **Post-Pandemic Context:** Recent trends (2020-2024) influenced by COVID recovery
+- **Economic Cycle Effects:** Inflation and economic uncertainty affect interpretation
+
+<strong>## Confidence Assessment</strong>
+
+<strong>High Confidence Areas:</strong>
+- Industry financial challenges are real (-6.0% revenue decline)
+- Customer retention is major problem (67% first-visit attrition)
+- Financial capacity exists for solutions (75.82% gross margins)
+
+<strong>Medium Confidence Areas:</strong>
+- Specific ROI predictions for loyalty programs
+- Timeline expectations for implementation success
+
+<strong>Overall Rating:** Medium-High for problem identification; Medium for solution feasibility</pre>
+                        </div>
+                    </div>
+
+                    <!-- Stakeholder Evidence Section -->
+                    <div class="evidence-section">
+                        <h3 class="evidence-type stakeholder">👥 Stakeholder Evidence</h3>
+                        
+                        <div class="content-file-preview">
+                            <h4>📝 content/evidence-stakeholder-methods.txt</h4>
+                            <div class="edit-notice">🖊️ Content loaded successfully</div>
+                            <pre><strong># Stakeholder Evidence: Methods & Engagement Strategy</strong>
+
+<strong>## Evidence Collection Approach</strong>
+**Primary Goal:** Understand client perspectives on beauty service loyalty and retention drivers
+**Secondary Goal:** Gather industry insights on successful loyalty program implementations
+
+<strong>## Research Sources Used</strong>
+
+<strong>Market Research Sources:</strong>
+- **IBISWorld Beauty Industry Report (2025):** $68.6B market analysis, 167,000 businesses
+- **Mintel Personal Care Consumer Report (2025):** Consumer behavior across demographics
+- **Bureau of Labor Statistics:** Employment and wage data (NAICS 8121)
+- **Bizminer Industry Analysis:** Financial performance benchmarks
+
+<strong>Success Case Studies:</strong>
+- **Sephora Beauty Insider Program:** Large-scale loyalty program (25M global members)
+- **Beautiful Co. Hair & Lashes:** Small salon success story (95% retention)
+
+<strong>## Target Stakeholder Groups</strong>
+
+<strong>Primary Customer Segments (From Mintel Research):</strong>
+- **Premium Spenders:** Women 55+ (current high-value customers)
+- **Growth Opportunity:** Men 35-54 & Women under 55 (emerging segments)  
+- **Experience-Driven:** Adults 18-44 seeking stress relief and mood enhancement
+
+<strong>Industry Stakeholders:</strong>
+- **Beauty Service Providers:** Salon owners, estheticians, spa operators
+- **Technology Partners:** Loyalty platform providers, POS system vendors
+- **Industry Groups:** Professional Beauty Association, trade organizations
+
+<strong>## Key Research Questions Addressed</strong>
+
+<strong>Customer Stakeholder Insights:</strong>
+1. What drives customer loyalty in beauty services?
+2. How do economic factors affect brand switching behavior?
+3. What motivates continued service usage beyond basic needs?
+
+<strong>Industry Stakeholder Perspectives:**
+1. What retention strategies prove most effective?
+2. How do successful loyalty programs structure benefits?
+3. What implementation challenges should be anticipated?
+
+<strong>## Data Collection Framework</strong>
+
+<strong>Quantitative Evidence:**
+- Market size: $68.6B beauty industry, 5.0% annual growth
+- Consumer loyalty: 70% of financially stable customers resist switching
+- Program effectiveness: 80% of sales from loyalty members (top retailers)
+
+<strong>Qualitative Evidence:**
+- Customer motivation factors (stress relief, mood enhancement)
+- Implementation best practices from case studies
+- Industry consensus on retention challenges and solutions</pre>
+                        </div>
+
+                        <div class="content-file-preview">
+                            <h4>📝 content/evidence-stakeholder-sources.txt</h4>
+                            <div class="edit-notice">🖊️ Content loaded successfully</div>
+                            <pre><strong># Stakeholder Evidence: Market Research & Industry Insights</strong>
+
+<strong>## Industry Stakeholder Evidence (IBISWorld Analysis)</strong>
+
+<strong>Market Size & Growth:</strong>
+- **Industry Value:** $68.6 billion (2025)
+- **Annual Growth:** 5.0% CAGR (2020-2025)
+- **Workforce:** 454,000 employees across 167,000 businesses
+- **Market Trend:** Strong economic recovery supporting discretionary beauty spending
+
+<strong>Competitive Landscape Insights:</strong>
+- **Major Players:** Sephora, Ulta succeed due to "expertise and loyalty programs"
+- **Success Factors:** Broad product range combined with customer retention strategies
+- **Industry Challenge:** High competition requires differentiation through customer experience
+- **Technology Integration:** Essential for competitive advantage in modern market
+
+<strong>## Consumer Stakeholder Evidence (Mintel Research)</strong>
+
+<strong>Customer Loyalty Patterns:</strong>
+- **Financial Stability Impact:** 70% of financially stable consumers maintain brand loyalty
+- **Price Sensitivity:** Only 30% willing to switch for lower costs
+- **Local Preference:** 30% shifting toward domestic brands over large chains
+- **Generational Differences:** Gen Z & Millennials seek experiential benefits over basic service
+
+<strong>Customer Motivation Analysis:</strong>
+- **Stress Relief Usage:** 35% of adults 18-44 use beauty services for mood enhancement
+- **Premium Willingness:** Women 55+ drive premium spending on facial skincare
+- **Growth Segments:** Men 35-54 and women under 55 represent expansion opportunities
+- **Value Perception:** Younger demographics take "broader view beyond price"
+
+<div class="data-reference-table">
+<h4>📊 Stakeholder Evidence Summary Table</h4>
+<table>
+<tr style="background: linear-gradient(135deg, #d4a5a5, #c49999);">
+<th style="border: 1px solid #b8a5a5; padding: 12px; color: white;">Stakeholder Group</th>
+<th style="border: 1px solid #b8a5a5; padding: 12px; color: white;">Key Insight</th>
+<th style="border: 1px solid #b8a5a5; padding: 12px; color: white;">Supporting Data</th>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px;"><strong>Financially Stable Customers</strong></td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">Strong brand loyalty potential</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">70% resist switching to lower-cost options</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px;"><strong>Adults 18-44</strong></td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">Experience-driven usage</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">35% use beauty services for stress relief</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px;"><strong>Local Market Preference</strong></td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">Shift toward domestic brands</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">30% prefer local over large chains</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px;"><strong>Industry Leaders</strong></td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">Loyalty programs drive success</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px;">80% of sales from repeat customers</td>
+</tr>
+</table>
+</div>
+
+<strong>## Success Story Evidence</strong>
+
+<strong>Sephora Beauty Insider (Large Scale):</strong>
+- **Program Scale:** 25 million global members
+- **Business Impact:** 80% of sales from loyalty program participants  
+- **Retention Rate:** 95% of members continue participation
+- **Key Success Factors:** Tiered benefits, personalization, community features
+
+<strong>Beautiful Co. Hair & Lashes (Small Business):</strong>
+- **Business Size:** 16 employees, single location
+- **Achievement:** 95% customer retention rate
+- **Revenue Impact:** $8,000 weekly from lash services alone
+- **Success Approach:** Personal relationships, luxury experience focus, technology support
+
+<strong>## Stakeholder Consensus Findings</strong>
+
+<strong>Agreement Across All Groups:</strong>
+- **Personal Relationships:** Critical for beauty service retention
+- **Consistency Matters:** Follow-up and service quality consistency essential
+- **Technology Support:** Enhances but doesn't replace personal touch
+- **Local Advantage:** Small businesses can compete with personal attention
+
+<strong>Investment Justification:**
+- Industry financial capacity (75.82% gross margins)
+- Strong customer loyalty potential (70% of stable customers)
+- Proven success models at both large and small scale
+- Growing market supporting retention investment ($68.6B, 5% growth)</pre>
+                        </div>
+
+                        <div class="content-file-preview">
+                            <h4>📝 content/evidence-stakeholder-appraisal.txt</h4>
+                            <div class="edit-notice">🖊️ Content loaded successfully</div>
+                            <pre><strong># Stakeholder Evidence: Quality Assessment</strong>
+
+<strong>## Source Reliability Assessment</strong>
+
+<strong>IBISWorld Beauty Industry Report (2025):</strong>
+- **Reliability:** Very reliable - established commercial research company
+- **Coverage:** Complete $68.6B industry analysis covering 167,000 businesses  
+- **Methodology:** Systematic market research with government data integration
+- **Limitations:** Business-focused perspective may be optimistic about growth
+
+<strong>Mintel Personal Care Consumer Report (2025):</strong>
+- **Reliability:** Very reliable - established consumer research company
+- **Coverage:** Large US consumer study across demographic segments
+- **Methodology:** Comprehensive consumer behavior analysis with statistical validation
+- **Limitations:** Focuses on purchasing behavior, may miss service relationship nuances
+
+<strong>Government Data (Bureau of Labor Statistics):</strong>
+- **Reliability:** Most reliable - unbiased government statistical reporting
+- **Coverage:** Complete industry employment and wage data (NAICS 8121)
+- **Methodology:** Standardized data collection with regulatory oversight
+- **Strengths:** Provides independent validation of industry trends
+
+<strong>## Evidence Cross-Validation</strong>
+
+<strong>Strong Agreement Patterns:</strong>
+- **Problem Confirmation:** 67% first-visit loss (organizational) matches industry revenue decline (stakeholder)
+- **Solution Validation:** Loyalty program success (case studies) aligns with consumer loyalty potential (70%)
+- **Financial Capacity:** Industry margins (75.82%) support consumer spending data ($768 annual)
+- **Market Opportunity:** Growth trends (5.0%) consistent across multiple sources
+
+<strong>Consistency Check:</strong>
+- **Customer Retention Challenge:** Confirmed across scientific, practitioner, organizational, and stakeholder evidence
+- **Loyalty Program Effectiveness:** Supported by research studies, practitioner examples, and market success stories
+- **Financial Viability:** Strong gross margins + consumer spending capacity + proven ROI examples
+
+<strong>## Stakeholder Representation Assessment</strong>
+
+<strong>Customer Stakeholder Coverage:</strong>
+- **Geographic Scope:** National US market data (comprehensive)
+- **Demographic Range:** Multiple age groups and income levels included
+- **Market Segments:** Premium spenders, experience-driven, value-conscious all represented
+- **Sample Quality:** Large-scale research with statistically valid samples
+
+<strong>Industry Stakeholder Coverage:**
+- **Business Size Range:** Large corporations (Sephora) to small businesses (Beautiful Co.)
+- **Service Types:** Hair, skincare, lash services, spa treatments covered
+- **Success Examples:** Both established programs (16+ years) and recent implementations
+- **Geographic Distribution:** National trends with local market considerations
+
+<strong>## Bias and Limitation Analysis</strong>
+
+<strong>Potential Biases Identified:**
+- **Success Story Selection:** Case studies show only successful programs, missing failure examples
+- **Industry Publication Bias:** Some sources may promote loyalty programs to support business services
+- **Temporal Limitations:** Post-pandemic data may not reflect long-term patterns
+
+<strong>Strengths Mitigating Bias:**
+- **Multiple Independent Sources:** Government, academic, and commercial sources provide triangulation
+- **Consistent Findings:** Same conclusions reached through different methodologies
+- **Long-term Data:** IBISWorld provides historical context, not just recent trends
+
+<strong>## Confidence Assessment by Evidence Type</strong>
+
+<strong>High Confidence Areas:</strong>
+- **Market Opportunity:** Industry size, growth, and customer loyalty potential well-documented
+- **Problem Validation:** Customer retention challenges confirmed across all evidence types
+- **Success Potential:** Multiple proven examples at different business scales
+
+<strong>Medium Confidence Areas:**
+- **Implementation Specifics:** General success factors identified but detailed implementation guidance limited
+- **ROI Predictions:** Range of outcomes shown but specific return predictions vary
+
+<strong>Overall Stakeholder Evidence Rating:** High quality with strong triangulation across multiple reliable sources</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: Aggregation -->
+                <div class="tab-panel" id="tab-3">
+                    <h2>⚖️ Evidence Aggregation</h2>
+                    <p><strong>Synthesis Process:</strong> Weigh and combine evidence from multiple sources to form conclusions.</p>
+
+                    <div class="milestone-tracker">
+                        <h4>📋 Milestone 4 Checkpoint (Week 12)</h4>
+                        <ul class="checklist">
+                            <li>Evidence synthesis across all four types completed</li>
+                            <li>Solution design based on evidence analysis</li>
+                            <li>Implementation plan developed</li>
+                            <li>Risk assessment and mitigation strategies</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-file-preview">
+                        <h4>📝 content/synthesis-integration.txt</h4>
+                        <div class="edit-notice">🖊️ Content loaded successfully</div>
+                        <pre id="evidence-synthesis-content"><strong>Evidence Integration & Synthesis</strong>
+
+<strong>Scientific Evidence Summary</strong>
+Key Finding 1: Non-tiered loyalty programs increase CLV by 29.5% (Hair salon study)
+- Source Quality: High (Grade A)
+- Relevance: Very high - direct beauty service context
+- Certainty Level: High confidence
+
+Key Finding 2: Brand attachment drives strongest loyalty outcomes (Meta-analysis)
+- Source Quality: High (Grade A-) 
+- Relevance: Good - applies across service industries
+- Certainty Level: High confidence
+
+Key Finding 3: Loyalty programs outperform short-term promotions (Online retail study)
+- Source Quality: Good (Grade B+)
+- Relevance: Moderate - different service context
+- Certainty Level: Moderate confidence
+
+<strong>Overall Scientific Evidence Strength:</strong> High
+
+<strong>Organizational Evidence Summary</strong>
+Key Data Point 1: Current churn rate estimated at 60%
+- Data Quality: Medium (industry estimates)
+- Trend Direction: Stable but problematic
+- Decision Relevance: High - directly measures problem
+
+Key Data Point 2: Average CLV currently $150
+- Data Quality: Medium (industry benchmarks)
+- Trend Direction: Below potential
+- Decision Relevance: High - key success metric
+
+<strong>Evidence-Based Recommendation:</strong>
+Implement non-tiered loyalty program focusing on emotional brand attachment, targeting 29.5% CLV increase and churn reduction from 60% to 40%.</pre>
+                    </div>
+                </div>
+
+                <!-- TAB 4: Application -->
+                <div class="tab-panel" id="tab-4">
+                    <h2>🚀 Application</h2>
+                    <p><strong>Implementation Planning:</strong> Put the evidence-based solution into practice.</p>
+
+                    <div class="content-file-preview">
+                        <h4>📝 content/application-implementation.txt</h4>
+                        <div class="edit-notice">🖊️ Content loaded successfully</div>
+                        <pre><strong># Application: Implementation Plan</strong>
+
+<strong>## Evidence-Based Solution Design</strong>
+
+<strong>Solution Name:** Beauty Service Loyalty & Retention Program
+**Evidence Foundation:** Based on scientific studies showing 29.5% CLV increase, practitioner success strategies, organizational capacity analysis, and stakeholder loyalty potential (70%)
+
+<strong>Core Components:**
+1. **Non-Tiered Loyalty Program** - Based on hair salon study showing superior results
+2. **Personal Relationship Focus** - Based on practitioner evidence (95% retention achievable)
+3. **Follow-up Communication System** - Consistent across all successful case studies
+4. **Service Quality Excellence** - Foundation requirement from all evidence types
+
+<strong>## Implementation Phases</strong>
+
+<strong>Phase 1: Foundation & Preparation (Months 1-2)</strong>
+
+<strong>Key Activities:</strong>
+- **Staff Training Program:** Personal relationship building, follow-up protocols
+- **Technology Setup:** Customer tracking system, communication tools
+- **Service Standard Development:** Based on Beautiful Co. and Diana Rosinski best practices
+- **Baseline Measurement:** Current retention rate, CLV, visit frequency establishment
+
+<strong>Success Criteria Phase 1:</strong>
+- All staff trained on relationship-building techniques
+- Customer database and tracking system operational  
+- Service standards documented and implemented
+- Baseline metrics established for comparison
+
+<strong>Phase 2: Program Launch (Months 3-4)</strong>
+
+<strong>Key Activities:**
+- **Loyalty Program Introduction:** Simple point-based system (non-tiered)
+- **Personal Touch Implementation:** Scalp massages, extra cleansing, personalized follow-up
+- **Communication Protocol Activation:** 24-48 hour follow-up texts, appointment reminders
+- **Early Success Monitoring:** Track initial retention improvements
+
+<strong>Success Criteria Phase 2:</strong>
+- 100% of new clients enrolled in loyalty program
+- Follow-up communication sent within 48 hours for 95% of appointments
+- Early retention improvement of 10-15% within first 60 days
+
+<strong>Phase 3: Optimization & Scaling (Months 5-6)</strong>
+
+<strong>Key Activities:**
+- **Program Refinement:** Based on initial results and feedback
+- **Advanced Personalization:** Customized service recommendations, birthday rewards
+- **Referral System Addition:** Leveraging satisfied customers for growth
+- **Performance Analysis:** Compare against 29.5% CLV target from scientific evidence
+
+<strong>Success Criteria Phase 3:</strong>
+- Customer retention rate improvement of 20-25% from baseline
+- CLV increase trending toward 29.5% target
+- Customer satisfaction scores at 4.0+ average (5-point scale)
+- Referral rate increase of 30%+ from program participants
+
+<strong>## Resource Requirements</strong>
+
+<strong>Financial Investment:**
+- **Technology Setup:** $500-$1,000 (POS integration, communication tools)
+- **Training Materials:** $300-$500 (staff development, procedure documentation)
+- **Program Rewards:** 2-3% of revenue (based on successful case study models)
+- **Total First Year:** $3,000-$5,000 investment
+
+<strong>ROI Projection (Based on Evidence):**
+- **CLV Increase:** 29.5% target = $44 additional revenue per client
+- **Retention Improvement:** 60% to 75% = 25% more repeat clients
+- **Break-even Timeline:** 6-8 months based on industry financial capacity (75.82% margins)
+
+<strong>## Success Measurement Plan</strong>
+
+<strong>Key Performance Indicators (Evidence-Based):**
+- **Primary KPI:** Customer retention rate (target: 60% to 75%)
+- **Financial KPI:** Customer lifetime value (target: +29.5%)
+- **Operational KPI:** Visit frequency (target: increase from current baseline)
+- **Quality KPI:** Customer satisfaction (target: 4.0+ average)
+
+<strong>Monitoring Schedule:**
+- **Weekly:** New client enrollment, follow-up completion rates
+- **Monthly:** Retention rates, revenue per customer, satisfaction surveys
+- **Quarterly:** Full program ROI analysis, strategy adjustments
+
+<strong>## Risk Management</strong>
+
+<strong>High-Probability Risks (Based on Evidence):**
+- **Staff Turnover:** 30-40% industry average could disrupt program consistency
+  - **Mitigation:** Comprehensive training documentation, cross-training protocols
+- **Technology Integration Issues:** POS system compatibility challenges
+  - **Mitigation:** Thorough testing, backup manual tracking systems
+- **Customer Response Variation:** Different demographic response rates
+  - **Mitigation:** Segmented approach based on age groups (18-44 vs 55+ preferences)
+
+<strong>## Success Timeline Expectations</strong>
+
+<strong>Based on Cross-Evidence Analysis:**
+- **Month 1-2:** Foundation setup, initial service improvements
+- **Month 3-4:** Early retention improvements (10-15%)
+- **Month 6:** Significant progress toward retention targets (20-25% improvement)  
+- **Month 12:** Full program maturity, 29.5% CLV increase target achievement</pre>
+                    </div>
+                </div>
+
+                <!-- TAB 5: Assessment -->
+                <div class="tab-panel" id="tab-5">
+                    <h2>📊 Assessment</h2>
+                    <p><strong>Continuous Improvement:</strong> Evaluate results and refine the approach.</p>
+
+                    <div class="milestone-tracker">
+                        <h4>📋 Final Submission Checklist (Week 16)</h4>
+                        <ul class="checklist">
+                            <li>Assessment framework completed</li>
+                            <li>Lessons learned documented</li>
+                            <li>Dashboard polished for portfolio</li>
+                            <li>Peer review feedback incorporated</li>
+                            <li>Final reflection on EBM process</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-file-preview">
+                        <h4>📝 content/assessment-monitoring.txt</h4>
+                        <div class="edit-notice">🖊️ Content loaded successfully</div>
+                        <pre><strong># Assessment: Monitoring & Evaluation Plan</strong>
+
+<strong>## Evaluation Framework Overview</strong>
+
+<strong>Primary Evaluation Question:** Did the evidence-based loyalty program successfully improve client retention and customer lifetime value as predicted by scientific research?
+
+<strong>Secondary Evaluation Questions:**
+1. Which specific program elements contributed most to retention improvements?
+2. How did results compare to evidence-based predictions (29.5% CLV increase)?
+3. What stakeholder satisfaction levels were achieved across different demographic groups?
+4. What unintended consequences or unexpected benefits emerged?
+
+<strong>## Key Performance Indicators</strong>
+
+<strong>Primary Outcome KPIs (Based on Scientific Evidence):</strong>
+
+<strong>Customer Retention Rate:</strong>
+- **Current Baseline:** 40% (industry standard for new beauty businesses)
+- **Evidence-Based Target:** 75% (based on Beautiful Co. case study and industry benchmarks)
+- **Timeline:** 12-month measurement period
+- **Data Source:** Customer database tracking repeat visits
+- **Measurement Frequency:** Monthly tracking with quarterly analysis
+
+<strong>Customer Lifetime Value (CLV):</strong>
+- **Current Baseline:** $150 (industry average for beauty services)
+- **Evidence-Based Target:** $195 (+29.5% based on hair salon study)
+- **Timeline:** 12-month rolling average
+- **Calculation Method:** (Average visit value × Visit frequency × Customer lifespan) - Acquisition cost
+
+<strong>Visit Frequency:</strong>
+- **Current Baseline:** 2.5 visits per year per customer
+- **Target:** 3.5 visits per year (+40% increase)
+- **Evidence Basis:** Hair salon study showed 45% visit frequency increase
+
+<strong>## Evaluation Timeline & Methods</strong>
+
+<strong>Baseline Data Collection (Pre-Implementation):</strong>
+- **Month 0:** Establish current retention rates, CLV, visit patterns
+- **Customer Survey:** Initial satisfaction and loyalty drivers assessment
+- **Staff Assessment:** Current retention strategy effectiveness evaluation
+
+<strong>Implementation Monitoring (Months 1-6):</strong>
+
+<strong>Monthly Monitoring Activities:</strong>
+- Customer enrollment rates in loyalty program
+- Follow-up completion percentages (target: 95% within 48 hours)
+- Early retention indicators (1-month and 3-month return rates)
+- Staff implementation consistency assessment
+
+<strong>Quarterly Review Activities:**
+- Comprehensive retention rate analysis by demographic segments
+- CLV calculation updates and trend analysis
+- Customer satisfaction surveys (net promoter score, service quality ratings)
+- Staff feedback sessions on program implementation challenges
+
+<strong>Post-Implementation Evaluation (Months 6-12):</strong>
+
+<strong>6-Month Milestone Assessment:</strong>
+- **Target Check:** 50% progress toward final retention goals
+- **Evidence Validation:** Compare actual vs. predicted outcomes from scientific studies
+- **Adjustment Planning:** Modify program elements based on initial results
+
+<strong>12-Month Final Evaluation:</strong>
+- **Outcome Achievement:** Final measurement against all evidence-based targets
+- **ROI Analysis:** Financial return calculation based on organizational evidence projections
+- **Stakeholder Impact Assessment:** Survey customer, staff, and business stakeholder satisfaction
+
+<strong>## Data Collection Methods</strong>
+
+<strong>Quantitative Data Collection:</strong>
+
+<strong>Customer Database Analytics:</strong>
+- **Appointment History:** Visit frequency, service types, revenue per visit
+- **Retention Tracking:** Time between visits, customer lifecycle stage
+- **Program Participation:** Loyalty program engagement levels, reward redemption
+
+<strong>Financial Performance Tracking:**
+- **Monthly Revenue:** Track revenue changes attributable to retention improvements
+- **Cost-Benefit Analysis:** Program costs vs. revenue increases from improved CLV
+- **Cash Flow Impact:** Monitor immediate vs. long-term financial benefits
+
+<strong>Qualitative Data Collection:</strong>
+
+<strong>Customer Experience Interviews:</strong>
+- **Sample Size:** 20-30 customers representing different demographic segments
+- **Timing:** 3, 6, and 12 months post-implementation
+- **Key Topics:** Program value perception, service quality changes, loyalty drivers
+
+<strong>Staff Implementation Assessment:</strong>
+- **Method:** Monthly team meetings with structured feedback collection
+- **Focus Areas:** Training effectiveness, implementation challenges, customer response observations
+- **Documentation:** Written feedback summaries with improvement recommendations
+
+<strong>## Success Criteria Framework</strong>
+
+<strong>Must-Achieve Criteria (Implementation Success Requirements):</strong>
+1. **Retention Rate:** Achieve minimum 60% retention (50% improvement from baseline)
+2. **Customer Satisfaction:** Maintain 4.0+ average satisfaction score
+3. **Financial Viability:** Program costs remain under 3% of revenue
+4. **Staff Engagement:** 90%+ staff compliance with follow-up protocols
+
+<strong>Target Achievement Criteria (Full Success Indicators):</strong>
+1. **Retention Rate:** Reach 75% retention target (87.5% improvement)
+2. **CLV Increase:** Achieve 29.5% CLV improvement as predicted by scientific evidence
+3. **Visit Frequency:** 40% increase in average visits per customer per year
+4. **Referral Growth:** 30% increase in referral-driven new customers
+
+<strong>## Continuous Improvement Integration</strong>
+
+<strong>Monthly Improvement Cycle:</strong>
+- **Data Review:** Analyze performance trends and identify improvement opportunities
+- **Staff Feedback:** Collect frontline insights on customer responses and operational challenges
+- **Program Adjustments:** Implement minor modifications based on evidence and feedback
+- **Best Practice Documentation:** Record successful strategies for replication and scaling
+
+<strong>Evidence-Based Adjustment Protocol:**
+- **Performance Below Targets:** Review original evidence assumptions, assess implementation fidelity
+- **Unexpected Results:** Document new insights, compare to literature for validation
+- **Stakeholder Feedback Integration:** Modify program elements based on customer and staff input
+- **Success Factor Amplification:** Identify and enhance most effective program components
+
+<strong>## Long-term Sustainability Assessment</strong>
+
+<strong>12-Month Sustainability Evaluation:</strong>
+- **Financial Self-Sufficiency:** Assess whether retention improvements generate sufficient ROI
+- **Operational Integration:** Evaluate staff adoption and process standardization
+- **Customer Engagement Durability:** Analyze whether initial enthusiasm translates to long-term loyalty
+- **Scalability Potential:** Determine feasibility for program expansion or enhancement</strong></pre>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <h3>🎉 EBM Cycle Complete!</h3>
+                        <p>Congratulations! You've built a professional Evidence-Based Management dashboard.</p>
+                        <div>
+                            <button class="btn" onclick="window.open('PROJECT_TRACKER.md')">📊 View Project Tracker</button>
+                            <button class="btn" onclick="showTab(1)">↻ Review Complete Process</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Content file loading functionality
+        function loadContentFiles() {
+            // This function would load content from .txt files
+            // For now, it shows placeholder content
+            console.log('Content files would be loaded here');
+        }
+
+        // Function to simulate opening content files in VS Code
+        function openContentFile(filename) {
+            alert(`In VS Code, you would open: content/${filename}\n\nThis is where you'll edit your content. Use GitHub Copilot to help with writing and organization!`);
+        }
+
+        // Tab Navigation Functionality
+        function showTab(tabNumber) {
+            // Hide all tab panels
+            const panels = document.querySelectorAll('.tab-panel');
+            panels.forEach(panel => panel.classList.remove('active'));
+            
+            // Remove active class from all tab buttons
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+            
+            // Show the selected tab panel
+            document.getElementById(`tab-${tabNumber}`).classList.add('active');
+            
+            // Add active class to the clicked button
+            buttons[tabNumber - 1].classList.add('active');
+            
+            // Update progress indicator
+            updateProgressIndicator(tabNumber);
+        }
+        
+        // Update Progress Indicator based on current tab
+        function updateProgressIndicator(currentTab) {
+            const progressSteps = document.querySelectorAll('.progress-step');
+            
+            progressSteps.forEach((step, index) => {
+                step.classList.remove('completed', 'active', 'pending');
+                
+                if (index + 1 < currentTab) {
+                    step.classList.add('completed');
+                } else if (index + 1 === currentTab) {
+                    step.classList.add('active');
+                } else {
+                    step.classList.add('pending');
+                }
+            });
+        }
+
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            loadContentFiles();
+            updateProgressIndicator(1);
+        });
+    </script>
+    <!-- Content loader disabled - content now embedded directly in HTML -->
+    <!-- <script src="content-loader.js"></script> -->
+</body>
+</html>

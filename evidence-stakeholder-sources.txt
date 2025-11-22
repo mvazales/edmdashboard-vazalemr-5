@@ -1,0 +1,413 @@
+# Stakeholder Evidence: Feedback & Perspectives
+# What different groups think about client retention in the beauty industry
+
+## Evidence Collection Summary
+
+**Research Sources Used:**
+- IBISWorld Beauty Industry Report (2025) - market data and trends
+- Mintel Personal Care Consumer Report (2025) - what customers want
+- Sephora Beauty Insider Case Study - large company success story
+- Beautiful Co. Hair & Lashes Case Study - small salon success story
+- Bureau of Labor Statistics data - employment and wage information
+- Bizminer Industry Analysis - financial performance data
+
+**Different Groups Studied:**
+- **Customers:** What consumers want from beauty services
+- **Industry Leaders:** Major companies and market trends
+- **Beauty Service Providers:** Both large and small businesses
+
+## What the Beauty Industry Says About Client Retention Problems
+
+### The Business Problem Is Real
+
+#### Industry Is Struggling Financially
+- **Revenue Dropped Hard:** Industry lost 6.0% of revenue ($16.6 billion) from 2023-2024
+- **More Workers, Less Money:** Employment grew 1.8% but revenue declined 6.0% - businesses are less profitable
+- **Rising Costs:** Operating expenses increased from 67.73% to 68.78% of revenue
+
+#### Customer Retention Is the Main Issue
+- **Most Clients Don't Come Back:** About 67% of new clients never return after their first visit
+- **Big Money at Stake:** Each client could be worth £300-£5000 over their lifetime
+- **Industry Goal:** Keep 60-75% of clients coming back within 12 months
+
+### Loyalty Programs Actually Work in Beauty Industry
+
+#### Market Shows Strong Growth Potential
+**Industry Size and Success Stories:**
+- Beauty industry worth $68.6 billion and growing 5% per year
+- 454,000 people work in 167,000 beauty businesses
+- Successful companies like Sephora and Ulta credit loyalty programs for their success
+- Top beauty retailers get 80% of their sales from repeat customers
+
+#### Customers Want to Stay Loyal
+**What Research Shows About Consumer Behavior:**
+- 70% of financially stable customers stick with brands they like, even during tough economic times
+- Younger customers (Gen Z & Millennials) want experiences that make them feel good, not just basic services
+- 35% of adults aged 18-44 use beauty services for stress relief and mood improvement
+- 30% of consumers prefer local/domestic brands over big chains
+
+## Real Success Stories
+
+### Sephora Beauty Insider Program
+**Big Company Success:**
+- **How It Works:** Three levels of rewards (Beauty Insider, VIB, Rouge) - spend more, get better perks
+- **How Long:** Started in 2007, keeps getting better over 16+ years
+- **How Big:** 17 million members in North America, 25 million worldwide
+- **Business Results:** 80% of Sephora's sales come from loyalty program members
+- **Customer Results:** 95% of members keep coming back
+
+### Beautiful Co. Hair & Lashes Salon
+**Small Business Success:**
+- **Business Size:** 16 employees, 1 location in South Carolina
+- **What They Do:** Hair, extensions, lashes, eyebrows
+- **Amazing Results:** 95% of clients keep coming back
+- **How They Do It:** Focus on personal relationships, not just transactions
+- **Success Secrets:** Pay attention to details, follow up with clients, keep everything super clean
+
+## What Everyone Agrees On
+
+### The Problem Is Urgent
+**Financial Pressure Is Real:**
+- Industry losing money (-6.0% revenue) but still hiring people (1.8% employment growth) - businesses are getting less efficient
+- Costs are eating up more of the revenue (went from 67.73% to 68.78%)
+- But there's still money available for solutions - businesses make 75.82% gross profit
+
+### Customers Want to Be Loyal
+**Consumer Research Shows:**
+- 70% of customers with stable finances don't want to switch to cheaper options
+- Younger customers (18-44) want experiences that make them feel good
+- 30% of customers prefer local businesses over big chains
+
+### Loyalty Programs Work for Any Size Business
+**Both Big and Small Can Succeed:**
+- Sephora (huge company) and Beautiful Co. (small salon) both got 95% of customers to come back
+- Same success factors work everywhere: care about customers personally, follow up consistently, provide quality service
+- Big companies need technology systems, small businesses succeed with personal touch
+
+## How to Make It Work
+
+### What Successful Businesses Do
+1. **Build Real Relationships:** Treat customers as people, not just transactions
+2. **Follow Up Consistently:** Have a system to stay in touch with customers
+3. **Provide Great Service First:** You can't build loyalty on top of bad service
+4. **Use Technology Smartly:** Booking systems and customer tracking help (more important for bigger businesses)
+5. **Train Your Staff:** Everyone needs to know how to build customer relationships
+
+### The Money Makes Sense
+**Industry Can Afford Loyalty Programs:**
+- Businesses make good profits (75.82% gross margins) so there's money to invest
+- Average household spends $768 per year on personal care services
+- Each loyal customer could be worth £300-£5000 over time
+- Industry is stable (1.8% employment growth) so businesses can focus on retention
+
+### Who to Target
+**Different Customer Groups Want Different Things:**
+- Women 55+ already spend the most money on skincare services
+- Men 35-54 and women under 55 are growth opportunities
+- Younger customers want experiences that make them feel good and reduce stress
+- Customers who use one service often want other services too
+
+## What to Do Next
+
+### Top Recommendations
+**Based on All the Research:**
+1. **Target Customers with Money:** Focus on financially stable customers - 70% of them stay loyal
+2. **Create a Follow-up System:** Both successful case studies had consistent ways to stay in touch with customers
+3. **Make Customers Feel Good:** Younger customers (18-44) want services that reduce stress and improve mood
+4. **You Can Afford It:** Industry profits (75.82% gross margins) are strong enough to invest in loyalty programs
+5. **Emphasize Being Local:** 30% of customers now prefer local businesses over big chains
+
+## Stakeholder Analysis Diagrams
+
+### Stakeholder Map: Beauty Industry Loyalty Program Implementation
+
+<div style="background: #faf8f8; padding: 20px; border-radius: 10px; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+    <tr>
+      <th style="border: 2px solid #b8a5a5; padding: 15px; background: #f1eded; text-align: center; font-weight: bold;"></th>
+      <th style="border: 2px solid #b8a5a5; padding: 15px; background: #d4a5a5; color: white; text-align: center; font-weight: bold;">INTERNAL</th>
+      <th style="border: 2px solid #b8a5a5; padding: 15px; background: #c49999; color: white; text-align: center; font-weight: bold;">EXTERNAL</th>
+    </tr>
+    <tr>
+      <td style="border: 2px solid #b8a5a5; padding: 15px; background: #a89999; color: white; text-align: center; font-weight: bold; writing-mode: vertical-lr; text-orientation: mixed;">PRIMARY</td>
+      <td style="border: 2px solid #b8a5a5; padding: 15px; background: #f9f4f4; vertical-align: top;">
+        <strong>💼 Salon Management</strong><br>
+        • Salon owners<br>
+        • General managers<br>
+        • Department heads<br><br>
+        <strong>👥 Front-line Staff</strong><br>
+        • Stylists & estheticians<br>
+        • Front desk staff<br>
+        • Customer service reps
+      </td>
+      <td style="border: 2px solid #b8a5a5; padding: 15px; background: #f7f4f4; vertical-align: top;">
+        <strong>👩‍💼 Target Customers</strong><br>
+        • Women 55+ (premium spenders)<br>
+        • Adults 18-44 (experience-driven)<br>
+        • Millennials (value-research)<br><br>
+        <strong>🤝 Key Partners</strong><br>
+        • Loyalty platform providers<br>
+        • POS system vendors<br>
+        • Beauty product suppliers
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 2px solid #b8a5a5; padding: 15px; background: #d4c4c4; color: black; text-align: center; font-weight: bold; writing-mode: vertical-lr; text-orientation: mixed;">SECONDARY</td>
+      <td style="border: 2px solid #b8a5a5; padding: 15px; background: #faf8f8; vertical-align: top;">
+        <strong>💻 Technology/Operations</strong><br>
+        • IT support staff<br>
+        • Booking system admins<br>
+        • Financial/accounting<br><br>
+        <strong>📊 Corporate Support</strong><br>
+        • Marketing team<br>
+        • Training coordinators<br>
+        • Business analysts
+      </td>
+      <td style="border: 2px solid #b8a5a5; padding: 15px; background: #faf8f8; vertical-align: top;">
+        <strong>🏢 Industry Groups</strong><br>
+        • Professional Beauty Association<br>
+        • State cosmetology boards<br>
+        • Industry trade publications<br><br>
+        <strong>🎯 Broader Market</strong><br>
+        • Competitors (Sephora, Ulta)<br>
+        • Beauty industry influencers<br>
+        • Regulatory bodies
+      </td>
+    </tr>
+  </table>
+</div>
+
+### Power/Interest Matrix: Beauty Industry Stakeholder Analysis
+
+<div style="background: #faf8f8; padding: 20px; border-radius: 10px; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <div style="position: relative; width: 100%; height: 500px; background: linear-gradient(to right, #f7f4f4 0%, #f1eded 50%, #e8d5d5 100%); border: 2px solid #b8a5a5; margin: 20px 0;">
+    
+    <!-- Axis Labels -->
+    <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); font-weight: bold; font-size: 14px; color: #6b5555;">HIGH POWER</div>
+    <div style="position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%); font-weight: bold; font-size: 14px; color: #6b5555;">LOW POWER</div>
+    <div style="position: absolute; left: -45px; top: 50%; transform: translateY(-50%) rotate(-90deg); font-weight: bold; font-size: 14px; color: #6b5555;">HIGH INTEREST</div>
+    <div style="position: absolute; right: -45px; top: 50%; transform: translateY(-50%) rotate(90deg); font-weight: bold; font-size: 14px; color: #6b5555;">LOW INTEREST</div>
+    
+    <!-- Quadrant Labels -->
+    <div style="position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px; font-weight: bold; font-size: 12px; color: #6b5555; border: 1px solid #d4a5a5;">MANAGE CLOSELY</div>
+    <div style="position: absolute; top: 10px; right: 10px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px; font-weight: bold; font-size: 12px; color: #6b5555; border: 1px solid #d4a5a5;">KEEP SATISFIED</div>
+    <div style="position: absolute; bottom: 10px; left: 10px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px; font-weight: bold; font-size: 12px; color: #6b5555; border: 1px solid #d4a5a5;">KEEP INFORMED</div>
+    <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px; font-weight: bold; font-size: 12px; color: #6b5555; border: 1px solid #d4a5a5;">MONITOR</div>
+    
+    <!-- Stakeholder Positions -->
+    <!-- HIGH POWER, HIGH INTEREST (Manage Closely) -->
+    <div style="position: absolute; top: 15%; left: 15%; background: #a89999; color: white; padding: 8px; border-radius: 5px; font-size: 11px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+      👩‍💼<br><strong>Target Customers</strong><br>70% loyalty potential
+    </div>
+    <div style="position: absolute; top: 25%; left: 30%; background: #a89999; color: white; padding: 8px; border-radius: 5px; font-size: 11px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+      💼<br><strong>Salon Owners</strong><br>Decision makers
+    </div>
+    
+    <!-- HIGH POWER, LOW INTEREST (Keep Satisfied) -->
+    <div style="position: absolute; top: 20%; right: 15%; background: #d4c4c4; color: black; padding: 8px; border-radius: 5px; font-size: 11px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+      💻<br><strong>POS Vendors</strong><br>Integration required
+    </div>
+    <div style="position: absolute; top: 35%; right: 25%; background: #d4c4c4; color: black; padding: 8px; border-radius: 5px; font-size: 11px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+      📊<br><strong>Corporate Support</strong><br>Budget approval
+    </div>
+    
+    <!-- LOW POWER, HIGH INTEREST (Keep Informed) -->
+    <div style="position: absolute; bottom: 15%; left: 20%; background: #c49999; color: white; padding: 8px; border-radius: 5px; font-size: 11px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+      👥<br><strong>Front-line Staff</strong><br>Daily implementation
+    </div>
+    <div style="position: absolute; bottom: 25%; left: 35%; background: #c49999; color: white; padding: 8px; border-radius: 5px; font-size: 11px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+      🏢<br><strong>Industry Groups</strong><br>Best practices
+    </div>
+    
+    <!-- LOW POWER, LOW INTEREST (Monitor) -->
+    <div style="position: absolute; bottom: 20%; right: 20%; background: #9e8888; color: white; padding: 8px; border-radius: 5px; font-size: 11px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+      🎯<br><strong>Competitors</strong><br>Market reference
+    </div>
+    <div style="position: absolute; bottom: 30%; right: 35%; background: #9e8888; color: white; padding: 8px; border-radius: 5px; font-size: 11px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+      📋<br><strong>Regulatory Bodies</strong><br>Compliance only
+    </div>
+    
+    <!-- Center Lines -->
+    <div style="position: absolute; top: 0; left: 50%; width: 1px; height: 100%; background: #b8a5a5; opacity: 0.5;"></div>
+    <div style="position: absolute; left: 0; top: 50%; width: 100%; height: 1px; background: #b8a5a5; opacity: 0.5;"></div>
+  </div>
+  
+  <div style="margin-top: 20px; font-size: 12px; color: #6b5555; background: #f9f4f4; padding: 15px; border-radius: 8px; border-left: 4px solid #d4a5a5;">
+    <strong>Engagement Strategy by Quadrant:</strong><br>
+    🟤 <strong>Manage Closely:</strong> Regular communication, active involvement in decisions<br>
+    🟨 <strong>Keep Satisfied:</strong> Ensure needs are met, avoid blocking implementation<br>
+    🟧 <strong>Keep Informed:</strong> Regular updates, gather feedback for improvement<br>
+    ⚫ <strong>Monitor:</strong> Minimal effort, watch for changes in position
+  </div>
+</div>
+
+
+
+
+
+
+
+## Data Sources Reference Table
+
+## Data Sources Reference Table
+
+<div class="data-reference-table">
+<h4>📊 Data Sources Reference Table</h4>
+<table style="width: 100%; border-collapse: collapse; margin: 10px 0;">
+<tr style="background: linear-gradient(135deg, #d4a5a5, #c49999);">
+<th style="border: 1px solid #b8a5a5; padding: 12px; color: white; text-align: left;">Statistic/Percentage</th>
+<th style="border: 1px solid #b8a5a5; padding: 12px; color: white; text-align: center;">Value</th>
+<th style="border: 1px solid #b8a5a5; padding: 12px; color: white; text-align: left;">Source File</th>
+<th style="border: 1px solid #b8a5a5; padding: 12px; color: white; text-align: left;">Original Data Source</th>
+</tr>
+<tr style="background: #f7f4f4;">
+<td colspan="4" style="border: 1px solid #e8d5d5; padding: 10px; color: #6b5555; font-weight: bold; background: #f1eded; text-align: center;">Industry Financial Performance</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Revenue decline (2023-2024)</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">-6.0%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-organizational-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Bizminer Industry Analysis</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Employment growth</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">+1.8%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-organizational-sources.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Bureau of Labor Statistics QCEW</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Operating expenses increase</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">67.73% to 68.78%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-organizational-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Bizminer Industry Analysis</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Gross profit margin</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">75.82%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-organizational-sources.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Bizminer Industry Analysis</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td colspan="4" style="border: 1px solid #e8d5d5; padding: 10px; color: #6b5555; font-weight: bold; background: #f1eded; text-align: center;">Customer Retention Metrics</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">First-visit attrition rate</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">67%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-organizational-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Industry benchmark data</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Target retention rate</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">60-75%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-organizational-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Industry benchmark data</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Client lifetime value range</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">£300-£5000</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-organizational-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Industry research</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Annual household spending</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">$768</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-organizational-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Consumer Expenditure Survey</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td colspan="4" style="border: 1px solid #e8d5d5; padding: 10px; color: #6b5555; font-weight: bold; background: #f1eded; text-align: center;">Market Size & Growth</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Market size</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">$68.6 billion</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-stakeholder-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">IBISWorld Report 2025</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Growth rate (CAGR)</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">5.0%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-stakeholder-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">IBISWorld Report 2025</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Industry employees</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">454,000</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-stakeholder-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">IBISWorld Report 2025</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Number of businesses</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">167,000</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-stakeholder-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">IBISWorld Report 2025</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Sales from repeat customers</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">80%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-stakeholder-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">IBISWorld Report 2025</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td colspan="4" style="border: 1px solid #e8d5d5; padding: 10px; color: #6b5555; font-weight: bold; background: #f1eded; text-align: center;">Consumer Behavior</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Financially stable customer loyalty</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">70%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-stakeholder-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Mintel Personal Care Report 2025</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Customers willing to switch for price</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">30%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-stakeholder-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Mintel Personal Care Report 2025</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Adults 18-44 using beauty for stress relief</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">35%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-stakeholder-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Mintel Personal Care Report 2025</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Preference for domestic brands</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">30%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-stakeholder-methods.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Mintel Personal Care Report 2025</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td colspan="4" style="border: 1px solid #e8d5d5; padding: 10px; color: #6b5555; font-weight: bold; background: #f1eded; text-align: center;">Case Study Results</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Sephora loyalty members</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">17 million (NA)</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-practitioner-sources.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">LoyaltyLion case study</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Sephora retention rate</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">95%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-practitioner-sources.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">LoyaltyLion case study</td>
+</tr>
+<tr style="background: #faf8f8;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Beautiful Co. retention rate</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">95%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-practitioner-sources.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">Square case study</td>
+</tr>
+<tr style="background: #f7f4f4;">
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; font-weight: bold;">Sephora sales from loyalty program</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555; text-align: center;">80%</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">evidence-practitioner-sources.txt</td>
+<td style="border: 1px solid #e8d5d5; padding: 12px; color: #6b5555;">LoyaltyLion case study</td>
+</tr>
+</table>
+</div>
+
+---
+INSTRUCTIONS:
+1. Include both quantitative survey data and qualitative insights from interviews
+2. Look for patterns across different stakeholder groups
+3. Pay attention to both supportive and resistant feedback  
+4. Document specific concerns and suggestions for addressing them
+5. Use stakeholder input to refine your implementation approach
