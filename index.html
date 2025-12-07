@@ -231,10 +231,71 @@
             overflow-wrap: break-word;
             font-family: 'Segoe UI', sans-serif;
             font-size: 0.9em;
-            line-height: 1.5;
+            line-height: 1.6;
             color: #555;
             margin: 0;
             padding: 0;
+        }
+
+        /* Header styling within content previews */
+        .content-file-preview h3 {
+            color: #6b5555;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 20px 0 12px 0;
+            padding: 0;
+            line-height: 1.4;
+        }
+
+        .content-file-preview h4 {
+            color: #7a5d5d;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 16px 0 10px 0;
+            padding: 0;
+            line-height: 1.3;
+        }
+
+        .content-file-preview h5 {
+            color: #8a6d6d;
+            font-size: 1.0em;
+            font-weight: 600;
+            margin: 12px 0 8px 0;
+            padding: 0;
+            line-height: 1.3;
+        }
+
+        .content-file-preview h6 {
+            color: #9a7d7d;
+            font-size: 0.95em;
+            font-weight: 600;
+            margin: 10px 0 6px 0;
+            padding: 0;
+            line-height: 1.3;
+        }
+
+        /* Styled labels for inline emphasis */
+        .content-file-preview .label {
+            font-weight: 600;
+            color: #7a5d5d;
+        }
+
+        /* Keep strong tags within tables and specific contexts */
+        .data-reference-table strong {
+            font-weight: 600;
+            color: inherit;
+        }
+
+        /* Strong tags in list items for inline labels */
+        li strong {
+            font-weight: 600;
+            color: #7a5d5d;
+        }
+
+        /* Strong tags in paragraphs for inline emphasis */
+        p strong {
+            font-weight: 600;
+            color: #7a5d5d;
         }
 
         .edit-notice {
@@ -647,10 +708,10 @@
             <p>MGT357 - Fall 2025 | Portfolio Project</p>
             
             <div class="student-info">
-                <div><strong>Student:</strong> [Molly Vazales]</div>
-                <div><strong>Problem Focus:</strong> [How can service providers increase their client retention rate? ]</div>
-                <div><strong>Repository:</strong> <a href="#" style="color: #d4a5a5;">[Your GitHub Link]</a></div>
-                <div><strong>Last Updated:</strong> [Today's Date]</div>
+                <div><h5>Student:</h5> Molly Vazales</div>
+                <div><h5>Problem Focus:</h5> How can service providers reduce churn and grow repeat visits through an evidence-based loyalty program?</div>
+                <div><h5>Repository:</h5> <a href="https://mvazales.github.io/edmdashboard-vazalemr-5/" style="color: #d4a5a5;">https://mvazales.github.io/edmdashboard-vazalemr-5/</a></div>
+                <div><h5>Last Updated:</h5> December 7, 2025</div>
             </div>
         </div>
 
@@ -678,18 +739,7 @@
                 <!-- TAB 1: Problem & Solution Framework -->
                 <div class="tab-panel active" id="tab-1">
                     <h2>🎯 Problem & Solution Framework</h2>
-                    <p><strong>Following Module 2 Flowchart:</strong> Define the problem AND identify the preferred solution before collecting evidence.</p>
-                    
-                    <div class="milestone-tracker">
-                        <h4>📋 Milestone 1 Checklist (Due: Week 3)</h4>
-                        <ul class="checklist">
-                            <li>GitHub repository created and dashboard running</li>
-                            <li>Problem Definition completed using frameworks</li>
-                            <li>Stakeholder Analysis documented</li>
-                            <li>Success Criteria clearly defined</li>
-                            <li>Progress tracker updated</li>
-                        </ul>
-                    </div>
+                    <p><h5>Following Module 2 Flowchart:</h5> Define the problem AND identify the preferred solution before collecting evidence.</p>
                     
                     <div class="flowchart-step">
                         STEP 1: ASK - What is the assumed problem?
@@ -698,54 +748,54 @@
                     <div class="content-file-preview">
                         <h4>📝 content/ask-problem-definition.txt</h4>
                         <div class="edit-notice">🖊️ Content loaded successfully</div>
-                        <pre id="problem-definition-content"><strong>Problem Definition Framework</strong>
+                        <pre id="problem-definition-content"><h3>Problem Definition Framework</h3>
 
-<strong>X → Y Framework</strong>
-<strong>Current State (X):</strong> Service providers in the beauty industry face significant client retention challenges, with annual churn rates varying widely (40-80% range). Client lifetime values estimated at $150-300 per client, indicating retention gaps create significant revenue loss.
+<h4>X → Y Framework</h4>
+<h5>Current State (X):</h5> Service providers in the beauty industry face significant client retention challenges, with annual churn rates varying widely (40-80% range). Client lifetime values estimated at $150-300 per client, indicating retention gaps create significant revenue loss.
 
-<strong>Desired State (Y):</strong> Improved client/customer retention
+<h5>Desired State (Y):</h5> Improved client/customer retention
 
-<strong>PICOC Framework</strong>
-<strong>Population:</strong> Service providers (beauty industry)
-<strong>Intervention:</strong> Loyalty programs  
-<strong>Comparison:</strong> Current methods (discounts, promotions, referral programs) vs. proposed multi-tier loyalty programs
-<strong>Outcomes:</strong> Sustainable revenue growth through improved client retention, increased repeat bookings, extended customer lifetime value
-<strong>Context:</strong> Beauty industry USA (NAICS 812112), CAGR = 7.8%, Current Revenue per business = $63,940
+<h4>PICOC Framework</h4>
+<h5>Population:</h5> Service providers (beauty industry)
+<h5>Intervention:</h5> Loyalty programs  
+<h5>Comparison:</h5> Current methods (discounts, promotions, referral programs) vs. proposed multi-tier loyalty programs
+<h5>Outcomes:</h5> Sustainable revenue growth through improved client retention, increased repeat bookings, extended customer lifetime value
+<h5>Context:</h5> Beauty industry USA (NAICS 812112), CAGR = 7.8%, Current Revenue per business = $63,940
 
-<strong>Clear Problem Statement:</strong>
+<h4>Clear Problem Statement:</h4>
 Beauty service providers in the USA are experiencing moderate to high client churn rates, struggling to convert initial bookings into recurring appointments, which threatens business sustainability and growth in a competitive market.</pre>
                     </div>
 
                     <div class="content-file-preview">
                         <h4>📝 content/ask-stakeholder-analysis.txt</h4>
                         <div class="edit-notice">🖊️ Content loaded successfully</div>
-                        <pre id="stakeholder-analysis-content"><strong>Stakeholder Analysis</strong>
+                        <pre id="stakeholder-analysis-content"><h3>Stakeholder Analysis</h3>
 
-<strong>Internal Stakeholders</strong>
+<h4>Internal Stakeholders</h4>
 
-<strong>Senior Management:</strong> Account managers, customer success leadership, executives
+<h5>Senior Management:</h5> Account managers, customer success leadership, executives
 - Interest in Problem: Adopting business methods that prioritize personalized client relationships, impacting long-term revenue sustainability
 - Interest in Solution: Increased and sustained business profitability
 - Influence Level: High | Support Level: Strong
 
-<strong>Employees/Staff:</strong> Front line service providers
+<h5>Employees/Staff:</h5> Front line service providers
 - Interest in Problem: Low client retention affects provider-client relationships, reducing bookings and profits
 - Interest in Solution: Increased revenue, decreased booking uncertainty, potential transition challenges
 - Influence Level: Low | Support Level: Cautious
 
-<strong>External Stakeholders</strong>
+<h4>External Stakeholders</h4>
 
-<strong>Customers/Clients</strong>
+<h5>Customers/Clients</h5>
 - Interest in Problem: Do not return when they don't feel valued
 - Interest in Solution: Benefit from loyalty rewards and priority booking privileges
 - Influence Level: Low | Support Level: Strong
 
-<strong>Suppliers/Partners</strong>
+<h5>Suppliers/Partners</h5>
 - Interest in Problem: Irregular orders due to inconsistent client bookings
 - Interest in Solution: Increased recurring sales and reliable revenue forecasting
 - Influence Level: Low | Support Level: Neutral
 
-<strong>Stakeholder Engagement Strategy</strong>
+<h4>Stakeholder Engagement Strategy</h4>
 - High Influence, High Interest: Senior management
 - High Influence, Low Interest: Regulatory bodies, suppliers
 - Low Influence, High Interest: Frontline staff, clients
@@ -755,35 +805,35 @@ Beauty service providers in the USA are experiencing moderate to high client chu
                     <div class="content-file-preview">
                         <h4>📝 content/ask-success-criteria.txt</h4>
                         <div class="edit-notice">🖊️ Content loaded successfully</div>
-                        <pre id="success-criteria-content"><strong>SMART Success Criteria</strong>
+                        <pre id="success-criteria-content"><h3>SMART Success Criteria</h3>
 
-<strong>Criterion 1: Reduced Client Churn Rate</strong>
+<h4>Criterion 1: Reduced Client Churn Rate</h4>
 - Specific: Annual client churn rate
 - Measurable: Decrease from 60% to 40% within 12 months
 - Achievable: Realistic given industry benchmarks
 - Relevant: Directly tied to business value
 - Time-bound: 12 months with checkpoints
 
-<strong>Criterion 2: Customer Lifetime Value</strong>
+<h4>Criterion 2: Customer Lifetime Value</h4>
 - Specific: Average revenue per client over 12 months
 - Measurable: Increase current CLV ($150) by 30% within 12 months
 - Achievable: Realistic given industry benchmarks
 - Relevant: Directly relates to retention
 - Time-bound: 12 month period
 
-<strong>Criterion 3: Appointment Frequency</strong>
+<h4>Criterion 3: Appointment Frequency</h4>
 - Specific: Average appointments per client per year
 - Measurable: Increase from 2 visits to 3 visits per year
 - Achievable: Realistic given resources
 - Relevant: Relates to retention
 - Time-bound: Twelve month period
 
-<strong>Baseline Measurements</strong>
+<h4>Baseline Measurements</h4>
 - Current Churn Rate: 60%
 - Current CLV: $150
 - Current Appointment Frequency: 2 visits per year
 
-<strong>Target Metrics</strong>
+<h4>Target Metrics</h4>
 - Customer satisfaction: 4 out of 5 average
 - CLV increase: 30%
 - Churn reduction: 60% to 40%</pre>
@@ -801,30 +851,19 @@ Beauty service providers in the USA are experiencing moderate to high client chu
                         STEP 4: ASK - What is the evidence for the preferred solution?
                     </div>
 
-                    <p><strong>Next Phase:</strong> Now that we have our problem framework defined, we move to the Evidence Hub to systematically collect and evaluate evidence from all four sources to answer Steps 2 & 4.</p>
+                    <p><h5>Next Phase:</h5> Now that we have our problem framework defined, we move to the Evidence Hub to systematically collect and evaluate evidence from all four sources to answer Steps 2 & 4.</p>
                 </div>
 
                 <!-- TAB 2: Evidence Hub -->
                 <div class="tab-panel" id="tab-2">
                     <h2>🔍 Evidence Hub</h2>
-                    <p><strong>Purpose:</strong> Systematically collect and critically evaluate evidence from all four sources.</p>
-
-                    <div class="milestone-tracker">
-                        <h4>📋 Milestone 2 & 3 Checkpoints</h4>
-                        <ul class="checklist">
-                            <li><strong>Milestone 2 (Week 6):</strong> Scientific & Practitioner Evidence Complete</li>
-                            <li><strong>Milestone 3 (Week 9):</strong> Organizational & Stakeholder Evidence Complete</li>
-                            <li>All acquisition methods documented</li>
-                            <li>Evidence sources collected and organized</li>
-                            <li>Quality appraisals completed for each evidence type</li>
-                        </ul>
-                    </div>
+                    <p><h5>Purpose:</h5> Systematically collect and critically evaluate evidence from all four sources.</p>
 
                     <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
                         <h4>🎯 Evidence Collection Goals:</h4>
                         <ul>
-                            <li><strong>For Step 2:</strong> What evidence supports our assumed problem?</li>
-                            <li><strong>For Step 4:</strong> What evidence supports our preferred solution?</li>
+                            <li><h5>For Step 2:</h5> What evidence supports our assumed problem?</li>
+                            <li><h5>For Step 4:</h5> What evidence supports our preferred solution?</li>
                         </ul>
                     </div>
 
@@ -835,19 +874,19 @@ Beauty service providers in the USA are experiencing moderate to high client chu
                         <div class="content-file-preview">
                             <h4>📝 content/evidence-scientific-methods.txt</h4>
                             <div class="edit-notice">🖊️ Content loaded successfully</div>
-                            <pre><strong># Scientific Evidence: Search Strategy & Methods</strong>
+                            <pre><h3>Scientific Evidence: Search Strategy & Methods</h3>
 
-<strong>## Research Questions</strong>
-**Primary:** What is the effectiveness of customer loyalty programs in improving client retention for beauty service businesses?
-**Secondary:** What factors drive customer loyalty and retention in service industries?
+<h4>Research Questions</h4>
+<span class="label">Primary:</span> What is the effectiveness of customer loyalty programs in improving client retention for beauty service businesses?
+<span class="label">Secondary:</span> What factors drive customer loyalty and retention in service industries?
 
-<strong>## Search Strategy Overview</strong>
-**Keywords Used:**
+<h4>Search Strategy Overview</h4>
+<span class="label">Keywords Used:</span>
 - Primary: "customer loyalty programs", "client retention", "beauty services", "salon loyalty" 
 - Secondary: "service industry loyalty", "customer lifetime value", "retention strategies"
 - Combined searches: "loyalty program AND retention AND beauty", "customer loyalty AND salon"
 
-<strong>## Databases and Sources</strong>
+<h4>Databases and Sources</h4>
 
 <div class="data-reference-table">
 <table>
@@ -874,9 +913,9 @@ Beauty service providers in the USA are experiencing moderate to high client chu
 </table>
 </div>
 
-<strong>## Study Selection Criteria</strong>
+<h4>Study Selection Criteria</h4>
 
-<strong>Inclusion Criteria:</strong>
+<h5>Inclusion Criteria:</h5>
 - Customer/client loyalty programs in service industries
 - Quantitative outcomes (retention rates, CLV, revenue impact)
 - Peer-reviewed publications or reputable business sources
@@ -884,39 +923,39 @@ Beauty service providers in the USA are experiencing moderate to high client chu
 - English language
 - Service industry focus preferred (beauty, salon, spa)
 
-<strong>Exclusion Criteria:</strong>
+<h5>Exclusion Criteria:</h5>
 - Product-only loyalty programs (not service-based)
 - Studies without measurable outcomes
 - Opinion pieces without empirical data
 - Industries too dissimilar to beauty services
 - Case studies without control groups or benchmarks
 
-<strong>## Quality Assessment Framework</strong>
-**Method:** CATmanager Critical Appraisal Tool
-**Criteria:** Study design, sample size, methodology rigor, relevance to beauty services
-**Grading:** A (excellent), B (good), C (fair), with +/- modifiers</pre>
+<h4>Quality Assessment Framework</h4>
+<span class="label">Method:</span> CATmanager Critical Appraisal Tool
+<span class="label">Criteria:</span> Study design, sample size, methodology rigor, relevance to beauty services
+<span class="label">Grading:</span> A (excellent), B (good), C (fair), with +/- modifiers</pre>
                         </div>
 
                         <div class="content-file-preview">
                             <h4>📝 content/evidence-scientific-sources.txt</h4>
                             <div class="edit-notice">🖊️ Content loaded successfully</div>
-                            <pre><strong># Scientific Evidence: Research Findings</strong>
+                            <pre><h3>Scientific Evidence: Research Findings</h3>
 
-<strong>Search Process and Terms:</strong>
+<h5>Search Process and Terms:</h5>
 - Business Source Elite / Google Scholar 
 - Terms: customer churn rate, loyalty programs, beauty industry, customer loyalty, USA, CLV
 
-<strong>## Study 1: Can Non-Tiered Customer Loyalty Programs be Profitable?</strong>
-**Citation:** Gopalakrishnan, A., Jiang, Z., Nevskaya, Y., & Thomadsen, R. (2021). Can non-tiered customer loyalty programs be profitable? Marketing Science, 40(3), 508–526.
+<h4>Study 1: Can Non-Tiered Customer Loyalty Programs be Profitable?</h4>
+<span class="label">Citation:</span> Gopalakrishnan, A., Jiang, Z., Nevskaya, Y., & Thomadsen, R. (2021). Can non-tiered customer loyalty programs be profitable? Marketing Science, 40(3), 508–526.
 
-<strong>Study Overview:</strong>
-- **Research Design:** Non-randomized controlled study  
-- **Sample Size:** 5,544 customers
-- **Population:** Hair salon chain
-- **Duration:** 30 months of data collection
-- **Program Launch:** Month 10 of observation period
+<h5>Study Overview:</h5>
+- <span class="label">Research Design:</span> Non-randomized controlled study  
+- <span class="label">Sample Size:</span> 5,544 customers
+- <span class="label">Population:</span> Hair salon chain
+- <span class="label">Duration:</span> 30 months of data collection
+- <span class="label">Program Launch:</span> Month 10 of observation period
 
-<strong>📊 Key Study Findings:</strong>
+<h5>📊 Key Study Findings:</h5>
 
 <div class="data-reference-table">
 <table>
@@ -955,7 +994,7 @@ Beauty service providers in the USA are experiencing moderate to high client chu
 </table>
 </div>
 
-<strong>📊 Data Collection & Methods:</strong>
+<h5>📊 Data Collection & Methods:</h5>
 
 <div class="data-reference-table">
 <table>
@@ -1002,47 +1041,47 @@ Beauty service providers in the USA are experiencing moderate to high client chu
 </table>
 </div>
 
-<strong>## Study 2: Consumer-Brand Relationships Meta-Analysis</strong>
-**Citation:** Khamitov, M., Wang, X., & Thomson, M. (2019). How well do consumer-brand relationships drive customer lifetime value? Journal of Marketing, 83(3), 33-51.
+<h4>Study 2: Consumer-Brand Relationships Meta-Analysis</h4>
+<span class="label">Citation:</span> Khamitov, M., Wang, X., & Thomson, M. (2019). How well do consumer-brand relationships drive customer lifetime value? Journal of Marketing, 83(3), 33-51.
 
-<strong>Study Overview:</strong>
-- **Research Design:** Meta-analysis
-- **Sample:** 588 estimates from 290 studies over 24 years
-- **Focus:** Consumer-brand relationship constructs and loyalty outcomes
-- **Key Framework:** 5 core constructs analyzed
+<h5>Study Overview:</h5>
+- <span class="label">Research Design:</span> Meta-analysis
+- <span class="label">Sample:</span> 588 estimates from 290 studies over 24 years
+- <span class="label">Focus:</span> Consumer-brand relationship constructs and loyalty outcomes
+- <span class="label">Key Framework:</span> 5 core constructs analyzed
 
-<strong>Key Findings:</strong>
+<h5>Key Findings:</h5>
 - Brand attachment drives strongest loyalty outcomes
 - Personal connections most predictive of retention
 - Emotional satisfaction significant but smaller effect
 - Trust and reliability strong predictors
 - Self-brand connection moderately effective
 
-<strong>## Study 3: Loyalty Programs vs Short-Term Promotions</strong>
-**Citation:** Lewis, M. (2004). The influence of loyalty programs and short-term promotions on customer retention. Journal of Marketing Research, 41(3), 281-292.
+<h4>Study 3: Loyalty Programs vs Short-Term Promotions</h4>
+<span class="label">Citation:</span> Lewis, M. (2004). The influence of loyalty programs and short-term promotions on customer retention. Journal of Marketing Research, 41(3), 281-292.
 
-<strong>Study Overview:</strong>
-- **Research Design:** Dynamic programming model
-- **Sample:** 1,058 customers over 13 months
-- **Context:** Online retailer comparison study
-- **Methodology:** Controlled comparison of retention strategies
+<h5>Study Overview:</h5>
+- <span class="label">Research Design:</span> Dynamic programming model
+- <span class="label">Sample:</span> 1,058 customers over 13 months
+- <span class="label">Context:</span> Online retailer comparison study
+- <span class="label">Methodology:</span> Controlled comparison of retention strategies
 
-<strong>Key Findings:</strong>
+<h5>Key Findings:</h5>
 - Loyalty programs 23% more effective than promotional offers for 12-month retention
 - Long-term customer value creation superior with loyalty approach
 - Customer acquisition cost 31% lower for loyalty program referrals
 - Revenue stability improved by 18% with loyalty implementation
 - Customer satisfaction scores 15% higher for program participants
 
-<strong>## Cross-Study Synthesis & Beauty Industry Applications</strong>
+<h4>Cross-Study Synthesis & Beauty Industry Applications</h4>
 
-<strong>Convergent Evidence Across Studies:</strong>
+<h5>Convergent Evidence Across Studies:</h5>
 1. **Non-tiered loyalty programs** show superior effectiveness (29.5% CLV increase)
 2. **Emotional connections** critical for retention (meta-analysis validation)
 3. **Consistent approach** outperforms sporadic promotions (comparative advantage)
 4. **Service industry applicability** particularly strong (hair salon direct relevance)
 
-<strong>Specific Beauty Industry Implications:</strong>
+<h5>Specific Beauty Industry Implications:</h5>
 - Hair salon context directly applicable to esthetics/spa services
 - Personal relationship model aligns with beauty service delivery
 - CLV improvement methodology transferable across beauty segments
@@ -1094,7 +1133,7 @@ Beauty service providers in the USA are experiencing moderate to high client chu
 </tbody>
 </table>
 
-<strong>CATmanager Grading Scale:</strong>
+<h5>CATmanager Grading Scale:</h5>
 - <strong>A</strong> = Excellent quality, highly applicable, transparent methodology
 - <strong>B+</strong> = Good quality with minor limitations
 - <strong>B</strong> = Adequate quality with some concerns
@@ -1109,130 +1148,130 @@ Beauty service providers in the USA are experiencing moderate to high client chu
                         <div class="content-file-preview">
                             <h4>📝 content/evidence-practitioner-methods.txt</h4>
                             <div class="edit-notice">🖊️ Content loaded successfully</div>
-                            <pre><strong># Practitioner Evidence: Methods & Acquisition Strategy</strong>
+                            <pre><h3>Practitioner Evidence: Methods & Acquisition Strategy</h3>
 
-<strong>## Target Practitioner Groups</strong>
+<h4>Target Practitioner Groups</h4>
 
-<strong>Group 1: Direct Beauty Service Practitioners</strong>
+<h5>Group 1: Direct Beauty Service Practitioners</h5>
 - Target: Licensed estheticians with client retention experience
 - Geographic Focus: Local area (Harrisonburg, VA and surrounding)
 - Target Number: 3-5 practitioners
 - Interview Focus: Real-world retention challenges and solutions
 
-<strong>Group 2: Success Case Studies</strong>
+<h5>Group 2: Success Case Studies</h5>
 - Target: Established beauty businesses with proven retention strategies
 - Research Focus: Sephora Beauty Insider, Beautiful Co. Hair & Lashes
 - Documentation: Implementation details and quantifiable results
 
-<strong>## Interview Framework</strong>
+<h4>Interview Framework</h4>
 
-<strong>Key Questions for Beauty Practitioners:</strong>
+<h5>Key Questions for Beauty Practitioners:</h5>
 1. How long have you been working in the beauty industry?
 2. Have you experienced clients not returning after initial appointments?
 3. What strategies have you tried to improve client retention?
 4. Which methods have been most/least successful?
 5. What advice would you give to others facing this challenge?
 
-<strong>## Quality Assessment Criteria</strong>
+<h4>Quality Assessment Criteria</h4>
 
-<strong>Practitioner Credibility Factors:</strong>
+<h5>Practitioner Credibility Factors:</h5>
 - Years of experience in beauty industry
 - Direct experience with retention challenges
 - Implementation experience with retention strategies
 - Current role relevance to beauty services
 
-<strong>Target Participants Interviewed:</strong>
-- **Molly Vazales:** Licensed Esthetician, Studio Owner
-- **Diana Rosinski:** Licensed Esthetician, Lotus Wellness Spa
-- **Bloom Esthetics Co:** Successful beauty business case study</pre>
+<h5>Target Participants Interviewed:</h5>
+- <span class="label">Molly Vazales:</span> Licensed Esthetician, Studio Owner
+- <span class="label">Diana Rosinski:</span> Licensed Esthetician, Lotus Wellness Spa
+- <span class="label">Bloom Esthetics Co:</span> Successful beauty business case study</pre>
                         </div>
 
                         <div class="content-file-preview">
                             <h4>📝 content/evidence-practitioner-sources.txt</h4>
                             <div class="edit-notice">🖊️ Content loaded successfully</div>
-                            <pre><strong># Practitioner Evidence: Expert Insights & Professional Experience</strong>
+                            <pre><h3>Practitioner Evidence: Expert Insights & Professional Experience</h3>
 
-<strong>## Interview 1: Molly Vazales, Studio Owner</strong>
+<h4>Interview 1: Molly Vazales, Studio Owner</h4>
 
-<strong>Practitioner Profile:</strong>
-- **Organization:** Aesthetics by Molly Rose
-- **Experience:** 1 year esthetician, prior Sephora experience
-- **Problem Recognition:** Yes - clients not returning after initial appointment
-- **Problem Frequency:** Moderately common
-- **Root Causes:** Schedule issues, pricing concerns, competing priorities
+<h5>Practitioner Profile:</h5>
+- <span class="label">Organization:</span> Aesthetics by Molly Rose
+- <span class="label">Experience:</span> 1 year esthetician, prior Sephora experience
+- <span class="label">Problem Recognition:</span> Yes - clients not returning after initial appointment
+- <span class="label">Problem Frequency:</span> Moderately common
+- <span class="label">Root Causes:</span> Schedule issues, pricing concerns, competing priorities
 
-<strong>Solution Insights:</strong>
-- **Recommended Approaches:** Social media marketing, promotions, word-of-mouth programs
-- **Success Factors:** Personal connections, consistent follow-up, perceived value alignment
-- **Timeline Expectations:** 2-3 months for initial improvements, 6+ months for strong base
+<h5>Solution Insights:</h5>
+- <span class="label">Recommended Approaches:</span> Social media marketing, promotions, word-of-mouth programs
+- <span class="label">Success Factors:</span> Personal connections, consistent follow-up, perceived value alignment
+- <span class="label">Timeline Expectations:</span> 2-3 months for initial improvements, 6+ months for strong base
 
-<strong>## Interview 2: Diana Rosinski, Esthetician</strong>
+<h4>Interview 2: Diana Rosinski, Esthetician</h4>
 
-<strong>Practitioner Profile:</strong>
-- **Organization:** Lotus Wellness Spa
-- **Experience:** 6 months at spa, additional home practice
-- **Retention Results:** 75% retention at home practice vs. lower spa retention
+<h5>Practitioner Profile:</h5>
+- <span class="label">Organization:</span> Lotus Wellness Spa
+- <span class="label">Experience:</span> 6 months at spa, additional home practice
+- <span class="label">Retention Results:</span> 75% retention at home practice vs. lower spa retention
 
-<strong>Key Success Strategies:</strong>
-- **Service Extras:** Scalp massages during treatments, double cleansing lashes
-- **Loyalty Programs:** Planning lash loyalty cards (10% off), pre-booking systems
-- **Quality Focus:** Extreme cleanliness and sanitation standards
+<h5>Key Success Strategies:</h5>
+- <span class="label">Service Extras:</span> Scalp massages during treatments, double cleansing lashes
+- <span class="label">Loyalty Programs:</span> Planning lash loyalty cards (10% off), pre-booking systems
+- <span class="label">Quality Focus:</span> Extreme cleanliness and sanitation standards
 
-<strong>## Case Study 1: Sephora Beauty Insider Program</strong>
+<h4>Case Study 1: Sephora Beauty Insider Program</h4>
 
-<strong>Program Results:</strong>
-- **Members:** 17 million North American, 25 million globally
-- **Business Impact:** 80% of sales from loyalty members
-- **Retention Rate:** 95% member retention
-- **Revenue Impact:** 22% increase in cross-sell, 13-51% increase in upsell
+<h5>Program Results:</h5>
+- <span class="label">Members:</span> 17 million North American, 25 million globally
+- <span class="label">Business Impact:</span> 80% of sales from loyalty members
+- <span class="label">Retention Rate:</span> 95% member retention
+- <span class="label">Revenue Impact:</span> 22% increase in cross-sell, 13-51% increase in upsell
 
-<strong>Success Factors:**
+<h5>Success Factors:</h5>
 - Three-tier structure creates aspirational goals
 - Personalization builds emotional connections
 - Omnichannel integration (online + in-store)
 - Continuous program evolution since 2007
 
-<strong>## Case Study 2: Beautiful Co. Hair & Lashes Salon</strong>
+<h4>Case Study 2: Beautiful Co. Hair & Lashes Salon</h4>
 
-<strong>Business Profile:</strong>
-- **Size:** 16 team members, 1 location (Greenville, SC)
-- **Achievement:** 95% customer retention rate
-- **Revenue:** $8,000 weekly from lash services alone
+<h5>Business Profile:</h5>
+- <span class="label">Size:</span> 16 team members, 1 location (Greenville, SC)
+- <span class="label">Achievement:</span> 95% customer retention rate
+- <span class="label">Revenue:</span> $8,000 weekly from lash services alone
 
-<strong>Luxury Experience Strategy:</strong>
-- **Hospitality Details:** Complimentary drinks, snacks, weighted blankets for comfort
-- **Technology Integration:** Square system enabling seamless scheduling and inventory
-- **Team Culture:** Focus on relationships and exceptional service delivery
-- **Service Diversification:** Hair (8 stylists) + Lashes (4 techs) + Retail (100 SKUs)
+<h5>Luxury Experience Strategy:</h5>
+- <span class="label">Hospitality Details:</span> Complimentary drinks, snacks, weighted blankets for comfort
+- <span class="label">Technology Integration:</span> Square system enabling seamless scheduling and inventory
+- <span class="label">Team Culture:</span> Focus on relationships and exceptional service delivery
+- <span class="label">Service Diversification:</span> Hair (8 stylists) + Lashes (4 techs) + Retail (100 SKUs)
 
-<strong>Key Success Factors:</strong>
+<h5>Key Success Factors:</h5>
 1. **Small details create big impact** - weighted blankets, refreshments memorable
 2. **Technology supports service** - efficient operations free staff for client focus
 3. **Revenue diversification** - multiple services reduce dependence risks
 4. **Team satisfaction drives results** - happy employees create loyal customers
 
-<strong>## Detailed Interview Insights</strong>
+<h4>Detailed Interview Insights</h4>
 
-<strong>Expert Interview with Diana Rosinski (8+ months experience):</strong>
+<h5>Expert Interview with Diana Rosinski (8+ months experience):</h5>
 
-<strong>Q: What specific retention challenges do you face?</strong>
-**A:** "My problem might be that I am a beginner and might not know certain techniques that people have known since they have been in the game longer! And some people are taking advantage of the grand opening deals going on around here and we get people from massanutten and other surrounding areas like new market."
+<h6>Q: What specific retention challenges do you face?</h6>
+<span class="label">A:</span> "My problem might be that I am a beginner and might not know certain techniques that people have known since they have been in the game longer! And some people are taking advantage of the grand opening deals going on around here and we get people from massanutten and other surrounding areas like new market."
 
-<strong>Q: How do you enhance service delivery for retention?</strong>
-**A:** "I give a scalp massage while the tint is sitting so I'm not just doing nothing. Or I double cleanse the lashes while some lash techs just put primer on for lashes."
+<h6>Q: How do you enhance service delivery for retention?</h6>
+<span class="label">A:</span> "I give a scalp massage while the tint is sitting so I'm not just doing nothing. Or I double cleanse the lashes while some lash techs just put primer on for lashes."
 
-<strong>Q: What loyalty strategies are you implementing?</strong>
-**A:** "I wanna incorporate a lash loyalty card for future 10% off or even pre booking so it's already in the works."
+<h6>Q: What loyalty strategies are you implementing?</h6>
+<span class="label">A:</span> "I wanna incorporate a lash loyalty card for future 10% off or even pre booking so it's already in the works."
 
-<strong>Q: How do you prevent loyalty program fraud?</strong>
-**A:** "If I were to have the challenge of someone cheating the punch card system then I would just make sure to change up the punch pin to make sure it's custom."
+<h6>Q: How do you prevent loyalty program fraud?</h6>
+<span class="label">A:</span> "If I were to have the challenge of someone cheating the punch card system then I would just make sure to change up the punch pin to make sure it's custom."
 
-<strong>Performance Results:</strong>
-- **Home Practice:** 75% retention rate with personal service focus
-- **Spa Environment:** Lower retention due to competition and beginner status
-- **Service Quality:** "All the ones I mentioned above are really good tips to keep clients and to make sure you have a clean space and are sterilizing properly and disinfecting EVERYTHING!!!"
+<h5>Performance Results:</h5>
+- <span class="label">Home Practice:</span> 75% retention rate with personal service focus
+- <span class="label">Spa Environment:</span> Lower retention due to competition and beginner status
+- <span class="label">Service Quality:</span> "All the ones I mentioned above are really good tips to keep clients and to make sure you have a clean space and are sterilizing properly and disinfecting EVERYTHING!!!"
 
-<strong>## Cross-Expert Analysis & Implementation Wisdom</strong>
+<h4>Cross-Expert Analysis & Implementation Wisdom</h4>
 
 <div class="data-reference-table">
 <h4>📋 Practitioner Success Strategies Matrix</h4>
@@ -1303,38 +1342,38 @@ Beauty service providers in the USA are experiencing moderate to high client chu
 </table>
 </div>
 
-<strong>## Critical Implementation Timeline</strong>
+<h4>Critical Implementation Timeline</h4>
 
-<strong>Immediate Actions (Week 1-4):</strong>
-- **Service enhancements:** Start scalp massages, double cleansing protocols
-- **Sanitation excellence:** Implement rigorous cleanliness standards  
-- **Follow-up system:** 24-48 hour client check-in communication
-- **Learning investment:** YouTube resources for technique improvement
+<h5>Immediate Actions (Week 1-4):</h5>
+- <span class="label">Service enhancements:</span> Start scalp massages, double cleansing protocols
+- <span class="label">Sanitation excellence:</span> Implement rigorous cleanliness standards  
+- <span class="label">Follow-up system:</span> 24-48 hour client check-in communication
+- <span class="label">Learning investment:</span> YouTube resources for technique improvement
 
-<strong>Short-term Development (Month 2-6):</strong>
-- **Loyalty program design:** Simple punch card with fraud prevention
-- **Pre-booking emphasis:** Schedule future appointments during service
-- **Comfort amenities:** Add small luxury touches (refreshments, comfort items)
-- **Skill mastery:** Focus on technique consistency and confidence building
+<h5>Short-term Development (Month 2-6):</h5>
+- <span class="label">Loyalty program design:</span> Simple punch card with fraud prevention
+- <span class="label">Pre-booking emphasis:</span> Schedule future appointments during service
+- <span class="label">Comfort amenities:</span> Add small luxury touches (refreshments, comfort items)
+- <span class="label">Skill mastery:</span> Focus on technique consistency and confidence building
 
-<strong>Long-term Strategy (Month 6+):</strong>
-- **Service diversification:** Consider expanding service offerings like Beautiful Co.
-- **Community building:** Develop emotional connections like Sephora model
-- **Technology integration:** Invest in systems that support personal service
-- **Referral systems:** Leverage satisfied clients for growth
+<h5>Long-term Strategy (Month 6+):</h5>
+- <span class="label">Service diversification:</span> Consider expanding service offerings like Beautiful Co.
+- <span class="label">Community building:</span> Develop emotional connections like Sephora model
+- <span class="label">Technology integration:</span> Invest in systems that support personal service
+- <span class="label">Referral systems:</span> Leverage satisfied clients for growth
 
-<strong>Success Probability Assessment:</strong>
+<h5>Success Probability Assessment:</h5>
 Based on practitioner evidence, implementing these strategies can realistically achieve **75-95% retention rates**, significantly exceeding industry benchmarks. Diana's 75% home practice rate and Beautiful Co.'s 95% salon rate demonstrate achievable targets with proper implementation of relationship-focused strategies and service excellence.
 
-<strong>Success Strategy:</strong>
+<h5>Success Strategy:</h5>
 - Luxury experience focus with personal touches
 - Technology integration for seamless operations
 - Staff training emphasis on hospitality
 - Service diversification and retail integration
 
-<strong>## Cross-Expert Analysis</strong>
+<h4>Cross-Expert Analysis</h4>
 
-<strong>Consensus Views:</strong>
+<h5>Consensus Views:</h5>
 - Personal touches and relationship building are crucial
 - Consistency in follow-up communication drives retention
 - Small service details make significant impact
@@ -1344,54 +1383,54 @@ Based on practitioner evidence, implementing these strategies can realistically 
                         <div class="content-file-preview">
                             <h4>📝 content/evidence-practitioner-appraisal.txt</h4>
                             <div class="edit-notice">🖊️ Content loaded successfully</div>
-                            <pre><strong># Practitioner Evidence: Credibility & Relevance Assessment</strong>
+                            <pre><h3>Practitioner Evidence: Credibility & Relevance Assessment</h3>
 
-<strong>## Individual Practitioner Credibility</strong>
+<h4>Individual Practitioner Credibility</h4>
 
-<strong>Expert 1: Molly Vazales</strong>
-- **Professional Credibility:** 1 year as esthetician, prior beauty industry experience
-- **Expertise Assessment:** Moderate - experiences retention challenges directly
-- **Context Relevance:** Highly relevant - owns studio in beauty industry
-- **Bias Assessment:** No conflicts - independent practitioner, transparent about challenges
+<h5>Expert 1: Molly Vazales</h5>
+- <span class="label">Professional Credibility:</span> 1 year as esthetician, prior beauty industry experience
+- <span class="label">Expertise Assessment:</span> Moderate - experiences retention challenges directly
+- <span class="label">Context Relevance:</span> Highly relevant - owns studio in beauty industry
+- <span class="label">Bias Assessment:</span> No conflicts - independent practitioner, transparent about challenges
 
-<strong>Expert 2: Diana Rosinski</strong>
-- **Professional Credibility:** 6 months at spa, 75% home practice retention rate
-- **Expertise Assessment:** Extensive - deals with retention challenges daily
-- **Context Relevance:** Highly relevant - dual context (spa and home practice)
-- **Bias Assessment:** High investment in solutions, very open about learning process
+<h5>Expert 2: Diana Rosinski</h5>
+- <span class="label">Professional Credibility:</span> 6 months at spa, 75% home practice retention rate
+- <span class="label">Expertise Assessment:</span> Extensive - deals with retention challenges daily
+- <span class="label">Context Relevance:</span> Highly relevant - dual context (spa and home practice)
+- <span class="label">Bias Assessment:</span> High investment in solutions, very open about learning process
 
-<strong>## Case Study Credibility Assessment</strong>
+<h4>Case Study Credibility Assessment</h4>
 
-<strong>Sephora Beauty Insider Program:</strong>
-- **Source:** LoyaltyLion industry publication - moderately reliable
-- **Context Relevance:** Same industry but very different scale (large corporation vs. small business)
-- **Outcome Verification:** Well documented with specific metrics over 16+ years
-- **Applicability:** Principles applicable, scale differences noted
+<h5>Sephora Beauty Insider Program:</h5>
+- <span class="label">Source:</span> LoyaltyLion industry publication - moderately reliable
+- <span class="label">Context Relevance:</span> Same industry but very different scale (large corporation vs. small business)
+- <span class="label">Outcome Verification:</span> Well documented with specific metrics over 16+ years
+- <span class="label">Applicability:</span> Principles applicable, scale differences noted
 
-<strong>Beautiful Co. Hair & Lashes:</strong>
-- **Source:** Square company case study - moderately reliable
-- **Context Relevance:** Similar scale small business with team, same industry
-- **Outcome Verification:** Good detail on implementation and 95% retention results
-- **Applicability:** High relevance for small beauty business context
+<h5>Beautiful Co. Hair & Lashes:</h5>
+- <span class="label">Source:</span> Square company case study - moderately reliable
+- <span class="label">Context Relevance:</span> Similar scale small business with team, same industry
+- <span class="label">Outcome Verification:</span> Good detail on implementation and 95% retention results
+- <span class="label">Applicability:</span> High relevance for small beauty business context
 
-<strong>## Evidence Quality Assessment</strong>
+<h4>Evidence Quality Assessment</h4>
 
-<strong>Consistent Messages:</strong>
+<h5>Consistent Messages:</h5>
 - Personal touches drive retention
 - Loyalty programs help when implemented properly
 - Consistency in service and follow-up matters
 - Cleanliness and professionalism are non-negotiable
 
-<strong>Evidence Limitations:</strong>
+<h5>Evidence Limitations:</h5>
 - Sample size: Only 2 practitioner interviews completed
 - Geographic limitation: Local area only
 - Experience level: Focus on newer practitioners (under 1 year)
 - Missing perspectives: No experienced practitioners (10+ years) or failed program examples
 
-<strong>Overall Confidence Level:</strong>
-- **High Confidence:** Personal service touches, relationship building importance
-- **Medium Confidence:** Specific loyalty program implementations
-- **Areas Needing More Evidence:** Long-term effectiveness, implementation challenges</pre>
+<h5>Overall Confidence Level:</h5>
+- <span class="label">High Confidence:</span> Personal service touches, relationship building importance
+- <span class="label">Medium Confidence:</span> Specific loyalty program implementations
+- <span class="label">Areas Needing More Evidence:</span> Long-term effectiveness, implementation challenges</pre>
                         </div>
                     </div>
 
@@ -1402,41 +1441,41 @@ Based on practitioner evidence, implementing these strategies can realistically 
                         <div class="content-file-preview">
                             <h4>📝 content/evidence-organizational-methods.txt</h4>
                             <div class="edit-notice">🖊️ Content loaded successfully</div>
-                            <pre><strong># Organizational Evidence: Data Collection Methods</strong>
+                            <pre><h3>Organizational Evidence: Data Collection Methods</h3>
 
-<strong>## Data Collection Strategy</strong>
-**Collection Period:** 2020-2024 (5-year analysis)
-**Data Quality Assessment:** High overall quality - Government datasets provide reliable foundation
+<h4>Data Collection Strategy</h4>
+<span class="label">Collection Period:</span> 2020-2024 (5-year analysis)
+<span class="label">Data Quality Assessment:</span> High overall quality - Government datasets provide reliable foundation
 
-<strong>## Primary Data Sources</strong>
+<h4>Primary Data Sources</h4>
 
-<strong>1. Bureau of Labor Statistics QCEW Data</strong>
-- **Content:** Employment and wage data for beauty services (NAICS 8121)
-- **Reliability:** High - government statistical reporting
-- **Time Period:** 2023-2024 annual comparison
-- **Key Metrics:** Employment growth, wage trends, industry stability
+<h5>1. Bureau of Labor Statistics QCEW Data</h5>
+- <span class="label">Content:</span> Employment and wage data for beauty services (NAICS 8121)
+- <span class="label">Reliability:</span> High - government statistical reporting
+- <span class="label">Time Period:</span> 2023-2024 annual comparison
+- <span class="label">Key Metrics:</span> Employment growth, wage trends, industry stability
 
-<strong>2. Bizminer Industry Financial Analysis</strong>
-- **Content:** Comprehensive industry financial performance
-- **Reliability:** High - systematic industry tracking
-- **Time Period:** 2020-2024 five-year trends
-- **Key Metrics:** Revenue trends, operating expenses, profit margins
+<h5>2. Bizminer Industry Financial Analysis</h5>
+- <span class="label">Content:</span> Comprehensive industry financial performance
+- <span class="label">Reliability:</span> High - systematic industry tracking
+- <span class="label">Time Period:</span> 2020-2024 five-year trends
+- <span class="label">Key Metrics:</span> Revenue trends, operating expenses, profit margins
 
-<strong>3. Industry Research & Benchmarks</strong>
-- **Content:** Customer retention and performance benchmarks
-- **Reliability:** Medium - industry association research
-- **Sources:** Professional Beauty Association, market research
-- **Key Metrics:** Retention rates, customer lifetime values, spending patterns
+<h5>3. Industry Research & Benchmarks</h5>
+- <span class="label">Content:</span> Customer retention and performance benchmarks
+- <span class="label">Reliability:</span> Medium - industry association research
+- <span class="label">Sources:</span> Professional Beauty Association, market research
+- <span class="label">Key Metrics:</span> Retention rates, customer lifetime values, spending patterns
 
-<strong>## Key Performance Indicators Tracked</strong>
+<h4>Key Performance Indicators Tracked</h4>
 
-<strong>Financial Performance Metrics:</strong>
+<h5>Financial Performance Metrics:</h5>
 - Industry revenue: -6.0% decline ($275.7B to $259.1B)
 - Operating expenses: Increased from 67.73% to 68.78% of revenue
 - Gross profit margin: 75.82% (strong capacity for investment)
 - Customer lifetime value: $1,200-$3,500 range
 
-<strong>Market & Customer Metrics:</strong>
+<h5>Market & Customer Metrics:</h5>
 - First-time client attrition: 67% don't return after initial visit
 - Target retention rates: 60-75% within 12 months
 - Annual household spending: $768 on personal care services
@@ -1446,29 +1485,29 @@ Based on practitioner evidence, implementing these strategies can realistically 
                         <div class="content-file-preview">
                             <h4>📝 content/evidence-organizational-sources.txt</h4>
                             <div class="edit-notice">🖊️ Content loaded successfully</div>
-                            <pre><strong># Organizational Evidence: Industry Performance Data & Metrics</strong>
+                            <pre><h3>Organizational Evidence: Industry Performance Data & Metrics</h3>
 
-<strong>## Problem-Related Metrics</strong>
+<h4>Problem-Related Metrics</h4>
 
-<strong>Industry Revenue Decline:</strong>
-- **Current Impact:** -6.0% decline ($275,738M to $259,127M)
-- **Trend:** Declining significantly over 12 months
-- **Problem Connection:** Demonstrates urgent need for retention strategies as market shrinks
-- **Data Source:** Bizminer industry financial reports
+<h5>Industry Revenue Decline:</h5>
+- <span class="label">Current Impact:</span> -6.0% decline ($275,738M to $259,127M)
+- <span class="label">Trend:</span> Declining significantly over 12 months
+- <span class="label">Problem Connection:</span> Demonstrates urgent need for retention strategies as market shrinks
+- <span class="label">Data Source:</span> Bizminer industry financial reports
 
-<strong>Customer Retention Crisis:</strong>
-- **Industry Benchmark:** 50-65% retention at 6 months, 60-75% at 12 months
-- **Critical Issue:** 67% of first-time clients don't return
-- **Problem Scale:** Major retention challenge confirmed industry-wide
-- **Financial Impact:** $1,200-$3,500 customer lifetime value at risk
+<h5>Customer Retention Crisis:</h5>
+- <span class="label">Industry Benchmark:</span> 50-65% retention at 6 months, 60-75% at 12 months
+- <span class="label">Critical Issue:</span> 67% of first-time clients don't return
+- <span class="label">Problem Scale:</span> Major retention challenge confirmed industry-wide
+- <span class="label">Financial Impact:</span> $1,200-$3,500 customer lifetime value at risk
 
-<strong>Operating Expense Pressure:</strong>
-- **Current State:** 68.78% of revenue (2024) vs. 67.73% (2023)
-- **Trend:** Worsening - expenses increasing as percentage of revenue
-- **Impact:** 1.05 percentage point unfavorable increase
-- **Implication:** Rising costs make retention more valuable than acquisition
+<h5>Operating Expense Pressure:</h5>
+- <span class="label">Current State:</span> 68.78% of revenue (2024) vs. 67.73% (2023)
+- <span class="label">Trend:</span> Worsening - expenses increasing as percentage of revenue
+- <span class="label">Impact:</span> 1.05 percentage point unfavorable increase
+- <span class="label">Implication:</span> Rising costs make retention more valuable than acquisition
 
-<strong>## Financial Capacity Analysis</strong>
+<h4>Financial Capacity Analysis</h4>
 
 <div class="data-reference-table">
 <h4>📊 Industry Financial Performance Summary</h4>
@@ -1506,72 +1545,72 @@ Based on practitioner evidence, implementing these strategies can realistically 
 </table>
 </div>
 
-<strong>## Investment Capacity Assessment</strong>
+<h4>Investment Capacity Assessment</h4>
 
-<strong>Available Resources:</strong>
-- **Gross Profit Margin:** 75.82% provides strong investment capacity
-- **Industry Stability:** 1.8% employment growth indicates stable workforce
-- **Customer Value Potential:** $1,200-$3,500 CLV demonstrates ROI opportunity
-- **Market Size:** 154,244 establishments show expanding presence
+<h5>Available Resources:</h5>
+- <span class="label">Gross Profit Margin:</span> 75.82% provides strong investment capacity
+- <span class="label">Industry Stability:</span> 1.8% employment growth indicates stable workforce
+- <span class="label">Customer Value Potential:</span> $1,200-$3,500 CLV demonstrates ROI opportunity
+- <span class="label">Market Size:</span> 154,244 establishments show expanding presence
 
-<strong>Financial Constraints:</strong>
-- **Operating Pressure:** Rising expense ratio (68.78%) requires careful ROI planning
-- **Revenue Decline:** -6.0% industry contraction creates urgency for efficiency
-- **Cost Structure:** Need to balance investment with expense management
+<h5>Financial Constraints:</h5>
+- <span class="label">Operating Pressure:</span> Rising expense ratio (68.78%) requires careful ROI planning
+- <span class="label">Revenue Decline:</span> -6.0% industry contraction creates urgency for efficiency
+- <span class="label">Cost Structure:</span> Need to balance investment with expense management
 
-<strong>## Market Context Analysis</strong>
+<h4>Market Context Analysis</h4>
 
-<strong>Customer Spending Baseline:</strong>
-- **Annual Household Spending:** $768 on personal care services
-- **Market Growth Potential:** Consumer spending supports retention investment
-- **Geographic Distribution:** Urban areas show higher retention potential
+<h5>Customer Spending Baseline:</h5>
+- <span class="label">Annual Household Spending:</span> $768 on personal care services
+- <span class="label">Market Growth Potential:</span> Consumer spending supports retention investment
+- <span class="label">Geographic Distribution:</span> Urban areas show higher retention potential
 
-<strong>## Workforce Analysis</strong>
+<h4>Workforce Analysis</h4>
 
-<strong>Employment Metrics:</strong>
-- **Total Industry Employment:** 743,964 employees (2024)
-- **Employment Growth:** 1.8% annual increase (12,843 net new employees)
-- **Workforce Stability:** Growing employment despite revenue decline
-- **Average Weekly Wage:** $645 (1.7% annual growth)
+<h5>Employment Metrics:</h5>
+- <span class="label">Total Industry Employment:</span> 743,964 employees (2024)
+- <span class="label">Employment Growth:</span> 1.8% annual increase (12,843 net new employees)
+- <span class="label">Workforce Stability:</span> Growing employment despite revenue decline
+- <span class="label">Average Weekly Wage:</span> $645 (1.7% annual growth)
 
-<strong>Human Resources Challenges:</strong>
-- **Turnover Rate:** 30-40% annually (typical for service sectors)
-- **Training Capacity:** Growing workforce suggests capacity for program training
-- **Implementation Risk:** High turnover could disrupt loyalty program consistency
-- **Skills Foundation:** Service workforce familiar with customer relationship basics
+<h5>Human Resources Challenges:</h5>
+- <span class="label">Turnover Rate:</span> 30-40% annually (typical for service sectors)
+- <span class="label">Training Capacity:</span> Growing workforce suggests capacity for program training
+- <span class="label">Implementation Risk:</span> High turnover could disrupt loyalty program consistency
+- <span class="label">Skills Foundation:</span> Service workforce familiar with customer relationship basics
 
-<strong>## Customer Impact Evidence</strong>
+<h4>Customer Impact Evidence</h4>
 
-<strong>Retention Performance:</strong>
-- **Industry Benchmarks:** 50-65% (6 months), 60-75% (12 months)
-- **First-Time Client Challenge:** 67% don't return after first visit
-- **Success Stories:** Top-performing salons achieve 45-70% return within 3 months
-- **Demographic Patterns:** Ages 25-45 with higher disposable income show better retention
+<h5>Retention Performance:</h5>
+- <span class="label">Industry Benchmarks:</span> 50-65% (6 months), 60-75% (12 months)
+- <span class="label">First-Time Client Challenge:</span> 67% don't return after first visit
+- <span class="label">Success Stories:</span> Top-performing salons achieve 45-70% return within 3 months
+- <span class="label">Demographic Patterns:</span> Ages 25-45 with higher disposable income show better retention
 
-<strong>Revenue Impact Analysis:</strong>
-- **Customer Lifetime Value Range:** $1,200-$3,500 depending on service frequency
-- **Geographic Factors:** Urban areas show higher retention due to accessibility
-- **Market Opportunity:** Revenue decline creates need for retention focus
+<h5>Revenue Impact Analysis:</h5>
+- <span class="label">Customer Lifetime Value Range:</span> $1,200-$3,500 depending on service frequency
+- <span class="label">Geographic Factors:</span> Urban areas show higher retention due to accessibility
+- <span class="label">Market Opportunity:</span> Revenue decline creates need for retention focus
 
-<strong>## Cost of Problem Analysis</strong>
+<h4>Cost of Problem Analysis</h4>
 
-<strong>Direct Financial Costs:</strong>
-- **Industry Revenue Loss:** $16,611 million annual decline
-- **Operating Inefficiency:** 1.05 percentage point expense increase
-- **Customer Acquisition Cost:** Higher replacement cost vs. retention investment
+<h5>Direct Financial Costs:</h5>
+- <span class="label">Industry Revenue Loss:</span> $16,611 million annual decline
+- <span class="label">Operating Inefficiency:</span> 1.05 percentage point expense increase
+- <span class="label">Customer Acquisition Cost:</span> Higher replacement cost vs. retention investment
 
-<strong>Indirect Opportunity Costs:</strong>
-- **Lost CLV Potential:** $1,200-$3,500 per client at risk from poor retention
-- **Competitive Disadvantage:** Market share loss in saturated market (154,244 establishments)
-- **Fixed Cost Leverage:** Operating expenses spread over declining revenue base
+<h5>Indirect Opportunity Costs:</h5>
+- <span class="label">Lost CLV Potential:</span> $1,200-$3,500 per client at risk from poor retention
+- <span class="label">Competitive Disadvantage:</span> Market share loss in saturated market (154,244 establishments)
+- <span class="label">Fixed Cost Leverage:</span> Operating expenses spread over declining revenue base
 
-<strong>## Investment Feasibility Assessment</strong>
+<h4>Investment Feasibility Assessment</h4>
 
-<strong>Financial Capacity Indicators:</strong>
-- **Available Investment Margin:** 75.82% gross profit provides capacity
-- **Budget Constraints:** 68.78% operating expense ratio requires careful management
-- **ROI Potential:** Customer lifetime values support strong return projections
-- **Market Foundation:** $768 annual household spending baseline
+<h5>Financial Capacity Indicators:</h5>
+- <span class="label">Available Investment Margin:</span> 75.82% gross profit provides capacity
+- <span class="label">Budget Constraints:</span> 68.78% operating expense ratio requires careful management
+- <span class="label">ROI Potential:</span> Customer lifetime values support strong return projections
+- <span class="label">Market Foundation:</span> $768 annual household spending baseline
 
 <div class="data-reference-table">
 <h4>📈 Organizational Readiness Summary</h4>
@@ -1609,92 +1648,92 @@ Based on practitioner evidence, implementing these strategies can realistically 
 </table>
 </div>
 
-<strong>## Evidence-Based Recommendations</strong>
+<h4>Evidence-Based Recommendations</h4>
 
-<strong>Critical Success Factors:</strong>
-1. **ROI Focus:** Demonstrate clear financial returns given expense pressure
-2. **Staff Consistency:** Address 30-40% turnover for program continuity
-3. **Customer Segmentation:** Target 25-45 demographic with retention potential
-4. **Cost Management:** Leverage gross margins while controlling operating growth
+<h5>Critical Success Factors:</h5>
+1. <span class="label">ROI Focus:</span> Demonstrate clear financial returns given expense pressure
+2. <span class="label">Staff Consistency:</span> Address 30-40% turnover for program continuity
+3. <span class="label">Customer Segmentation:</span> Target 25-45 demographic with retention potential
+4. <span class="label">Cost Management:</span> Leverage gross margins while controlling operating growth
 
-<strong>Implementation Readiness Score: MEDIUM-HIGH</strong>
+<h5>Implementation Readiness Score: MEDIUM-HIGH</h5>
 Strong financial capacity and urgent market need, balanced against operational challenges from cost pressure and workforce turnover.
 
-<strong>Competitive Landscape:</strong>
-- **Industry Competition:** 154,244 establishments (2.1% growth) creates need for differentiation
-- **Retention Imperative:** High competition makes customer retention critical advantage
-- **Market Saturation:** Established market requires efficiency over expansion</strong></pre>
+<h5>Competitive Landscape:</h5>
+- <span class="label">Industry Competition:</span> 154,244 establishments (2.1% growth) creates need for differentiation
+- <span class="label">Retention Imperative:</span> High competition makes customer retention critical advantage
+- <span class="label">Market Saturation:</span> Established market requires efficiency over expansion</strong></pre>
                         </div>
 
                         <div class="content-file-preview">
                             <h4>📝 content/evidence-organizational-appraisal.txt</h4>
                             <div class="edit-notice">🖊️ Content loaded successfully</div>
-                            <pre><strong># Organizational Evidence: Quality Assessment</strong>
+                            <pre><h3>Organizational Evidence: Quality Assessment</h3>
 
-<strong>## Data Source Reliability</strong>
+<h4>Data Source Reliability</h4>
 
-<strong>Bureau of Labor Statistics QCEW:</strong>
-- **Reliability Rating:** High
-- **Method:** Government statistical reporting, mandatory employer filings
-- **Strengths:** Comprehensive industry coverage, standardized methodology
-- **Limitations:** Industry-level aggregation, 2-3 quarter publication lag
+<h5>Bureau of Labor Statistics QCEW:</h5>
+- <span class="label">Reliability Rating:</span> High
+- <span class="label">Method:</span> Government statistical reporting, mandatory employer filings
+- <span class="label">Strengths:</span> Comprehensive industry coverage, standardized methodology
+- <span class="label">Limitations:</span> Industry-level aggregation, 2-3 quarter publication lag
 
-<strong>Bizminer Industry Financial Reports:</strong>
-- **Reliability Rating:** High  
-- **Method:** Comprehensive business financial data compilation
-- **Strengths:** 5-year trend analysis, detailed financial metrics
-- **Limitations:** Industry averages may not reflect individual business variations
+<h5>Bizminer Industry Financial Reports:</h5>
+- <span class="label">Reliability Rating:</span> High  
+- <span class="label">Method:</span> Comprehensive business financial data compilation
+- <span class="label">Strengths:</span> 5-year trend analysis, detailed financial metrics
+- <span class="label">Limitations:</span> Industry averages may not reflect individual business variations
 
-<strong>Industry Research & Benchmarks:</strong>
-- **Reliability Rating:** Medium
-- **Method:** Industry association surveys and market analysis
-- **Strengths:** Customer behavior insights, retention benchmarks
-- **Limitations:** Self-reported data, potential response bias
+<h5>Industry Research & Benchmarks:</h5>
+- <span class="label">Reliability Rating:</span> Medium
+- <span class="label">Method:</span> Industry association surveys and market analysis
+- <span class="label">Strengths:</span> Customer behavior insights, retention benchmarks
+- <span class="label">Limitations:</span> Self-reported data, potential response bias
 
-<strong>## Evidence Quality Assessment - Nine Barriers Framework</strong>
+<h4>Evidence Quality Assessment - Nine Barriers Framework</h4>
 
-<strong>Barrier 1: No Clear Logic Model</strong>
-- **Risk Level:** Medium
-- **Issue:** Good industry data but limited proof loyalty programs solve retention
-- **Mitigation:** Combined with scientific evidence showing program effectiveness
+<h5>Barrier 1: No Clear Logic Model</h5>
+- <span class="label">Risk Level:</span> Medium
+- <span class="label">Issue:</span> Good industry data but limited proof loyalty programs solve retention
+- <span class="label">Mitigation:</span> Combined with scientific evidence showing program effectiveness
 
-<strong>Barrier 2: Irrelevant Data</strong>
-- **Risk Level:** Low-Medium  
-- **Assessment:** Focused on relevant metrics (retention, revenue, costs)
-- **Strength:** Direct connection between data and business decisions
+<h5>Barrier 2: Irrelevant Data</h5>
+- <span class="label">Risk Level:</span> Low-Medium  
+- <span class="label">Assessment:</span> Focused on relevant metrics (retention, revenue, costs)
+- <span class="label">Strength:</span> Direct connection between data and business decisions
 
-<strong>Barrier 3: Inaccurate Data</strong>
-- **Risk Level:** Low
-- **Assessment:** Government data very reliable; industry reports fairly reliable
-- **Confidence:** High accuracy for financial and employment metrics
+<h5>Barrier 3: Inaccurate Data</h5>
+- <span class="label">Risk Level:</span> Low
+- <span class="label">Assessment:</span> Government data very reliable; industry reports fairly reliable
+- <span class="label">Confidence:</span> High accuracy for financial and employment metrics
 
-<strong>Barrier 5: Measurement Error</strong>
-- **Risk Level:** Medium
-- **Issue:** Industry averages may not match individual business experiences
-- **Implication:** Need to adapt findings to specific business context
+<h5>Barrier 5: Measurement Error</h5>
+- <span class="label">Risk Level:</span> Medium
+- <span class="label">Issue:</span> Industry averages may not match individual business experiences
+- <span class="label">Implication:</span> Need to adapt findings to specific business context
 
-<strong>## Bias Assessment</strong>
+<h4>Bias Assessment</h4>
 
-<strong>Selection Bias:**
-- **Data Availability Bias:** Medium risk - industry data may not represent small businesses
-- **Survivorship Bias:** Low risk - government data captures broad representation
+<h5>Selection Bias:</h5>
+- <span class="label">Data Availability Bias:</span> Medium risk - industry data may not represent small businesses
+- <span class="label">Survivorship Bias:</span> Low risk - government data captures broad representation
 
-<strong>Temporal Bias:**
-- **Post-Pandemic Context:** Recent trends (2020-2024) influenced by COVID recovery
-- **Economic Cycle Effects:** Inflation and economic uncertainty affect interpretation
+<h5>Temporal Bias:</h5>
+- <span class="label">Post-Pandemic Context:</span> Recent trends (2020-2024) influenced by COVID recovery
+- <span class="label">Economic Cycle Effects:</span> Inflation and economic uncertainty affect interpretation
 
-<strong>## Confidence Assessment</strong>
+<h4>Confidence Assessment</h4>
 
-<strong>High Confidence Areas:</strong>
+<h5>High Confidence Areas:</h5>
 - Industry financial challenges are real (-6.0% revenue decline)
 - Customer retention is major problem (67% first-visit attrition)
 - Financial capacity exists for solutions (75.82% gross margins)
 
-<strong>Medium Confidence Areas:</strong>
+<h5>Medium Confidence Areas:</h5>
 - Specific ROI predictions for loyalty programs
 - Timeline expectations for implementation success
 
-<strong>Overall Rating:** Medium-High for problem identification; Medium for solution feasibility</pre>
+<span class="label">Overall Rating:</span> Medium-High for problem identification; Medium for solution feasibility</pre>
                         </div>
                     </div>
 
@@ -1705,56 +1744,56 @@ Strong financial capacity and urgent market need, balanced against operational c
                         <div class="content-file-preview">
                             <h4>📝 content/evidence-stakeholder-methods.txt</h4>
                             <div class="edit-notice">🖊️ Content loaded successfully</div>
-                            <pre><strong># Stakeholder Evidence: Methods & Engagement Strategy</strong>
+                            <pre><h3>Stakeholder Evidence: Methods & Engagement Strategy</h3>
 
-<strong>## Evidence Collection Approach</strong>
-**Primary Goal:** Understand client perspectives on beauty service loyalty and retention drivers
-**Secondary Goal:** Gather industry insights on successful loyalty program implementations
+<h4>Evidence Collection Approach</h4>
+<span class="label">Primary Goal:</span> Understand client perspectives on beauty service loyalty and retention drivers
+<span class="label">Secondary Goal:</span> Gather industry insights on successful loyalty program implementations
 
-<strong>## Research Sources Used</strong>
+<h4>Research Sources Used</h4>
 
-<strong>Market Research Sources:</strong>
-- **IBISWorld Beauty Industry Report (2025):** $68.6B market analysis, 167,000 businesses
-- **Mintel Personal Care Consumer Report (2025):** Consumer behavior across demographics
-- **Bureau of Labor Statistics:** Employment and wage data (NAICS 8121)
-- **Bizminer Industry Analysis:** Financial performance benchmarks
+<h5>Market Research Sources:</h5>
+- <span class="label">IBISWorld Beauty Industry Report (2025):</span> $68.6B market analysis, 167,000 businesses
+- <span class="label">Mintel Personal Care Consumer Report (2025):</span> Consumer behavior across demographics
+- <span class="label">Bureau of Labor Statistics:</span> Employment and wage data (NAICS 8121)
+- <span class="label">Bizminer Industry Analysis:</span> Financial performance benchmarks
 
-<strong>Success Case Studies:</strong>
-- **Sephora Beauty Insider Program:** Large-scale loyalty program (25M global members)
-- **Beautiful Co. Hair & Lashes:** Small salon success story (95% retention)
+<h5>Success Case Studies:</h5>
+- <span class="label">Sephora Beauty Insider Program:</span> Large-scale loyalty program (25M global members)
+- <span class="label">Beautiful Co. Hair & Lashes:</span> Small salon success story (95% retention)
 
-<strong>## Target Stakeholder Groups</strong>
+<h4>Target Stakeholder Groups</h4>
 
-<strong>Primary Customer Segments (From Mintel Research):</strong>
-- **Premium Spenders:** Women 55+ (current high-value customers)
-- **Growth Opportunity:** Men 35-54 & Women under 55 (emerging segments)  
-- **Experience-Driven:** Adults 18-44 seeking stress relief and mood enhancement
+<h5>Primary Customer Segments (From Mintel Research):</h5>
+- <span class="label">Premium Spenders:</span> Women 55+ (current high-value customers)
+- <span class="label">Growth Opportunity:</span> Men 35-54 & Women under 55 (emerging segments)  
+- <span class="label">Experience-Driven:</span> Adults 18-44 seeking stress relief and mood enhancement
 
-<strong>Industry Stakeholders:</strong>
-- **Beauty Service Providers:** Salon owners, estheticians, spa operators
-- **Technology Partners:** Loyalty platform providers, POS system vendors
-- **Industry Groups:** Professional Beauty Association, trade organizations
+<h5>Industry Stakeholders:</h5>
+- <span class="label">Beauty Service Providers:</span> Salon owners, estheticians, spa operators
+- <span class="label">Technology Partners:</span> Loyalty platform providers, POS system vendors
+- <span class="label">Industry Groups:</span> Professional Beauty Association, trade organizations
 
-<strong>## Key Research Questions Addressed</strong>
+<h4>Key Research Questions Addressed</h4>
 
-<strong>Customer Stakeholder Insights:</strong>
+<h5>Customer Stakeholder Insights:</h5>
 1. What drives customer loyalty in beauty services?
 2. How do economic factors affect brand switching behavior?
 3. What motivates continued service usage beyond basic needs?
 
-<strong>Industry Stakeholder Perspectives:**
+<h5>Industry Stakeholder Perspectives:</h5>
 1. What retention strategies prove most effective?
 2. How do successful loyalty programs structure benefits?
 3. What implementation challenges should be anticipated?
 
-<strong>## Data Collection Framework</strong>
+<h4>Data Collection Framework</h4>
 
-<strong>Quantitative Evidence:**
+<h5>Quantitative Evidence:</h5>
 - Market size: $68.6B beauty industry, 5.0% annual growth
 - Consumer loyalty: 70% of financially stable customers resist switching
 - Program effectiveness: 80% of sales from loyalty members (top retailers)
 
-<strong>Qualitative Evidence:**
+<h5>Qualitative Evidence:</h5>
 - Customer motivation factors (stress relief, mood enhancement)
 - Implementation best practices from case studies
 - Industry consensus on retention challenges and solutions</pre>
@@ -1763,35 +1802,35 @@ Strong financial capacity and urgent market need, balanced against operational c
                         <div class="content-file-preview">
                             <h4>📝 content/evidence-stakeholder-sources.txt</h4>
                             <div class="edit-notice">🖊️ Content loaded successfully</div>
-                            <pre><strong># Stakeholder Evidence: Market Research & Industry Insights</strong>
+                            <pre><h3>Stakeholder Evidence: Market Research & Industry Insights</h3>
 
-<strong>## Industry Stakeholder Evidence (IBISWorld Analysis)</strong>
+<h4>Industry Stakeholder Evidence (IBISWorld Analysis)</h4>
 
-<strong>Market Size & Growth:</strong>
-- **Industry Value:** $68.6 billion (2025)
-- **Annual Growth:** 5.0% CAGR (2020-2025)
-- **Workforce:** 454,000 employees across 167,000 businesses
-- **Market Trend:** Strong economic recovery supporting discretionary beauty spending
+<h5>Market Size & Growth:</h5>
+- <span class="label">Industry Value:</span> $68.6 billion (2025)
+- <span class="label">Annual Growth:</span> 5.0% CAGR (2020-2025)
+- <span class="label">Workforce:</span> 454,000 employees across 167,000 businesses
+- <span class="label">Market Trend:</span> Strong economic recovery supporting discretionary beauty spending
 
-<strong>Competitive Landscape Insights:</strong>
-- **Major Players:** Sephora, Ulta succeed due to "expertise and loyalty programs"
-- **Success Factors:** Broad product range combined with customer retention strategies
-- **Industry Challenge:** High competition requires differentiation through customer experience
-- **Technology Integration:** Essential for competitive advantage in modern market
+<h5>Competitive Landscape Insights:</h5>
+- <span class="label">Major Players:</span> Sephora, Ulta succeed due to "expertise and loyalty programs"
+- <span class="label">Success Factors:</span> Broad product range combined with customer retention strategies
+- <span class="label">Industry Challenge:</span> High competition requires differentiation through customer experience
+- <span class="label">Technology Integration:</span> Essential for competitive advantage in modern market
 
-<strong>## Consumer Stakeholder Evidence (Mintel Research)</strong>
+<h4>Consumer Stakeholder Evidence (Mintel Research)</h4>
 
-<strong>Customer Loyalty Patterns:</strong>
-- **Financial Stability Impact:** 70% of financially stable consumers maintain brand loyalty
-- **Price Sensitivity:** Only 30% willing to switch for lower costs
-- **Local Preference:** 30% shifting toward domestic brands over large chains
-- **Generational Differences:** Gen Z & Millennials seek experiential benefits over basic service
+<h5>Customer Loyalty Patterns:</h5>
+- <span class="label">Financial Stability Impact:</span> 70% of financially stable consumers maintain brand loyalty
+- <span class="label">Price Sensitivity:</span> Only 30% willing to switch for lower costs
+- <span class="label">Local Preference:</span> 30% shifting toward domestic brands over large chains
+- <span class="label">Generational Differences:</span> Gen Z & Millennials seek experiential benefits over basic service
 
-<strong>Customer Motivation Analysis:</strong>
-- **Stress Relief Usage:** 35% of adults 18-44 use beauty services for mood enhancement
-- **Premium Willingness:** Women 55+ drive premium spending on facial skincare
-- **Growth Segments:** Men 35-54 and women under 55 represent expansion opportunities
-- **Value Perception:** Younger demographics take "broader view beyond price"
+<h5>Customer Motivation Analysis:</h5>
+- <span class="label">Stress Relief Usage:</span> 35% of adults 18-44 use beauty services for mood enhancement
+- <span class="label">Premium Willingness:</span> Women 55+ drive premium spending on facial skincare
+- <span class="label">Growth Segments:</span> Men 35-54 and women under 55 represent expansion opportunities
+- <span class="label">Value Perception:</span> Younger demographics take "broader view beyond price"
 
 <div class="data-reference-table">
 <h4>📊 Stakeholder Evidence Summary Table</h4>
@@ -1824,23 +1863,23 @@ Strong financial capacity and urgent market need, balanced against operational c
 </table>
 </div>
 
-<strong>## Success Story Evidence</strong>
+<h4>Success Story Evidence</h4>
 
-<strong>Sephora Beauty Insider (Large Scale):</strong>
-- **Program Scale:** 25 million global members
-- **Business Impact:** 80% of sales from loyalty program participants  
-- **Retention Rate:** 95% of members continue participation
-- **Key Success Factors:** Tiered benefits, personalization, community features
+<h5>Sephora Beauty Insider (Large Scale):</h5>
+- <span class="label">Program Scale:</span> 25 million global members
+- <span class="label">Business Impact:</span> 80% of sales from loyalty program participants  
+- <span class="label">Retention Rate:</span> 95% of members continue participation
+- <span class="label">Key Success Factors:</span> Tiered benefits, personalization, community features
 
-<strong>Beautiful Co. Hair & Lashes (Small Business):</strong>
-- **Business Size:** 16 employees, single location
-- **Achievement:** 95% customer retention rate
-- **Revenue Impact:** $8,000 weekly from lash services alone
-- **Success Approach:** Personal relationships, luxury experience focus, technology support
+<h5>Beautiful Co. Hair & Lashes (Small Business):</h5>
+- <span class="label">Business Size:</span> 16 employees, single location
+- <span class="label">Achievement:</span> 95% customer retention rate
+- <span class="label">Revenue Impact:</span> $8,000 weekly from lash services alone
+- <span class="label">Success Approach:</span> Personal relationships, luxury experience focus, technology support
 
-<strong>## Stakeholder Consensus Findings</strong>
+<h4>Stakeholder Consensus Findings</h4>
 
-<strong>### Stakeholder Map: Beauty Industry Loyalty Program Implementation</strong>
+<h5>Stakeholder Map: Beauty Industry Loyalty Program Implementation</h5>
 
 <div style="background: #faf8f8; padding: 20px; border-radius: 10px; margin: 20px 0;">
   <h4 style="text-align: center; color: #6b5555; margin-bottom: 20px;">📋 Stakeholder Classification Matrix</h4>
@@ -1900,15 +1939,15 @@ Strong financial capacity and urgent market need, balanced against operational c
   </table>
   
   <div style="margin-top: 15px; font-size: 12px; color: #6b5555; background: #f9f4f4; padding: 12px; border-radius: 8px; border-left: 4px solid #d4a5a5;">
-    <strong>📋 Stakeholder Classification Guide:</strong><br>
-    <strong>Primary Internal:</strong> Direct decision-makers and implementers within organization<br>
-    <strong>Primary External:</strong> Key customers and essential business partners<br>
-    <strong>Secondary Internal:</strong> Supporting roles and corporate functions<br>
-    <strong>Secondary External:</strong> Industry context and competitive environment
+    <h5>📋 Stakeholder Classification Guide:</h5><br>
+    <h5>Primary Internal:</h5> Direct decision-makers and implementers within organization<br>
+    <h5>Primary External:</h5> Key customers and essential business partners<br>
+    <h5>Secondary Internal:</h5> Supporting roles and corporate functions<br>
+    <h5>Secondary External:</h5> Industry context and competitive environment
   </div>
 </div>
 
-<strong>### Power/Interest Matrix: Beauty Industry Stakeholder Analysis</strong>
+<h5>Power/Interest Matrix: Beauty Industry Stakeholder Analysis</h5>
 
 <div style="background: #faf8f8; padding: 20px; border-radius: 10px; margin: 20px 0;">
   <h4 style="text-align: center; color: #6b5555; margin-bottom: 20px;">📊 Stakeholder Power/Interest Matrix</h4>
@@ -1982,19 +2021,19 @@ Strong financial capacity and urgent market need, balanced against operational c
   </table>
   
   <div style="margin-top: 20px; font-size: 12px; color: #6b5555; background: #f9f4f4; padding: 15px; border-radius: 8px; border-left: 4px solid #d4a5a5;">
-    <strong>📋 Engagement Strategy Guide:</strong><br><br>
-    🔴 <strong>Manage Closely:</strong> Regular communication, active involvement in decisions<br>
-    🟡 <strong>Keep Satisfied:</strong> Ensure needs are met, avoid blocking implementation<br>
-    🟠 <strong>Keep Informed:</strong> Regular updates, gather feedback for improvement<br>
-    ⚫ <strong>Monitor:</strong> Minimal effort, watch for changes in position
+    <h5>📋 Engagement Strategy Guide:</h5><br><br>
+    🔴 <h5>Manage Closely:</h5> Regular communication, active involvement in decisions<br>
+    🟡 <h5>Keep Satisfied:</h5> Ensure needs are met, avoid blocking implementation<br>
+    🟠 <h5>Keep Informed:</h5> Regular updates, gather feedback for improvement<br>
+    ⚫ <h5>Monitor:</h5> Minimal effort, watch for changes in position
   </div>
 </div>
 
-<strong>Agreement Across All Groups:</strong>
-- **Personal Relationships:** Critical for beauty service retention
-- **Consistency Matters:** Follow-up and service quality consistency essential
+<h5>Agreement Across All Groups:</h5>
+- <span class="label">Personal Relationships:</span> Critical for beauty service retention
+- <span class="label">Consistency Matters:</span> Follow-up and service quality consistency essential
 
-<strong>## Comprehensive Stakeholder Research Methods</strong>
+<h4>Comprehensive Stakeholder Research Methods</h4>
 
 <div class="data-reference-table">
 <h4>📋 Stakeholder Evidence Collection Strategy</h4>
@@ -2050,52 +2089,51 @@ Strong financial capacity and urgent market need, balanced against operational c
 </table>
 </div>
 
-<strong>## Consumer Stakeholder Behavioral Evidence</strong>
+<h4>Consumer Stakeholder Behavioral Evidence</h4>
 
-<strong>Economic Sensitivity Analysis:</strong>
-- **Price Resistance:** Only 30% of financially stable consumers switch for lower costs
-- **Brand Loyalty Strength:** 70% maintain loyalty despite economic pressure  
-- **Local Brand Preference:** 30% shifting toward domestic businesses over large chains
-- **Research Behavior:** Millennials do 26% more research when budget-conscious
+<h5>Economic Sensitivity Analysis:</h5>
+- <span class="label">Price Resistance:</span> Only 30% of financially stable consumers switch for lower costs
+- <span class="label">Brand Loyalty Strength:</span> 70% maintain loyalty despite economic pressure  
+- <span class="label">Local Brand Preference:</span> 30% shifting toward domestic businesses over large chains
+- <span class="label">Research Behavior:</span> Millennials do 26% more research when budget-conscious
 
-<strong>Generational Motivation Patterns:</strong>
+<h5>Generational Motivation Patterns:</h5>
 
-<strong>Adults 18-44 (Primary Target):</strong>
-- **Stress Relief Usage:** 35% use beauty services for mood enhancement
-- **Experience Focus:** Seek benefits beyond basic hygiene and appearance
-- **Novelty Appetite:** Value experimental features and sensorial benefits
-- **Value Perspective:** Take "broader view beyond price tag" in purchase decisions
+<h5>Adults 18-44 (Primary Target):</h5>
+- <span class="label">Stress Relief Usage:</span> 35% use beauty services for mood enhancement
+- <span class="label">Experience Focus:</span> Seek benefits beyond basic hygiene and appearance
+- <span class="label">Novelty Appetite:</span> Value experimental features and sensorial benefits
+- <span class="label">Value Perspective:</span> Take "broader view beyond price tag" in purchase decisions
 
-<strong>Women 55+ (Premium Segment):</strong>
-- **Premium Spending:** Drive highest spending on facial skincare services  
-- **Quality Focus:** Prioritize proven results over experimental features
-- **Brand Loyalty:** Higher retention rates when satisfaction achieved
-- **Service Expectations:** Value professional expertise and luxury experience
+<h5>Women 55+ (Premium Segment):</h5>
+- <span class="label">Premium Spending:</span> Drive highest spending on facial skincare services  
+- <span class="label">Quality Focus:</span> Prioritize proven results over experimental features
+- <span class="label">Brand Loyalty:</span> Higher retention rates when satisfaction achieved
+- <span class="label">Service Expectations:</span> Value professional expertise and luxury experience
 
-<strong>## Stakeholder Engagement Strategy Applications</strong>
+<h4>Stakeholder Engagement Strategy Applications</h4>
 
-<strong>Customer Value Proposition Evidence:</strong>
-1. **Experience Positioning:** 35% stress relief motivation supports experience-focused messaging
-2. **Quality Justification:** 70% loyalty rate among stable consumers supports premium positioning  
-3. **Local Advantage:** 30% domestic preference creates competitive opportunity vs. chains
-4. **Multi-benefit Appeal:** Cross-category spending behavior supports comprehensive service packages
+<h5>Customer Value Proposition Evidence:</h5>
+1. <span class="label">Experience Positioning:</span> 35% stress relief motivation supports experience-focused messaging
+2. <span class="label">Quality Justification:</span> 70% loyalty rate among stable consumers supports premium positioning  
+3. <span class="label">Local Advantage:</span> 30% domestic preference creates competitive opportunity vs. chains
+4. <span class="label">Multi-benefit Appeal:</span> Cross-category spending behavior supports comprehensive service packages
 
-<strong>Market Segmentation Strategy:</strong>
-- **Primary Target:** Adults 18-44 seeking stress relief and experience (35% market)
-- **Premium Segment:** Women 55+ with proven high spending patterns
-- **Growth Opportunity:** Men 35-54 emerging as facial skincare market
-- **Research-Heavy:** Millennials requiring information and value demonstration
+<h5>Market Segmentation Strategy:</h5>
+- <span class="label">Primary Target:</span> Adults 18-44 seeking stress relief and experience (35% market)
+- <span class="label">Premium Segment:</span> Women 55+ with proven high spending patterns
+- <span class="label">Growth Opportunity:</span> Men 35-54 emerging as facial skincare market
+- <span class="label">Research-Heavy:</span> Millennials requiring information and value demonstration
 
-<strong>Implementation Readiness Assessment:</strong>
-- **Market Size:** $68.6 billion industry with 5% growth supports investment
-- **Consumer Behavior:** Strong loyalty patterns (70%) indicate program viability  
-- **Economic Environment:** 2.2% income growth supports discretionary spending
-- **Competitive Pressure:** High competition requires differentiation strategies
-- **Technology Support:** Enhances but doesn't replace personal touch
-- **Local Advantage:** Small businesses can compete with personal attention
+<h5>Implementation Readiness Assessment:</h5>
+- <span class="label">Market Size:</span> $68.6 billion industry with 5% growth supports investment
+- <span class="label">Consumer Behavior:</span> Strong loyalty patterns (70%) indicate program viability  
+- <span class="label">Economic Environment:</span> 2.2% income growth supports discretionary spending
+- <span class="label">Competitive Pressure:</span> High competition requires differentiation strategies
+- <span class="label">Technology Support:</span> Enhances but doesn't replace personal touch
+- <span class="label">Local Advantage:</span> Small businesses can compete with personal attention
 
-<strong>Investment Justification:**
-- Industry financial capacity (75.82% gross margins)
+<h5>Investment Justification:</h5>- Industry financial capacity (75.82% gross margins)
 - Strong customer loyalty potential (70% of stable customers)
 - Proven success models at both large and small scale
 - Growing market supporting retention investment ($68.6B, 5% growth)</pre>
@@ -2104,79 +2142,79 @@ Strong financial capacity and urgent market need, balanced against operational c
                         <div class="content-file-preview">
                             <h4>📝 content/evidence-stakeholder-appraisal.txt</h4>
                             <div class="edit-notice">🖊️ Content loaded successfully</div>
-                            <pre><strong># Stakeholder Evidence: Quality Assessment</strong>
+                            <pre><h3>Stakeholder Evidence: Quality Assessment</h3>
 
-<strong>## Source Reliability Assessment</strong>
+<h4>Source Reliability Assessment</h4>
 
-<strong>IBISWorld Beauty Industry Report (2025):</strong>
-- **Reliability:** Very reliable - established commercial research company
-- **Coverage:** Complete $68.6B industry analysis covering 167,000 businesses  
-- **Methodology:** Systematic market research with government data integration
-- **Limitations:** Business-focused perspective may be optimistic about growth
+<h5>IBISWorld Beauty Industry Report (2025):</h5>
+- <span class="label">Reliability:</span> Very reliable - established commercial research company
+- <span class="label">Coverage:</span> Complete $68.6B industry analysis covering 167,000 businesses  
+- <span class="label">Methodology:</span> Systematic market research with government data integration
+- <span class="label">Limitations:</span> Business-focused perspective may be optimistic about growth
 
-<strong>Mintel Personal Care Consumer Report (2025):</strong>
-- **Reliability:** Very reliable - established consumer research company
-- **Coverage:** Large US consumer study across demographic segments
-- **Methodology:** Comprehensive consumer behavior analysis with statistical validation
-- **Limitations:** Focuses on purchasing behavior, may miss service relationship nuances
+<h5>Mintel Personal Care Consumer Report (2025):</h5>
+- <span class="label">Reliability:</span> Very reliable - established consumer research company
+- <span class="label">Coverage:</span> Large US consumer study across demographic segments
+- <span class="label">Methodology:</span> Comprehensive consumer behavior analysis with statistical validation
+- <span class="label">Limitations:</span> Focuses on purchasing behavior, may miss service relationship nuances
 
-<strong>Government Data (Bureau of Labor Statistics):</strong>
-- **Reliability:** Most reliable - unbiased government statistical reporting
-- **Coverage:** Complete industry employment and wage data (NAICS 8121)
-- **Methodology:** Standardized data collection with regulatory oversight
-- **Strengths:** Provides independent validation of industry trends
+<h5>Government Data (Bureau of Labor Statistics):</h5>
+- <span class="label">Reliability:</span> Most reliable - unbiased government statistical reporting
+- <span class="label">Coverage:</span> Complete industry employment and wage data (NAICS 8121)
+- <span class="label">Methodology:</span> Standardized data collection with regulatory oversight
+- <span class="label">Strengths:</span> Provides independent validation of industry trends
 
-<strong>## Evidence Cross-Validation</strong>
+<h4>Evidence Cross-Validation</h4>
 
-<strong>Strong Agreement Patterns:</strong>
-- **Problem Confirmation:** 67% first-visit loss (organizational) matches industry revenue decline (stakeholder)
-- **Solution Validation:** Loyalty program success (case studies) aligns with consumer loyalty potential (70%)
-- **Financial Capacity:** Industry margins (75.82%) support consumer spending data ($768 annual)
-- **Market Opportunity:** Growth trends (5.0%) consistent across multiple sources
+<h5>Strong Agreement Patterns:</h5>
+- <span class="label">Problem Confirmation:</span> 67% first-visit loss (organizational) matches industry revenue decline (stakeholder)
+- <span class="label">Solution Validation:</span> Loyalty program success (case studies) aligns with consumer loyalty potential (70%)
+- <span class="label">Financial Capacity:</span> Industry margins (75.82%) support consumer spending data ($768 annual)
+- <span class="label">Market Opportunity:</span> Growth trends (5.0%) consistent across multiple sources
 
-<strong>Consistency Check:</strong>
-- **Customer Retention Challenge:** Confirmed across scientific, practitioner, organizational, and stakeholder evidence
-- **Loyalty Program Effectiveness:** Supported by research studies, practitioner examples, and market success stories
-- **Financial Viability:** Strong gross margins + consumer spending capacity + proven ROI examples
+<h5>Consistency Check:</h5>
+- <span class="label">Customer Retention Challenge:</span> Confirmed across scientific, practitioner, organizational, and stakeholder evidence
+- <span class="label">Loyalty Program Effectiveness:</span> Supported by research studies, practitioner examples, and market success stories
+- <span class="label">Financial Viability:</span> Strong gross margins + consumer spending capacity + proven ROI examples
 
-<strong>## Stakeholder Representation Assessment</strong>
+<h4>Stakeholder Representation Assessment</h4>
 
-<strong>Customer Stakeholder Coverage:</strong>
-- **Geographic Scope:** National US market data (comprehensive)
-- **Demographic Range:** Multiple age groups and income levels included
-- **Market Segments:** Premium spenders, experience-driven, value-conscious all represented
-- **Sample Quality:** Large-scale research with statistically valid samples
+<h5>Customer Stakeholder Coverage:</h5>
+- <span class="label">Geographic Scope:</span> National US market data (comprehensive)
+- <span class="label">Demographic Range:</span> Multiple age groups and income levels included
+- <span class="label">Market Segments:</span> Premium spenders, experience-driven, value-conscious all represented
+- <span class="label">Sample Quality:</span> Large-scale research with statistically valid samples
 
-<strong>Industry Stakeholder Coverage:**
-- **Business Size Range:** Large corporations (Sephora) to small businesses (Beautiful Co.)
-- **Service Types:** Hair, skincare, lash services, spa treatments covered
-- **Success Examples:** Both established programs (16+ years) and recent implementations
-- **Geographic Distribution:** National trends with local market considerations
+<h5>Industry Stakeholder Coverage:</h5>
+- <span class="label">Business Size Range:</span> Large corporations (Sephora) to small businesses (Beautiful Co.)
+- <span class="label">Service Types:</span> Hair, skincare, lash services, spa treatments covered
+- <span class="label">Success Examples:</span> Both established programs (16+ years) and recent implementations
+- <span class="label">Geographic Distribution:</span> National trends with local market considerations
 
-<strong>## Bias and Limitation Analysis</strong>
+<h4>Bias and Limitation Analysis</h4>
 
-<strong>Potential Biases Identified:**
-- **Success Story Selection:** Case studies show only successful programs, missing failure examples
-- **Industry Publication Bias:** Some sources may promote loyalty programs to support business services
-- **Temporal Limitations:** Post-pandemic data may not reflect long-term patterns
+<h5>Potential Biases Identified:</h5>
+- <span class="label">Success Story Selection:</span> Case studies show only successful programs, missing failure examples
+- <span class="label">Industry Publication Bias:</span> Some sources may promote loyalty programs to support business services
+- <span class="label">Temporal Limitations:</span> Post-pandemic data may not reflect long-term patterns
 
-<strong>Strengths Mitigating Bias:**
-- **Multiple Independent Sources:** Government, academic, and commercial sources provide triangulation
-- **Consistent Findings:** Same conclusions reached through different methodologies
-- **Long-term Data:** IBISWorld provides historical context, not just recent trends
+<h5>Strengths Mitigating Bias:</h5>
+- <span class="label">Multiple Independent Sources:</span> Government, academic, and commercial sources provide triangulation
+- <span class="label">Consistent Findings:</span> Same conclusions reached through different methodologies
+- <span class="label">Long-term Data:</span> IBISWorld provides historical context, not just recent trends
 
-<strong>## Confidence Assessment by Evidence Type</strong>
+<h4>Confidence Assessment by Evidence Type</h4>
 
-<strong>High Confidence Areas:</strong>
-- **Market Opportunity:** Industry size, growth, and customer loyalty potential well-documented
-- **Problem Validation:** Customer retention challenges confirmed across all evidence types
-- **Success Potential:** Multiple proven examples at different business scales
+<h5>High Confidence Areas:</h5>
+- <span class="label">Market Opportunity:</span> Industry size, growth, and customer loyalty potential well-documented
+- <span class="label">Problem Validation:</span> Customer retention challenges confirmed across all evidence types
+- <span class="label">Success Potential:</span> Multiple proven examples at different business scales
 
-<strong>Medium Confidence Areas:**
-- **Implementation Specifics:** General success factors identified but detailed implementation guidance limited
-- **ROI Predictions:** Range of outcomes shown but specific return predictions vary
+<h5>Medium Confidence Areas:</h5>
+- <span class="label">Implementation Specifics:</span> General success factors identified but detailed implementation guidance limited
+- <span class="label">ROI Predictions:</span> Range of outcomes shown but specific return predictions vary
 
-<strong>Overall Stakeholder Evidence Rating:** High quality with strong triangulation across multiple reliable sources</pre>
+<h5>Overall Stakeholder Evidence Rating:</h5>High quality with strong triangulation across multiple reliable sources</pre>
                         </div>
                     </div>
                 </div>
@@ -2184,413 +2222,403 @@ Strong financial capacity and urgent market need, balanced against operational c
                 <!-- TAB 3: Aggregation -->
                 <div class="tab-panel" id="tab-3">
                     <h2>⚖️ Evidence Aggregation</h2>
-                    <p><strong>Synthesis Process:</strong> Weigh and combine evidence from multiple sources to form conclusions.</p>
-
-                    <div class="milestone-tracker">
-                        <h4>📋 Milestone 4 Checkpoint (Week 12)</h4>
-                        <ul class="checklist">
-                            <li>Evidence synthesis across all four types completed</li>
-                            <li>Solution design based on evidence analysis</li>
-                            <li>Implementation plan developed</li>
-                            <li>Risk assessment and mitigation strategies</li>
-                        </ul>
-                    </div>
+                    <p><h5>Synthesis Process:</h5> Weigh and combine evidence from multiple sources to form conclusions.</p>
 
                     <div class="content-file-preview">
                         <h4>📝 content/synthesis-integration.txt</h4>
                         <div class="edit-notice">🖊️ Content loaded successfully</div>
-                        <pre id="evidence-synthesis-content"><strong># Evidence Integration & Synthesis</strong>
+                        <pre id="evidence-synthesis-content"><h3>Evidence Integration & Synthesis</h3>
 
-<strong>## Evidence Summary by Type</strong>
+<h4>Evidence Summary by Type</h4>
 
-<strong>### Scientific Evidence Summary</strong>
+<h5>Scientific Evidence Summary</h5>
 
 **Key Finding 1: Non-tiered loyalty programs increase CLV by 29.5% (Hair salon study)**
-- **Source Quality:** High (Grade A)
-- **Relevance to Context:** Very high - direct beauty service context with 5,544 customers over 30 months
-- **Certainty Level:** High confidence - rigorous methodology accounting for selection bias
+- <span class="label">Source Quality:</span> High (Grade A)
+- <span class="label">Relevance to Context:</span> Very high - direct beauty service context with 5,544 customers over 30 months
+- <span class="label">Certainty Level:</span> High confidence - rigorous methodology accounting for selection bias
 
 **Key Finding 2: Brand attachment drives strongest loyalty outcomes (Meta-analysis)**
-- **Source Quality:** High (Grade A-)
-- **Relevance to Context:** Good - 588 estimates from 290 studies over 24 years across service industries
-- **Certainty Level:** High confidence - comprehensive meta-analytic approach
+- <span class="label">Source Quality:</span> High (Grade A-)
+- <span class="label">Relevance to Context:</span> Good - 588 estimates from 290 studies over 24 years across service industries
+- <span class="label">Certainty Level:</span> High confidence - comprehensive meta-analytic approach
 
 **Key Finding 3: Loyalty programs outperform short-term promotions (Online retail study)**
-- **Source Quality:** Good (Grade B+)
-- **Relevance to Context:** Moderate - different service context but solid methodology
-- **Certainty Level:** Moderate confidence - single study with 1,058 customers
+- <span class="label">Source Quality:</span> Good (Grade B+)
+- <span class="label">Relevance to Context:</span> Moderate - different service context but solid methodology
+- <span class="label">Certainty Level:</span> Moderate confidence - single study with 1,058 customers
 
-**Overall Scientific Evidence Strength:** High
+<span class="label">Overall Scientific Evidence Strength:</span> High
 
-<strong>### Practitioner Evidence Summary</strong>
+<h5>Practitioner Evidence Summary</h5>
 
 **Key Insight 1: Personal touches drive 95% retention rates (Case study evidence)**
-- **Source Credibility:** High - Both Sephora (25M global members) and Beautiful Co. (small salon) achieved 95% retention
-- **Context Similarity:** High - beauty industry focus, service relationship model
-- **Implementation Detail:** Comprehensive - detailed strategies from both large and small scale implementations
+- <span class="label">Source Credibility:</span> High - Both Sephora (25M global members) and Beautiful Co. (small salon) achieved 95% retention
+- <span class="label">Context Similarity:</span> High - beauty industry focus, service relationship model
+- <span class="label">Implementation Detail:</span> Comprehensive - detailed strategies from both large and small scale implementations
 
 **Key Insight 2: Consistent follow-up communication is critical (Interview evidence)**
-- **Source Credibility:** Medium-High - Direct experience from practicing estheticians (Molly Vazales, Diana Rosinski)
-- **Context Similarity:** Very high - identical industry context and customer challenges
-- **Implementation Detail:** Good - specific protocols like 24-48 hour follow-up, scalp massages, loyalty cards
+- <span class="label">Source Credibility:</span> Medium-High - Direct experience from practicing estheticians (Molly Vazales, Diana Rosinski)
+- <span class="label">Context Similarity:</span> Very high - identical industry context and customer challenges
+- <span class="label">Implementation Detail:</span> Good - specific protocols like 24-48 hour follow-up, scalp massages, loyalty cards
 
 **Key Insight 3: Small business can compete with personal attention (Cross-case analysis)**
-- **Source Credibility:** High - Multiple success examples across different scales
-- **Context Similarity:** Perfect match - local beauty service context
-- **Implementation Detail:** Good - actionable strategies documented
+- <span class="label">Source Credibility:</span> High - Multiple success examples across different scales
+- <span class="label">Context Similarity:</span> Perfect match - local beauty service context
+- <span class="label">Implementation Detail:</span> Good - actionable strategies documented
 
-**Overall Practitioner Evidence Strength:** High
+<span class="label">Overall Practitioner Evidence Strength:</span> High
 
-<strong>### Organizational Evidence Summary</strong>
+<h5>Organizational Evidence Summary</h5>
 
 **Key Data Point 1: Industry revenue decline -6.0% while employment grows +1.8%**
-- **Data Quality:** High - Government data (BLS) plus industry analysis (Bizminer)
-- **Trend Direction:** Problem is worsening - efficiency crisis requiring retention focus
-- **Decision Relevance:** High - demonstrates urgency and validates problem existence
+- <span class="label">Data Quality:</span> High - Government data (BLS) plus industry analysis (Bizminer)
+- <span class="label">Trend Direction:</span> Problem is worsening - efficiency crisis requiring retention focus
+- <span class="label">Decision Relevance:</span> High - demonstrates urgency and validates problem existence
 
 **Key Data Point 2: 67% of first-time clients don't return after initial visit**
-- **Data Quality:** Medium-High - Industry benchmarks from multiple sources
-- **Trend Direction:** Stable but critical problem
-- **Decision Relevance:** High - quantifies the retention challenge magnitude
+- <span class="label">Data Quality:</span> Medium-High - Industry benchmarks from multiple sources
+- <span class="label">Trend Direction:</span> Stable but critical problem
+- <span class="label">Decision Relevance:</span> High - quantifies the retention challenge magnitude
 
 **Key Data Point 3: Strong financial capacity with 75.82% gross margins**
-- **Data Quality:** High - Comprehensive industry financial tracking
-- **Trend Direction:** Stable capacity despite cost pressures
-- **Decision Relevance:** High - confirms ability to invest in loyalty programs
+- <span class="label">Data Quality:</span> High - Comprehensive industry financial tracking
+- <span class="label">Trend Direction:</span> Stable capacity despite cost pressures
+- <span class="label">Decision Relevance:</span> High - confirms ability to invest in loyalty programs
 
-**Overall Organizational Evidence Strength:** High
+<span class="label">Overall Organizational Evidence Strength:</span> High
 
-<strong>### Stakeholder Evidence Summary</strong>
+<h5>Stakeholder Evidence Summary</h5>
 
 **Key Stakeholder Insight 1: 70% of financially stable customers maintain brand loyalty**
-- **Representative Level:** High - Large-scale Mintel consumer research across demographics
-- **Bias Assessment:** Low bias - Independent market research with validated methodology
-- **Implementation Implication:** Target financially stable customer segments for maximum retention ROI
+- <span class="label">Representative Level:</span> High - Large-scale Mintel consumer research across demographics
+- <span class="label">Bias Assessment:</span> Low bias - Independent market research with validated methodology
+- <span class="label">Implementation Implication:</span> Target financially stable customer segments for maximum retention ROI
 
 **Key Stakeholder Insight 2: 35% of adults 18-44 use beauty services for stress relief**
-- **Representative Level:** High - National consumer behavior study
-- **Bias Assessment:** Low bias - Independent research findings
-- **Implementation Implication:** Position loyalty program around experiential benefits, not just transactional rewards
+- <span class="label">Representative Level:</span> High - National consumer behavior study
+- <span class="label">Bias Assessment:</span> Low bias - Independent research findings
+- <span class="label">Implementation Implication:</span> Position loyalty program around experiential benefits, not just transactional rewards
 
 **Key Stakeholder Insight 3: Industry leaders achieve 80% of sales from loyalty members**
-- **Representative Level:** High - Multiple successful case studies (Sephora, Ulta, Beautiful Co.)
-- **Bias Assessment:** Some selection bias - only successful programs highlighted
-- **Implementation Implication:** Loyalty programs are proven effective at scale across business sizes
+- <span class="label">Representative Level:</span> High - Multiple successful case studies (Sephora, Ulta, Beautiful Co.)
+- <span class="label">Bias Assessment:</span> Some selection bias - only successful programs highlighted
+- <span class="label">Implementation Implication:</span> Loyalty programs are proven effective at scale across business sizes
 
-**Overall Stakeholder Evidence Strength:** High
+<span class="label">Overall Stakeholder Evidence Strength:</span> High
 
-<strong>## Cross-Evidence Analysis</strong>
+<h4>Cross-Evidence Analysis</h4>
 
-<strong>### Convergent Findings (Where Evidence Types Agree)</strong>
+<h5>Convergent Findings (Where Evidence Types Agree)</h5>
 
-<strong>#### Strong Convergence - High Confidence</strong>
-**Finding:** Personal relationships are the critical success factor for beauty service loyalty
-**Supporting Evidence Types:** Scientific (brand attachment drives strongest loyalty), Practitioner (95% retention through personal touches), Stakeholder (70% loyalty potential through experience focus)
-**Confidence Level:** High - All evidence types consistently support relationship-based approach
-**Implication:** Prioritize staff training on relationship building over technology or promotional strategies
+<h5>Strong Convergence - High Confidence</h5>
+<span class="label">Finding:</span> Personal relationships are the critical success factor for beauty service loyalty
+<span class="label">Supporting Evidence Types:</span> Scientific (brand attachment drives strongest loyalty), Practitioner (95% retention through personal touches), Stakeholder (70% loyalty potential through experience focus)
+<span class="label">Confidence Level:</span> High - All evidence types consistently support relationship-based approach
+<span class="label">Implication:</span> Prioritize staff training on relationship building over technology or promotional strategies
 
-**Finding:** Non-tiered loyalty programs outperform complex tiered systems in beauty services
-**Supporting Evidence Types:** Scientific (29.5% CLV increase from non-tiered programs), Practitioner (simple systems easier to explain and maintain), Organizational (administrative complexity costs exceed benefits)
-**Confidence Level:** High - Consistent across all evidence types
-**Implication:** Implement simple point-based system without tiers or complicated rules
+<span class="label">Finding:</span> Non-tiered loyalty programs outperform complex tiered systems in beauty services
+<span class="label">Supporting Evidence Types:</span> Scientific (29.5% CLV increase from non-tiered programs), Practitioner (simple systems easier to explain and maintain), Organizational (administrative complexity costs exceed benefits)
+<span class="label">Confidence Level:</span> High - Consistent across all evidence types
+<span class="label">Implication:</span> Implement simple point-based system without tiers or complicated rules
 
-**Finding:** Financial ROI is achievable within 6-12 months with proper implementation
-**Supporting Evidence Types:** Scientific (30-month study showed sustained benefits), Practitioner (2-3 months for initial results, 6+ months for full benefits), Organizational (industry margin analysis supports ROI calculation)
-**Confidence Level:** High - Timeline expectations align across evidence types
-**Implication:** Set realistic expectations with stakeholders and measure progress incrementally
+<span class="label">Finding:</span> Financial ROI is achievable within 6-12 months with proper implementation
+<span class="label">Supporting Evidence Types:</span> Scientific (30-month study showed sustained benefits), Practitioner (2-3 months for initial results, 6+ months for full benefits), Organizational (industry margin analysis supports ROI calculation)
+<span class="label">Confidence Level:</span> High - Timeline expectations align across evidence types
+<span class="label">Implication:</span> Set realistic expectations with stakeholders and measure progress incrementally
 
-<strong>### Divergent Findings (Where Evidence Types Disagree)</strong>
+<h5>Divergent Findings (Where Evidence Types Disagree)</h5>
 
-<strong>#### Major Divergence</strong>
-**Issue:** Technology integration importance and complexity requirements
-**Scientific Evidence Says:** Technology can enhance loyalty programs but is not the primary driver
-**Practitioner Evidence Says:** Simple technology (email, basic tracking) is sufficient; complex systems create barriers
-**Organizational Evidence Says:** Technology investment may be necessary for competitive advantage
-**Stakeholder Evidence Says:** Customers value human interaction over technological sophistication
+<h5>Major Divergence</h5>
+<span class="label">Issue:</span> Technology integration importance and complexity requirements
+<span class="label">Scientific Evidence Says:</span> Technology can enhance loyalty programs but is not the primary driver
+<span class="label">Practitioner Evidence Says:</span> Simple technology (email, basic tracking) is sufficient; complex systems create barriers
+<span class="label">Organizational Evidence Says:</span> Technology investment may be necessary for competitive advantage
+<span class="label">Stakeholder Evidence Says:</span> Customers value human interaction over technological sophistication
 
-**Possible Explanations for Disagreement:**
+<span class="label">Possible Explanations for Disagreement:</span>
 - Context differences: Large-scale studies may include businesses where technology is more critical
 - Timing factors: Technology importance may increase over time as customer expectations evolve
 - Bias influences: Practitioners may undervalue technology due to implementation complexity concerns
 - Quality differences: Some technology studies may include poorly implemented systems
 
-**Resolution Approach:** Start with minimal technology (email tracking, simple CRM) and scale up based on demonstrated value and customer response
+<span class="label">Resolution Approach:</span> Start with minimal technology (email tracking, simple CRM) and scale up based on demonstrated value and customer response
 
-<strong>#### Minor Divergence</strong>
-**Issue:** Optimal frequency of customer follow-up communication
-**Resolution Approach:** Test different frequencies (24-48 hours vs. weekly) and adjust based on customer response and staff capacity
+<h5>Minor Divergence</h5>
+<span class="label">Issue:</span> Optimal frequency of customer follow-up communication
+<span class="label">Resolution Approach:</span> Test different frequencies (24-48 hours vs. weekly) and adjust based on customer response and staff capacity
 
-<strong>### Evidence Gaps</strong>
+<h5>Evidence Gaps</h5>
 
-<strong>#### Critical Gaps</strong>
-**Gap 1:** Specific customer response variation by demographic segment within beauty services
-- **Impact on Decision:** Limits ability to customize approach for different customer groups
-- **Mitigation Strategy:** Implement pilot program with measurement by customer segment
+<h5>Critical Gaps</h5>
+<span class="label">Gap 1:</span> Specific customer response variation by demographic segment within beauty services
+- <span class="label">Impact on Decision:</span> Limits ability to customize approach for different customer groups
+- <span class="label">Mitigation Strategy:</span> Implement pilot program with measurement by customer segment
 
-**Gap 2:** Long-term sustainability of loyalty program effectiveness (beyond 30 months)
-- **Impact on Decision:** Uncertainty about whether benefits decline over time
-- **Mitigation Strategy:** Plan for program evolution and periodic refresh based on customer feedback
+<span class="label">Gap 2:</span> Long-term sustainability of loyalty program effectiveness (beyond 30 months)
+- <span class="label">Impact on Decision:</span> Uncertainty about whether benefits decline over time
+- <span class="label">Mitigation Strategy:</span> Plan for program evolution and periodic refresh based on customer feedback
 
-<strong>#### Minor Gaps</strong>
-**Gap:** Optimal reward structure and point values for beauty services
-**Mitigation Strategy:** Start with industry standard ratios and adjust based on customer response
+<h5>Minor Gaps</h5>
+<span class="label">Gap:</span> Optimal reward structure and point values for beauty services
+<span class="label">Mitigation Strategy:</span> Start with industry standard ratios and adjust based on customer response
 
-<strong>## Evidence-Based Problem Refinement</strong>
+<h4>Evidence-Based Problem Refinement</h4>
 
-<strong>### Original Problem Statement</strong>
+<h5>Original Problem Statement</h5>
 Beauty service business struggling with customer retention and revenue optimization
 
-<strong>### Evidence-Refined Problem Statement</strong>
+<h5>Evidence-Refined Problem Statement</h5>
 Beauty service business experiencing industry-wide efficiency crisis (revenue declining while employment grows) requiring loyalty program implementation to achieve 29.5% CLV increase and 75% customer retention through relationship-based, non-tiered approach targeting experience-motivated customers
 
-**Key Refinements:**
-- **Scope Changes:** Problem is industry-wide crisis, not isolated business issue
-- **Root Cause Updates:** Efficiency crisis caused by failure to implement retention strategies, not pricing or service quality issues
-- **Impact Reassessment:** Solution can achieve specific, measurable improvements (29.5% CLV increase, 75% retention rate)
-- **Stakeholder Effects:** 70% of customer base shows high loyalty potential, requiring targeted relationship approach
+<span class="label">Key Refinements:</span>
+- <span class="label">Scope Changes:</span> Problem is industry-wide crisis, not isolated business issue
+- <span class="label">Root Cause Updates:</span> Efficiency crisis caused by failure to implement retention strategies, not pricing or service quality issues
+- <span class="label">Impact Reassessment:</span> Solution can achieve specific, measurable improvements (29.5% CLV increase, 75% retention rate)
+- <span class="label">Stakeholder Effects:</span> 70% of customer base shows high loyalty potential, requiring targeted relationship approach
 
-<strong>## Integrated Evidence Assessment</strong>
+<h4>Integrated Evidence Assessment</h4>
 
-<strong>### Overall Evidence Quality</strong>
+<h5>Overall Evidence Quality</h5>
 
-<strong>#### Evidence Strength by Decision Component</strong>
-**Problem Definition:** High - All evidence types consistently validate retention challenges and industry crisis
+<h5>Evidence Strength by Decision Component</h5>
+<span class="label">Problem Definition:</span> High - All evidence types consistently validate retention challenges and industry crisis
 - Strongest Supporting Evidence: Organizational evidence (government data, industry analysis)
 - Evidence Quality: High
 
-**Solution Design:** High - Strong convergence on relationship-based, non-tiered approach
+<span class="label">Solution Design:</span> High - Strong convergence on relationship-based, non-tiered approach
 - Strongest Supporting Evidence: Scientific evidence (29.5% CLV increase study)
 - Evidence Quality: High
 
-**Implementation Approach:** Medium-High - Good guidance with some areas requiring local testing
+<span class="label">Implementation Approach:</span> Medium-High - Good guidance with some areas requiring local testing
 - Strongest Supporting Evidence: Practitioner evidence (detailed success strategies)
 - Evidence Quality: Medium-High
 
-**Success Prediction:** Medium-High - Strong evidence for effectiveness with some uncertainty on timeline
+<span class="label">Success Prediction:</span> Medium-High - Strong evidence for effectiveness with some uncertainty on timeline
 - Strongest Supporting Evidence: Scientific evidence (sustained 30-month benefits)
 - Evidence Quality: Medium-High
 
-<strong>#### Evidence-Based Confidence Assessment</strong>
-**Overall Confidence in Decision:** High
+<h5>Evidence-Based Confidence Assessment</h5>
+<span class="label">Overall Confidence in Decision:</span> High
 
-**High Confidence Areas:** Problem existence, solution effectiveness, relationship focus importance
-**Medium Confidence Areas:** Specific implementation timeline, technology integration requirements
-**Low Confidence Areas:** Customer segment-specific response variation, long-term program evolution needs
+<span class="label">High Confidence Areas:</span> Problem existence, solution effectiveness, relationship focus importance
+<span class="label">Medium Confidence Areas:</span> Specific implementation timeline, technology integration requirements
+<span class="label">Low Confidence Areas:</span> Customer segment-specific response variation, long-term program evolution needs
 
-<strong>### Risk Assessment Based on Evidence</strong>
+<h5>Risk Assessment Based on Evidence</h5>
 
-<strong>#### Risks with Strong Evidence Support</strong>
-**Risk 1:** Implementation complexity leading to staff resistance
-- **Likelihood:** Medium based on practitioner evidence
-- **Impact:** High based on relationship dependency
-- **Mitigation Strategy:** Gradual implementation with extensive staff training and support
+<h5>Risks with Strong Evidence Support</h5>
+<span class="label">Risk 1:</span> Implementation complexity leading to staff resistance
+- <span class="label">Likelihood:</span> Medium based on practitioner evidence
+- <span class="label">Impact:</span> High based on relationship dependency
+- <span class="label">Mitigation Strategy:</span> Gradual implementation with extensive staff training and support
 
-**Risk 2:** Customer response variation exceeding expectations
-- **Likelihood:** Medium based on stakeholder evidence gaps
-- **Impact:** Medium based on ability to adjust approach
-- **Mitigation Strategy:** Pilot program with measurement and adjustment capability
+<span class="label">Risk 2:</span> Customer response variation exceeding expectations
+- <span class="label">Likelihood:</span> Medium based on stakeholder evidence gaps
+- <span class="label">Impact:</span> Medium based on ability to adjust approach
+- <span class="label">Mitigation Strategy:</span> Pilot program with measurement and adjustment capability
 
-<strong>#### Risks with Weak Evidence Support</strong>
-**Risk:** Technology system failures disrupting customer experience
-- **Evidence Uncertainty:** Limited evidence on technology dependency in beauty service loyalty
-- **Approach:** Start with minimal technology and expand gradually based on stability
+<h5>Risks with Weak Evidence Support</h5>
+<span class="label">Risk:</span> Technology system failures disrupting customer experience
+- <span class="label">Evidence Uncertainty:</span> Limited evidence on technology dependency in beauty service loyalty
+- <span class="label">Approach:</span> Start with minimal technology and expand gradually based on stability
 
-<strong>## Evidence-Based Recommendations</strong>
+<h4>Evidence-Based Recommendations</h4>
 
-<strong>### Recommendation 1: Implement Non-Tiered Relationship-Based Loyalty Program</strong>
-**Supporting Evidence Types:** Scientific, Practitioner, Organizational, Stakeholder
-**Confidence Level:** High
-**Implementation Priority:** High
+<h5>Recommendation 1: Implement Non-Tiered Relationship-Based Loyalty Program</h5>
+<span class="label">Supporting Evidence Types:</span> Scientific, Practitioner, Organizational, Stakeholder
+<span class="label">Confidence Level:</span> High
+<span class="label">Implementation Priority:</span> High
 
-**Evidence Basis:**
-- **Scientific Support:** 29.5% CLV increase from non-tiered programs in similar service context
-- **Practitioner Support:** 95% retention achievable through relationship focus and simple systems
-- **Organizational Support:** Strong financial capacity (75.82% margins) and urgent need (revenue declining)
-- **Stakeholder Support:** 70% loyalty potential among stable customers, 35% experiential motivation
+<span class="label">Evidence Basis:</span>
+- <span class="label">Scientific Support:</span> 29.5% CLV increase from non-tiered programs in similar service context
+- <span class="label">Practitioner Support:</span> 95% retention achievable through relationship focus and simple systems
+- <span class="label">Organizational Support:</span> Strong financial capacity (75.82% margins) and urgent need (revenue declining)
+- <span class="label">Stakeholder Support:</span> 70% loyalty potential among stable customers, 35% experiential motivation
 
-<strong>### Recommendation 2: Focus on Experience-Driven Benefits Over Transactional Rewards</strong>
-**Supporting Evidence Types:** Stakeholder, Practitioner, Scientific
-**Confidence Level:** High
-**Implementation Priority:** High
+<h5>Recommendation 2: Focus on Experience-Driven Benefits Over Transactional Rewards</h5>
+<span class="label">Supporting Evidence Types:</span> Stakeholder, Practitioner, Scientific
+<span class="label">Confidence Level:</span> High
+<span class="label">Implementation Priority:</span> High
 
-**Evidence Basis:**
-- **Scientific Support:** Brand attachment drives stronger loyalty than transactional benefits
-- **Practitioner Support:** Personal touches and experience enhancements achieve highest retention
-- **Stakeholder Support:** 35% of customers motivated by stress relief and mood enhancement
+<span class="label">Evidence Basis:</span>
+- <span class="label">Scientific Support:</span> Brand attachment drives stronger loyalty than transactional benefits
+- <span class="label">Practitioner Support:</span> Personal touches and experience enhancements achieve highest retention
+- <span class="label">Stakeholder Support:</span> 35% of customers motivated by stress relief and mood enhancement
 
-<strong>### Recommendation 3: Target Financially Stable Customer Segments Initially</strong>
-**Supporting Evidence Types:** Stakeholder, Organizational
-**Confidence Level:** Medium-High
-**Implementation Priority:** Medium
+<h5>Recommendation 3: Target Financially Stable Customer Segments Initially</h5>
+<span class="label">Supporting Evidence Types:</span> Stakeholder, Organizational
+<span class="label">Confidence Level:</span> Medium-High
+<span class="label">Implementation Priority:</span> Medium
 
-**Evidence Basis:**
-- **Stakeholder Support:** 70% loyalty potential among financially stable customers
-- **Organizational Support:** Resource efficiency and higher ROI from stable customer base
+<span class="label">Evidence Basis:</span>
+- <span class="label">Stakeholder Support:</span> 70% loyalty potential among financially stable customers
+- <span class="label">Organizational Support:</span> Resource efficiency and higher ROI from stable customer base
 
-<strong>## Evidence Limitations and Uncertainties</strong>
+<h4>Evidence Limitations and Uncertainties</h4>
 
-<strong>### Key Limitations Affecting Recommendations</strong>
+<h5>Key Limitations Affecting Recommendations</h5>
 - Limited evidence on customer segment-specific response patterns within beauty services
 - Uncertainty about long-term program evolution requirements beyond initial 30-month period
 - Gaps in technology integration best practices for small beauty service businesses
 
-<strong>### Uncertainties Requiring Monitoring</strong>
+<h5>Uncertainties Requiring Monitoring</h5>
 - Customer response variation by demographic segment
 - Staff adaptation to relationship-building requirements
 - Technology integration needs as program scales
 
-<strong>### Future Evidence Needs</strong>
+<h5>Future Evidence Needs</h5>
 - Customer segment analysis during implementation
 - Staff effectiveness measurement and training optimization
 - Technology integration success tracking and optimization opportunities
 
-<strong>## Cross-Evidence Analysis</strong>
+<h4>Cross-Evidence Analysis</h4>
 
-<strong>### Strong Convergence - High Confidence Findings</strong>
+<h5>Strong Convergence - High Confidence Findings</h5>
 
-**Finding:** Loyalty programs significantly improve customer retention and CLV in beauty services
-**Supporting Evidence Types:** Scientific (29.5% CLV increase), Practitioner (95% retention achieved), Organizational (67% attrition problem confirmed), Stakeholder (70% customer loyalty potential)
-**Confidence Level:** High - Multiple independent evidence sources reach same conclusion
-**Implication:** Strong business case exists for loyalty program implementation
+<span class="label">Finding:</span> Loyalty programs significantly improve customer retention and CLV in beauty services
+<span class="label">Supporting Evidence Types:</span> Scientific (29.5% CLV increase), Practitioner (95% retention achieved), Organizational (67% attrition problem confirmed), Stakeholder (70% customer loyalty potential)
+<span class="label">Confidence Level:</span> High - Multiple independent evidence sources reach same conclusion
+<span class="label">Implication:</span> Strong business case exists for loyalty program implementation
 
-**Finding:** Personal relationships are the foundation of beauty service loyalty
-**Supporting Evidence Types:** Scientific (brand attachment meta-analysis), Practitioner (personal touch strategies), Stakeholder (experiential service motivation)
-**Confidence Level:** High - Consistent across all evidence types
-**Implication:** Technology should support, not replace, personal service delivery
+<span class="label">Finding:</span> Personal relationships are the foundation of beauty service loyalty
+<span class="label">Supporting Evidence Types:</span> Scientific (brand attachment meta-analysis), Practitioner (personal touch strategies), Stakeholder (experiential service motivation)
+<span class="label">Confidence Level:</span> High - Consistent across all evidence types
+<span class="label">Implication:</span> Technology should support, not replace, personal service delivery
 
-**Finding:** Non-tiered programs work better than complex tiered structures for service businesses
-**Supporting Evidence Types:** Scientific (hair salon study), Practitioner (simple loyalty card success), Organizational (small business capacity)
-**Confidence Level:** High - Direct evidence from comparable business context
-**Implication:** Simple program design optimal for implementation
+<span class="label">Finding:</span> Non-tiered programs work better than complex tiered structures for service businesses
+<span class="label">Supporting Evidence Types:</span> Scientific (hair salon study), Practitioner (simple loyalty card success), Organizational (small business capacity)
+<span class="label">Confidence Level:</span> High - Direct evidence from comparable business context
+<span class="label">Implication:</span> Simple program design optimal for implementation
 
-<strong>### Moderate Convergence - Medium Confidence Findings</strong>
+<h5>Moderate Convergence - Medium Confidence Findings</h5>
 
-**Finding:** ROI timeline expectations of 6-12 months for significant results
-**Supporting Evidence Types:** Practitioner (2-3 months initial, 6+ months full results), Scientific (30-month study period), Organizational (industry financial cycles)
-**Variation Notes:** Timeline estimates vary by business size and implementation quality
-**Implication:** Set realistic expectations and maintain consistent implementation
+<span class="label">Finding:</span> ROI timeline expectations of 6-12 months for significant results
+<span class="label">Supporting Evidence Types:</span> Practitioner (2-3 months initial, 6+ months full results), Scientific (30-month study period), Organizational (industry financial cycles)
+<span class="label">Variation Notes:</span> Timeline estimates vary by business size and implementation quality
+<span class="label">Implication:</span> Set realistic expectations and maintain consistent implementation
 
-<strong>### Evidence-Based Solution Design</strong>
+<h5>Evidence-Based Solution Design</h5>
 
-**Solution Name:** Beauty Service Customer Retention & Loyalty Program
+<span class="label">Solution Name:</span> Beauty Service Customer Retention & Loyalty Program
 
-**Core Components (Evidence-Based):**
-1. **Non-Tiered Loyalty Program:** Simple point-based system (Scientific evidence: 29.5% CLV increase)
-2. **Personal Relationship Focus:** Staff training on connection-building (Practitioner evidence: 95% retention achievable)
-3. **Consistent Follow-Up System:** 24-48 hour communication protocol (Practitioner evidence: critical success factor)
-4. **Experience-Driven Benefits:** Stress relief and mood enhancement positioning (Stakeholder evidence: 35% motivation)
+<span class="label">Core Components (Evidence-Based):</span>
+1. <span class="label">Non-Tiered Loyalty Program:</span> Simple point-based system (Scientific evidence: 29.5% CLV increase)
+2. <span class="label">Personal Relationship Focus:</span> Staff training on connection-building (Practitioner evidence: 95% retention achievable)
+3. <span class="label">Consistent Follow-Up System:</span> 24-48 hour communication protocol (Practitioner evidence: critical success factor)
+4. <span class="label">Experience-Driven Benefits:</span> Stress relief and mood enhancement positioning (Stakeholder evidence: 35% motivation)
 
-**Evidence-Based Targets:**
-- **Customer Retention:** Improve from current 40% to 75% (based on Beautiful Co. case study)
-- **Customer Lifetime Value:** Increase by 29.5% (based on hair salon scientific study)
-- **Visit Frequency:** Increase from baseline through enhanced engagement
-- **Financial ROI:** Break-even within 6-8 months (based on industry margin analysis)
+<span class="label">Evidence-Based Targets:</span>
+- <span class="label">Customer Retention:</span> Improve from current 40% to 75% (based on Beautiful Co. case study)
+- <span class="label">Customer Lifetime Value:</span> Increase by 29.5% (based on hair salon scientific study)
+- <span class="label">Visit Frequency:</span> Increase from baseline through enhanced engagement
+- <span class="label">Financial ROI:</span> Break-even within 6-8 months (based on industry margin analysis)
 
-<strong>## Implementation Confidence Assessment</strong>
+<h4>Implementation Confidence Assessment</h4>
 
-**High Confidence Implementation Elements:**
+<span class="label">High Confidence Implementation Elements:</span>
 - Personal service enhancements (staff training, follow-up protocols)
 - Simple loyalty program structure (email-based, non-tiered)
 - Customer segmentation approach (financially stable customers, experience-seekers)
 
-**Medium Confidence Elements:**
+<span class="label">Medium Confidence Elements:</span>
 - Specific timeline for ROI achievement
 - Technology integration requirements
 - Exact reward structure optimization
 
-**Risk Mitigation Strategies:**
+<span class="label">Risk Mitigation Strategies:</span>
 - Start with service improvements before formal program launch
 - Implement gradual rollout with measurement at each phase
 - Maintain flexibility to adjust based on initial customer response
 
-<strong>## Evidence Quality Summary</strong>
+<h4>Evidence Quality Summary</h4>
 
-**Strongest Evidence Support:** Problem existence and loyalty program effectiveness
-**Good Evidence Support:** Implementation strategies and success factors
-**Areas Needing Monitoring:** Specific outcomes timeline and customer response variation
+<span class="label">Strongest Evidence Support:</span> Problem existence and loyalty program effectiveness
+<span class="label">Good Evidence Support:</span> Implementation strategies and success factors
+<span class="label">Areas Needing Monitoring:</span> Specific outcomes timeline and customer response variation
 
-**Overall Evidence-Based Recommendation:** Implement comprehensive beauty service loyalty program focusing on personal relationships, non-tiered structure, and experience-driven benefits, targeting 29.5% CLV increase and 75% customer retention rate within 12 months.</pre>
+<span class="label">Overall Evidence-Based Recommendation:</span> Implement comprehensive beauty service loyalty program focusing on personal relationships, non-tiered structure, and experience-driven benefits, targeting 29.5% CLV increase and 75% customer retention rate within 12 months.</pre>
                     </div>
                 </div>
 
                 <!-- TAB 4: Application -->
                 <div class="tab-panel" id="tab-4">
                     <h2>🚀 Application</h2>
-                    <p><strong>Implementation Planning:</strong> Put the evidence-based solution into practice.</p>
+                    <p><h5>Implementation Planning:</h5> Put the evidence-based solution into practice.</p>
 
                     <div class="content-file-preview">
                         <h4>📝 content/application-implementation.txt</h4>
                         <div class="edit-notice">🖊️ Content loaded successfully</div>
-                        <pre><strong># Application: Implementation Plan</strong>
+                        <pre><h3>Application: Implementation Plan</h3>
 
-<strong>## Evidence-Based Solution Design</strong>
+<h4>Evidence-Based Solution Design</h4>
 
-<strong>Solution Name:** Beauty Service Loyalty & Retention Program
-**Evidence Foundation:** Based on scientific studies showing 29.5% CLV increase, practitioner success strategies, organizational capacity analysis, and stakeholder loyalty potential (70%)
+<h5>Solution Name:</h5>Beauty Service Loyalty & Retention Program
+<span class="label">Evidence Foundation:</span> Based on scientific studies showing 29.5% CLV increase, practitioner success strategies, organizational capacity analysis, and stakeholder loyalty potential (70%)
 
-<strong>Core Components:**
-1. **Non-Tiered Loyalty Program** - Based on hair salon study showing superior results
-2. **Personal Relationship Focus** - Based on practitioner evidence (95% retention achievable)
-3. **Follow-up Communication System** - Consistent across all successful case studies
-4. **Service Quality Excellence** - Foundation requirement from all evidence types
+<h5>Core Components:</h5>
+1. Non-Tiered Loyalty Program - Based on hair salon study showing superior results
+2. Personal Relationship Focus - Based on practitioner evidence (95% retention achievable)
+3. Follow-up Communication System - Consistent across all successful case studies
+4. Service Quality Excellence - Foundation requirement from all evidence types
 
-<strong>## Implementation Phases</strong>
+<h4>Implementation Phases</h4>
 
-<strong>Phase 1: Foundation & Preparation (Months 1-2)</strong>
+<h5>Phase 1: Foundation & Preparation (Months 1-2)</h5>
 
-<strong>Key Activities:</strong>
-- **Staff Training Program:** Personal relationship building, follow-up protocols
-- **Technology Setup:** Customer tracking system, communication tools
-- **Service Standard Development:** Based on Beautiful Co. and Diana Rosinski best practices
-- **Baseline Measurement:** Current retention rate, CLV, visit frequency establishment
+<h5>Key Activities:</h5>
+- <span class="label">Staff Training Program:</span> Personal relationship building, follow-up protocols
+- <span class="label">Technology Setup:</span> Customer tracking system, communication tools
+- <span class="label">Service Standard Development:</span> Based on Beautiful Co. and Diana Rosinski best practices
+- <span class="label">Baseline Measurement:</span> Current retention rate, CLV, visit frequency establishment
 
-<strong>Success Criteria Phase 1:</strong>
+<h5>Success Criteria Phase 1:</h5>
 - All staff trained on relationship-building techniques
 - Customer database and tracking system operational  
 - Service standards documented and implemented
 - Baseline metrics established for comparison
 
-<strong>Phase 2: Program Launch (Months 3-4)</strong>
+<h5>Phase 2: Program Launch (Months 3-4)</h5>
 
-<strong>Implementation Activities:</strong>
+<h5>Implementation Activities:</h5>
 
-<strong>Activity 1: Loyalty Program Introduction</strong>
-- **Purpose:** Launch simple, non-tiered program based on scientific evidence
-- **Deliverables:** Program rules, enrollment process, reward structure
-- **Resources:** Marketing materials ($200), staff training (5 hours)
-- **Success Criteria:** 90%+ new customer enrollment, clear understanding of benefits
-- **Risk Mitigation:** Simple structure prevents confusion, staff scripts ensure consistency
+<h5>Activity 1: Loyalty Program Introduction</h5>
+- <span class="label">Purpose:</span> Launch simple, non-tiered program based on scientific evidence
+- <span class="label">Deliverables:</span> Program rules, enrollment process, reward structure
+- <span class="label">Resources:</span> Marketing materials ($200), staff training (5 hours)
+- <span class="label">Success Criteria:</span> 90%+ new customer enrollment, clear understanding of benefits
+- <span class="label">Risk Mitigation:</span> Simple structure prevents confusion, staff scripts ensure consistency
 
-<strong>Activity 2: Personal Touch Implementation</strong>
-- **Purpose:** Activate relationship-building strategies from practitioner evidence
-- **Deliverables:** Service enhancement checklist, personalization protocols
-- **Resources:** Additional service time (2-3 minutes per appointment)
-- **Success Criteria:** 95% implementation rate, positive customer feedback
-- **Risk Mitigation:** Standard protocols prevent inconsistency
+<h5>Activity 2: Personal Touch Implementation</h5>
+- <span class="label">Purpose:</span> Activate relationship-building strategies from practitioner evidence
+- <span class="label">Deliverables:</span> Service enhancement checklist, personalization protocols
+- <span class="label">Resources:</span> Additional service time (2-3 minutes per appointment)
+- <span class="label">Success Criteria:</span> 95% implementation rate, positive customer feedback
+- <span class="label">Risk Mitigation:</span> Standard protocols prevent inconsistency
 
-<strong>Activity 3: Communication System Activation</strong>
-- **Purpose:** Implement 24-48 hour follow-up proven effective by practitioners
-- **Deliverables:** Automated follow-up messages, appointment reminders, thank you communications
-- **Resources:** System setup time, message template creation
-- **Success Criteria:** 95% follow-up completion within 48 hours
-- **Risk Mitigation:** Automated systems reduce manual effort and ensure consistency
+<h5>Activity 3: Communication System Activation</h5>
+- <span class="label">Purpose:</span> Implement 24-48 hour follow-up proven effective by practitioners
+- <span class="label">Deliverables:</span> Automated follow-up messages, appointment reminders, thank you communications
+- <span class="label">Resources:</span> System setup time, message template creation
+- <span class="label">Success Criteria:</span> 95% follow-up completion within 48 hours
+- <span class="label">Risk Mitigation:</span> Automated systems reduce manual effort and ensure consistency
 
-<strong>Phase 2 Success Indicators:</strong>
-- **Process:** 90%+ enrollment rate, 95% follow-up completion
-- **Outcome:** 10-15% early retention improvement within 60 days
-- **Stakeholder Response:** Positive customer feedback, staff engagement
+<h5>Phase 2 Success Indicators:</h5>
+- <span class="label">Process:</span> 90%+ enrollment rate, 95% follow-up completion
+- <span class="label">Outcome:</span> 10-15% early retention improvement within 60 days
+- <span class="label">Stakeholder Response:</span> Positive customer feedback, staff engagement
 
-<strong>## Phase 3: Optimization & Measurement (Months 5-12)</strong>
+<h4>Phase 3: Optimization & Measurement (Months 5-12)</h4>
 
-<strong>Full Implementation Activities:</strong>
-- **Advanced Personalization:** Birthday rewards, service history preferences
-- **Referral System:** Leverage satisfied customers for growth (practitioner recommendation)
-- **Performance Optimization:** Adjust based on data and customer response
-- **Success Measurement:** Compare against evidence-based targets
+<h5>Full Implementation Activities:</h5>
+- <span class="label">Advanced Personalization:</span> Birthday rewards, service history preferences
+- <span class="label">Referral System:</span> Leverage satisfied customers for growth (practitioner recommendation)
+- <span class="label">Performance Optimization:</span> Adjust based on data and customer response
+- <span class="label">Success Measurement:</span> Compare against evidence-based targets
 
-<strong>## Resource Requirements</strong>
+<h4>Resource Requirements</h4>
 
-<strong>Financial Investment Analysis:</strong>
+<h5>Financial Investment Analysis:</h5>
 
 <div class="data-reference-table">
 <table>
@@ -2622,385 +2650,365 @@ Beauty service business experiencing industry-wide efficiency crisis (revenue de
 </table>
 </div>
 
-<strong>ROI Projection (Evidence-Based):</strong>
-- **CLV Target Increase:** 29.5% (Scientific evidence from hair salon study)
-- **Revenue Impact:** $44 additional per client (based on $150 baseline CLV)
-- **Retention Improvement:** 40% to 75% (35% increase = 87.5% improvement)
-- **Break-even Timeline:** 6-8 months (Organizational evidence: strong margins support investment)
+<h5>ROI Projection (Evidence-Based):</h5>
+- <span class="label">CLV Target Increase:</span> 29.5% (Scientific evidence from hair salon study)
+- <span class="label">Revenue Impact:</span> $44 additional per client (based on $150 baseline CLV)
+- <span class="label">Retention Improvement:</span> 40% to 75% (35% increase = 87.5% improvement)
+- <span class="label">Break-even Timeline:</span> 6-8 months (Organizational evidence: strong margins support investment)
 
-<strong>## Success Criteria and Measurement</strong>
+<h4>Success Criteria and Measurement</h4>
 
-<strong>Evidence-Based KPIs:</strong>
+<h5>Evidence-Based KPIs:</h5>
 
-<strong>Short-term (3-6 months):</strong>
+<h5>Short-term (3-6 months):</h5>
 - Customer retention rate: Improve from 40% to 55% (25% improvement)
 - Follow-up completion: Maintain 95% within 48 hours
 - Customer satisfaction: Achieve 4.0+ average (5-point scale)
 
-<strong>Long-term (6-12 months):</strong>
+<h5>Long-term (6-12 months):</h5>
 - Customer retention rate: Achieve 75% target (Beautiful Co. case study level)
 - CLV increase: Reach 29.5% improvement (Hair salon scientific study target)
 - Referral rate: 30% increase from satisfied customers
 - Revenue stability: Reduce monthly revenue variance by 15%
 
-<strong>## Risk Management (Evidence-Informed)</strong>
+<h4>Risk Management (Evidence-Informed)</h4>
 
-<strong>High-Probability Risks:</strong>
+<h5>High-Probability Risks:</h5>
 
-<strong>Risk 1: Staff Turnover (30-40% industry average)</strong>
-- **Evidence Basis:** Organizational data on beauty industry employment
-- **Mitigation:** Comprehensive documentation, cross-training, simplified protocols
-- **Contingency:** Rapid training program for new hires
+<h5>Risk 1: Staff Turnover (30-40% industry average)</h5>
+- <span class="label">Evidence Basis:</span> Organizational data on beauty industry employment
+- <span class="label">Mitigation:</span> Comprehensive documentation, cross-training, simplified protocols
+- <span class="label">Contingency:</span> Rapid training program for new hires
 
-<strong>Risk 2: Customer Response Variation by Demographics</strong>
-- **Evidence Basis:** Stakeholder research showing different motivations by age group
-- **Mitigation:** Segmented approach (stress relief focus for 18-44, premium service for 55+)
-- **Contingency:** Adjust messaging and benefits based on customer feedback
+<h5>Risk 2: Customer Response Variation by Demographics</h5>
+- <span class="label">Evidence Basis:</span> Stakeholder research showing different motivations by age group
+- <span class="label">Mitigation:</span> Segmented approach (stress relief focus for 18-44, premium service for 55+)
+- <span class="label">Contingency:</span> Adjust messaging and benefits based on customer feedback
 
-<strong>## Timeline Expectations (Cross-Evidence Synthesis)</strong>
-- **Month 1-2:** Foundation and staff training (immediate service improvements)
-- **Month 3-4:** Program launch and early retention gains (10-15%)
-- **Month 6:** Mid-point assessment and optimization (20-25% improvement target)
-- **Month 12:** Full target achievement (29.5% CLV increase, 75% retention)
+<h4>Timeline Expectations (Cross-Evidence Synthesis)</h4>
+- <span class="label">Month 1-2:</span> Foundation and staff training (immediate service improvements)
+- <span class="label">Month 3-4:</span> Program launch and early retention gains (10-15%)
+- <span class="label">Month 6:</span> Mid-point assessment and optimization (20-25% improvement target)
+- <span class="label">Month 12:</span> Full target achievement (29.5% CLV increase, 75% retention)
 
-<strong>Phase 3: Optimization & Scaling (Months 5-6)</strong>
+<h5>Phase 3: Optimization & Scaling (Months 5-6)</h5>
 
-<strong>Key Activities:**
-- **Program Refinement:** Based on initial results and feedback
-- **Advanced Personalization:** Customized service recommendations, birthday rewards
-- **Referral System Addition:** Leveraging satisfied customers for growth
-- **Performance Analysis:** Compare against 29.5% CLV target from scientific evidence
+<h5>Key Activities:</h5>- <span class="label">Program Refinement:</span> Based on initial results and feedback
+- <span class="label">Advanced Personalization:</span> Customized service recommendations, birthday rewards
+- <span class="label">Referral System Addition:</span> Leveraging satisfied customers for growth
+- <span class="label">Performance Analysis:</span> Compare against 29.5% CLV target from scientific evidence
 
-<strong>Success Criteria Phase 3:</strong>
+<h5>Success Criteria Phase 3:</h5>
 - Customer retention rate improvement of 20-25% from baseline
 - CLV increase trending toward 29.5% target
 - Customer satisfaction scores at 4.0+ average (5-point scale)
 - Referral rate increase of 30%+ from program participants
 
-<strong>## Resource Requirements</strong>
+<h4>Resource Requirements</h4>
 
-<strong>Financial Investment:**
-- **Technology Setup:** $500-$1,000 (POS integration, communication tools)
-- **Training Materials:** $300-$500 (staff development, procedure documentation)
-- **Program Rewards:** 2-3% of revenue (based on successful case study models)
-- **Total First Year:** $3,000-$5,000 investment
+<h5>Financial Investment:</h5>- <span class="label">Technology Setup:</span> $500-$1,000 (POS integration, communication tools)
+- <span class="label">Training Materials:</span> $300-$500 (staff development, procedure documentation)
+- <span class="label">Program Rewards:</span> 2-3% of revenue (based on successful case study models)
+- <span class="label">Total First Year:</span> $3,000-$5,000 investment
 
-<strong>ROI Projection (Based on Evidence):**
-- **CLV Increase:** 29.5% target = $44 additional revenue per client
-- **Retention Improvement:** 60% to 75% = 25% more repeat clients
-- **Break-even Timeline:** 6-8 months based on industry financial capacity (75.82% margins)
+<h5>ROI Projection (Based on Evidence):</h5>- <span class="label">CLV Increase:</span> 29.5% target = $44 additional revenue per client
+- <span class="label">Retention Improvement:</span> 60% to 75% = 25% more repeat clients
+- <span class="label">Break-even Timeline:</span> 6-8 months based on industry financial capacity (75.82% margins)
 
-<strong>## Success Measurement Plan</strong>
+<h4>Success Measurement Plan</h4>
 
-<strong>Key Performance Indicators (Evidence-Based):**
-- **Primary KPI:** Customer retention rate (target: 60% to 75%)
-- **Financial KPI:** Customer lifetime value (target: +29.5%)
-- **Operational KPI:** Visit frequency (target: increase from current baseline)
-- **Quality KPI:** Customer satisfaction (target: 4.0+ average)
+<h5>Key Performance Indicators (Evidence-Based):</h5>- <span class="label">Primary KPI:</span> Customer retention rate (target: 60% to 75%)
+- <span class="label">Financial KPI:</span> Customer lifetime value (target: +29.5%)
+- <span class="label">Operational KPI:</span> Visit frequency (target: increase from current baseline)
+- <span class="label">Quality KPI:</span> Customer satisfaction (target: 4.0+ average)
 
-<strong>Monitoring Schedule:**
-- **Weekly:** New client enrollment, follow-up completion rates
-- **Monthly:** Retention rates, revenue per customer, satisfaction surveys
-- **Quarterly:** Full program ROI analysis, strategy adjustments
+<h5>Monitoring Schedule:</h5>- <span class="label">Weekly:</span> New client enrollment, follow-up completion rates
+- <span class="label">Monthly:</span> Retention rates, revenue per customer, satisfaction surveys
+- <span class="label">Quarterly:</span> Full program ROI analysis, strategy adjustments
 
-<strong>## Risk Management</strong>
+<h4>Risk Management</h4>
 
-<strong>High-Probability Risks (Based on Evidence):**
-- **Staff Turnover:** 30-40% industry average could disrupt program consistency
-  - **Mitigation:** Comprehensive training documentation, cross-training protocols
-- **Technology Integration Issues:** POS system compatibility challenges
-  - **Mitigation:** Thorough testing, backup manual tracking systems
-- **Customer Response Variation:** Different demographic response rates
-  - **Mitigation:** Segmented approach based on age groups (18-44 vs 55+ preferences)
+<h5>High-Probability Risks (Based on Evidence):</h5>- <span class="label">Staff Turnover:</span> 30-40% industry average could disrupt program consistency
+  - <span class="label">Mitigation:</span> Comprehensive training documentation, cross-training protocols
+- <span class="label">Technology Integration Issues:</span> POS system compatibility challenges
+  - <span class="label">Mitigation:</span> Thorough testing, backup manual tracking systems
+- <span class="label">Customer Response Variation:</span> Different demographic response rates
+  - <span class="label">Mitigation:</span> Segmented approach based on age groups (18-44 vs 55+ preferences)
 
-<strong>## Success Timeline Expectations</strong>
+<h4>Success Timeline Expectations</h4>
 
-<strong>Based on Cross-Evidence Analysis:**
-- **Month 1-2:** Foundation setup, initial service improvements
-- **Month 3-4:** Early retention improvements (10-15%)
-- **Month 6:** Significant progress toward retention targets (20-25% improvement)  
-- **Month 12:** Full program maturity, 29.5% CLV increase target achievement
+<h5>Based on Cross-Evidence Analysis:</h5>- <span class="label">Month 1-2:</span> Foundation setup, initial service improvements
+- <span class="label">Month 3-4:</span> Early retention improvements (10-15%)
+- <span class="label">Month 6:</span> Significant progress toward retention targets (20-25% improvement)  
+- <span class="label">Month 12:</span> Full program maturity, 29.5% CLV increase target achievement
 
-<strong>## Comprehensive Resource Requirements</strong>
+<h4>Comprehensive Resource Requirements</h4>
 
-<strong>### Human Resources</strong>
-**Project Team Members:**
-- **Project Manager:** Business owner/manager (10 hours/week during implementation)
-- **Staff Training Coordinator:** Lead esthetician/technician (5 hours/week first 2 months)
-- **Customer Experience Specialist:** Front desk staff (3 hours/week ongoing)
+<h5>Human Resources</h5>
+<span class="label">Project Team Members:</span>
+- <span class="label">Project Manager:</span> Business owner/manager (10 hours/week during implementation)
+- <span class="label">Staff Training Coordinator:</span> Lead esthetician/technician (5 hours/week first 2 months)
+- <span class="label">Customer Experience Specialist:</span> Front desk staff (3 hours/week ongoing)
 
-**Stakeholder Time Requirements:**
-- **Leadership Time:** 2-3 hours weekly for monitoring and decision-making
-- **Staff Time:** 5 hours initial training + 1 hour/week ongoing development
-- **Customer Time:** Optional 2-3 minutes additional per appointment for enhanced experience
+<span class="label">Stakeholder Time Requirements:</span>
+- <span class="label">Leadership Time:</span> 2-3 hours weekly for monitoring and decision-making
+- <span class="label">Staff Time:</span> 5 hours initial training + 1 hour/week ongoing development
+- <span class="label">Customer Time:</span> Optional 2-3 minutes additional per appointment for enhanced experience
 
-<strong>### Technology and Infrastructure Requirements</strong>
-**Technology Needs:**
-- **Customer Database:** Simple CRM or email marketing platform ($30-50/month)
-- **Communication System:** Email automation and SMS capability ($25-40/month)
-- **POS Integration:** Compatibility with existing point-of-sale system
-- **Backup Tracking:** Manual tracking sheets for technology failures
+<h5>Technology and Infrastructure Requirements</h5>
+<span class="label">Technology Needs:</span>
+- <span class="label">Customer Database:</span> Simple CRM or email marketing platform ($30-50/month)
+- <span class="label">Communication System:</span> Email automation and SMS capability ($25-40/month)
+- <span class="label">POS Integration:</span> Compatibility with existing point-of-sale system
+- <span class="label">Backup Tracking:</span> Manual tracking sheets for technology failures
 
-**Information Systems Requirements:**
+<span class="label">Information Systems Requirements:</span>
 - Customer contact information database
 - Appointment history tracking
 - Purchase/service history integration
 - Basic reporting capability for retention metrics
 
-<strong>## Advanced Risk Management</strong>
+<h4>Advanced Risk Management</h4>
 
-<strong>### High-Impact Risks</strong>
+<h5>High-Impact Risks</h5>
 
-<strong>Risk: Major economic downturn affecting customer spending</strong>
-- **Likelihood:** Low (economic data shows beauty industry resilience)
-- **Impact:** High (would significantly affect program success)
-- **Evidence Basis:** Economic sensitivity analysis shows beauty services maintain demand during moderate downturns
-- **Monitoring Strategy:** Track customer spending patterns and frequency changes monthly
-- **Contingency Plan:** Pivot to lower-cost experiential rewards, extend timelines for ROI expectations
+<h6>Risk: Major economic downturn affecting customer spending</h6>
+- <span class="label">Likelihood:</span> Low (economic data shows beauty industry resilience)
+- <span class="label">Impact:</span> High (would significantly affect program success)
+- <span class="label">Evidence Basis:</span> Economic sensitivity analysis shows beauty services maintain demand during moderate downturns
+- <span class="label">Monitoring Strategy:</span> Track customer spending patterns and frequency changes monthly
+- <span class="label">Contingency Plan:</span> Pivot to lower-cost experiential rewards, extend timelines for ROI expectations
 
-<strong>Risk: Key staff member departure during implementation</strong>
-- **Likelihood:** Medium (30-40% industry turnover rate)
-- **Impact:** High (relationship-based program depends on staff consistency)
-- **Evidence Basis:** Practitioner evidence shows personal relationships are critical success factor
-- **Monitoring Strategy:** Regular staff satisfaction checks, cross-training implementation
-- **Contingency Plan:** Accelerated training for replacement staff, temporary mentor support system
+<h6>Risk: Key staff member departure during implementation</h6>
+- <span class="label">Likelihood:</span> Medium (30-40% industry turnover rate)
+- <span class="label">Impact:</span> High (relationship-based program depends on staff consistency)
+- <span class="label">Evidence Basis:</span> Practitioner evidence shows personal relationships are critical success factor
+- <span class="label">Monitoring Strategy:</span> Regular staff satisfaction checks, cross-training implementation
+- <span class="label">Contingency Plan:</span> Accelerated training for replacement staff, temporary mentor support system
 
-<strong>### Risk Mitigation Integration</strong>
-**Built-in Risk Mitigation:** Simple program design reduces complexity risks; gradual implementation allows for adjustment before full investment
-**Adaptive Capacity:** Monthly measurement points allow for rapid adjustment; flexible reward structure permits optimization without complete program redesign
+<h5>Risk Mitigation Integration</h5>
+<span class="label">Built-in Risk Mitigation:</span> Simple program design reduces complexity risks; gradual implementation allows for adjustment before full investment
+<span class="label">Adaptive Capacity:</span> Monthly measurement points allow for rapid adjustment; flexible reward structure permits optimization without complete program redesign
 
-<strong>## Comprehensive Communication Plan</strong>
+<h4>Comprehensive Communication Plan</h4>
 
-<strong>### Communication by Stakeholder Group</strong>
+<h5>Communication by Stakeholder Group</h5>
 
-<strong>#### Leadership Communication</strong>
-- **Frequency:** Weekly progress reports during implementation, monthly during operation
-- **Format:** One-page dashboard with key metrics and actionable insights
-- **Content:** Retention rates, revenue impact, customer feedback trends, staff performance
-- **Feedback Mechanism:** Monthly strategy review meetings with adjustment authority
+<h5>Leadership Communication</h5>
+- <span class="label">Frequency:</span> Weekly progress reports during implementation, monthly during operation
+- <span class="label">Format:</span> One-page dashboard with key metrics and actionable insights
+- <span class="label">Content:</span> Retention rates, revenue impact, customer feedback trends, staff performance
+- <span class="label">Feedback Mechanism:</span> Monthly strategy review meetings with adjustment authority
 
-<strong>#### Staff Communication</strong>
-- **Frequency:** Daily during launch phase, weekly during operation
-- **Format:** Team meetings, individual coaching sessions, written updates
-- **Content:** Customer success stories, technique improvements, program performance
-- **Two-way Communication:** Weekly team feedback sessions, suggestion system for improvements
+<h5>Staff Communication</h5>
+- <span class="label">Frequency:</span> Daily during launch phase, weekly during operation
+- <span class="label">Format:</span> Team meetings, individual coaching sessions, written updates
+- <span class="label">Content:</span> Customer success stories, technique improvements, program performance
+- <span class="label">Two-way Communication:</span> Weekly team feedback sessions, suggestion system for improvements
 
-<strong>#### Customer Communication</strong>
-- **Frequency:** Initial enrollment explanation, follow-up after each service, monthly program updates
-- **Format:** In-person explanation, email follow-up, periodic newsletters
-- **Content:** Program benefits, reward status, appreciation messages, special offers
-- **Feedback Collection:** Post-service surveys, quarterly satisfaction assessment, suggestion system
+<h5>Customer Communication</h5>
+- <span class="label">Frequency:</span> Initial enrollment explanation, follow-up after each service, monthly program updates
+- <span class="label">Format:</span> In-person explanation, email follow-up, periodic newsletters
+- <span class="label">Content:</span> Program benefits, reward status, appreciation messages, special offers
+- <span class="label">Feedback Collection:</span> Post-service surveys, quarterly satisfaction assessment, suggestion system
 
-<strong>### Communication Integration Strategy</strong>
-**Consistency:** All communications emphasize personal relationship and experiential benefits (based on evidence)
-**Measurement:** Track communication effectiveness through response rates and customer feedback
-**Optimization:** Adjust frequency and format based on customer response and staff feedback
+<h5>Communication Integration Strategy</h5>
+<span class="label">Consistency:</span> All communications emphasize personal relationship and experiential benefits (based on evidence)
+<span class="label">Measurement:</span> Track communication effectiveness through response rates and customer feedback
+<span class="label">Optimization:</span> Adjust frequency and format based on customer response and staff feedback
 
-<strong>## Detailed Success Criteria and Measurement</strong>
+<h4>Detailed Success Criteria and Measurement</h4>
 
-<strong>### Short-term Success Criteria (0-3 months)</strong>
-- **Criterion 1:** 90%+ new customer enrollment in loyalty program
-- **Criterion 2:** 95% staff completion of follow-up protocols within 48 hours
-- **Criterion 3:** 10-15% early improvement in customer retention rate
+<h5>Short-term Success Criteria (0-3 months)</h5>
+- <span class="label">Criterion 1:</span> 90%+ new customer enrollment in loyalty program
+- <span class="label">Criterion 2:</span> 95% staff completion of follow-up protocols within 48 hours
+- <span class="label">Criterion 3:</span> 10-15% early improvement in customer retention rate
 
-<strong>### Medium-term Success Criteria (3-12 months)</strong>
-- **Criterion 1:** 25% improvement in customer retention rate (target: 60% to 75%)
-- **Criterion 2:** 15-20% increase in customer lifetime value (progress toward 29.5% target)
-- **Criterion 3:** 4.0+ average customer satisfaction rating
+<h5>Medium-term Success Criteria (3-12 months)</h5>
+- <span class="label">Criterion 1:</span> 25% improvement in customer retention rate (target: 60% to 75%)
+- <span class="label">Criterion 2:</span> 15-20% increase in customer lifetime value (progress toward 29.5% target)
+- <span class="label">Criterion 3:</span> 4.0+ average customer satisfaction rating
 
-<strong>### Long-term Success Criteria (12+ months)</strong>
-- **Criterion 1:** 29.5% customer lifetime value increase achievement
-- **Criterion 2:** 75% customer retention rate stabilization
-- **Criterion 3:** Positive ROI demonstration with program sustainability
+<h5>Long-term Success Criteria (12+ months)</h5>
+- <span class="label">Criterion 1:</span> 29.5% customer lifetime value increase achievement
+- <span class="label">Criterion 2:</span> 75% customer retention rate stabilization
+- <span class="label">Criterion 3:</span> Positive ROI demonstration with program sustainability
 
-<strong>### Measurement Plan</strong>
-**Data Collection Methods:** 
+<h5>Measurement Plan</h5>
+<span class="label">Data Collection Methods:</span> 
 - Point-of-sale system integration for transaction tracking
 - Email platform analytics for engagement measurement
 - Customer surveys for satisfaction assessment
 - Staff self-reporting for protocol compliance
 
-**Measurement Frequency:** 
+<span class="label">Measurement Frequency:</span> 
 - Daily: New enrollments, follow-up completion
 - Weekly: Retention tracking, revenue analysis
 - Monthly: Full dashboard review and strategy adjustment
 - Quarterly: Comprehensive program evaluation
 
-**Reporting Schedule:** 
+<span class="label">Reporting Schedule:</span> 
 - Weekly executive summary
 - Monthly stakeholder update
 - Quarterly comprehensive review with adjustment recommendations
 
-**Decision Points:** 
+<span class="label">Decision Points:</span> 
 - Month 3: Continuation vs. modification based on early results
 - Month 6: Program expansion vs. optimization focus
 - Month 12: Long-term sustainability assessment and evolution planning
 
-<strong>## Sustainability Planning</strong>
+<h4>Sustainability Planning</h4>
 
-<strong>### Ensuring Long-term Success</strong>
-**Institutionalization Strategy:** Integrate loyalty protocols into standard operating procedures; make relationship-building part of service standards
-**Continuous Improvement Process:** Monthly staff feedback integration; quarterly customer needs assessment; annual program evolution based on industry trends
-**Knowledge Transfer:** Document all successful strategies; create training materials for new staff; maintain program handbook for consistency
+<h5>Ensuring Long-term Success</h5>
+<span class="label">Institutionalization Strategy:</span> Integrate loyalty protocols into standard operating procedures; make relationship-building part of service standards
+<span class="label">Continuous Improvement Process:</span> Monthly staff feedback integration; quarterly customer needs assessment; annual program evolution based on industry trends
+<span class="label">Knowledge Transfer:</span> Document all successful strategies; create training materials for new staff; maintain program handbook for consistency
 
-<strong>### Resource Sustainability</strong>
-**Ongoing Resource Requirements:** 
+<h5>Resource Sustainability</h5>
+<span class="label">Ongoing Resource Requirements:</span> 
 - Technology: $600-720 annually (email platform, basic CRM)
 - Rewards: 2-3% of revenue ongoing (self-funding through increased CLV)
 - Staff time: 1-2 hours per week per staff member for program maintenance
 
-**Funding Strategy:** Program rewards funded through increased customer lifetime value; technology costs offset by improved efficiency
-**Efficiency Improvements:** Automate routine communications; streamline reward delivery; optimize staff training for faster onboarding</pre>
+<span class="label">Funding Strategy:</span> Program rewards funded through increased customer lifetime value; technology costs offset by improved efficiency
+<span class="label">Efficiency Improvements:</span> Automate routine communications; streamline reward delivery; optimize staff training for faster onboarding</pre>
                     </div>
                 </div>
 
                 <!-- TAB 5: Assessment -->
                 <div class="tab-panel" id="tab-5">
                     <h2>📊 Assessment</h2>
-                    <p><strong>Continuous Improvement:</strong> Evaluate results and refine the approach.</p>
-
-                    <div class="milestone-tracker">
-                        <h4>📋 Final Submission Checklist (Week 16)</h4>
-                        <ul class="checklist">
-                            <li>Assessment framework completed</li>
-                            <li>Lessons learned documented</li>
-                            <li>Dashboard polished for portfolio</li>
-                            <li>Peer review feedback incorporated</li>
-                            <li>Final reflection on EBM process</li>
-                        </ul>
-                    </div>
+                    <p><h5>Continuous Improvement:</h5> Evaluate results and refine the approach.</p>
 
                     <div class="content-file-preview">
                         <h4>📝 content/assessment-monitoring.txt</h4>
                         <div class="edit-notice">🖊️ Content loaded successfully</div>
-                        <pre><strong># Assessment: Monitoring & Evaluation Plan</strong>
+                        <pre><h3>Assessment: Monitoring & Evaluation Plan</h3>
 
-<strong>## Evaluation Framework Overview</strong>
+<h4>Evaluation Framework Overview</h4>
 
-<strong>Primary Evaluation Question:** Did the evidence-based loyalty program successfully improve client retention and customer lifetime value as predicted by scientific research?
+<h5>Primary Evaluation Question:</h5> Did the evidence-based loyalty program successfully improve client retention and customer lifetime value as predicted by scientific research?
 
-<strong>Secondary Evaluation Questions:**
+<h5>Secondary Evaluation Questions:</h5>
 1. Which specific program elements contributed most to retention improvements?
 2. How did results compare to evidence-based predictions (29.5% CLV increase)?
 3. What stakeholder satisfaction levels were achieved across different demographic groups?
 4. What unintended consequences or unexpected benefits emerged?
 
-<strong>## Key Performance Indicators</strong>
+<h4>Key Performance Indicators</h4>
 
-<strong>Primary Outcome KPIs (Based on Scientific Evidence):</strong>
+<h5>Primary Outcome KPIs (Based on Scientific Evidence):</h5>
 
-<strong>Customer Retention Rate:</strong>
-- **Current Baseline:** 40% (industry standard for new beauty businesses)
-- **Evidence-Based Target:** 75% (based on Beautiful Co. case study and industry benchmarks)
-- **Timeline:** 12-month measurement period
-- **Data Source:** Customer database tracking repeat visits
-- **Measurement Frequency:** Monthly tracking with quarterly analysis
+<h5>Customer Retention Rate:</h5>
+- <span class="label">Current Baseline:</span> 40% (industry standard for new beauty businesses)
+- <span class="label">Evidence-Based Target:</span> 75% (based on Beautiful Co. case study and industry benchmarks)
+- <span class="label">Timeline:</span> 12-month measurement period
+- <span class="label">Data Source:</span> Customer database tracking repeat visits
+- <span class="label">Measurement Frequency:</span> Monthly tracking with quarterly analysis
 
-<strong>Customer Lifetime Value (CLV):</strong>
-- **Current Baseline:** $150 (industry average for beauty services)
-- **Evidence-Based Target:** $195 (+29.5% based on hair salon study)
-- **Timeline:** 12-month rolling average
-- **Calculation Method:** (Average visit value × Visit frequency × Customer lifespan) - Acquisition cost
+<h5>Customer Lifetime Value (CLV):</h5>
+- <span class="label">Current Baseline:</span> $150 (industry average for beauty services)
+- <span class="label">Evidence-Based Target:</span> $195 (+29.5% based on hair salon study)
+- <span class="label">Timeline:</span> 12-month rolling average
+- <span class="label">Calculation Method:</span> (Average visit value × Visit frequency × Customer lifespan) - Acquisition cost
 
-<strong>Visit Frequency:</strong>
-- **Current Baseline:** 2.5 visits per year per customer
-- **Target:** 3.5 visits per year (+40% increase)
-- **Evidence Basis:** Hair salon study showed 45% visit frequency increase
+<h5>Visit Frequency:</h5>
+- <span class="label">Current Baseline:</span> 2.5 visits per year per customer
+- <span class="label">Target:</span> 3.5 visits per year (+40% increase)
+- <span class="label">Evidence Basis:</span> Hair salon study showed 45% visit frequency increase
 
-<strong>## Evaluation Timeline & Methods</strong>
+<h4>Evaluation Timeline & Methods</h4>
 
-<strong>Baseline Data Collection (Pre-Implementation):</strong>
-- **Month 0:** Establish current retention rates, CLV, visit patterns
-- **Customer Survey:** Initial satisfaction and loyalty drivers assessment
-- **Staff Assessment:** Current retention strategy effectiveness evaluation
+<h5>Baseline Data Collection (Pre-Implementation):</h5>
+- <span class="label">Month 0:</span> Establish current retention rates, CLV, visit patterns
+- <span class="label">Customer Survey:</span> Initial satisfaction and loyalty drivers assessment
+- <span class="label">Staff Assessment:</span> Current retention strategy effectiveness evaluation
 
-<strong>Implementation Monitoring (Months 1-6):</strong>
+<h5>Implementation Monitoring (Months 1-6):</h5>
 
-<strong>Monthly Monitoring Activities:</strong>
+<h5>Monthly Monitoring Activities:</h5>
 - Customer enrollment rates in loyalty program
 - Follow-up completion percentages (target: 95% within 48 hours)
 - Early retention indicators (1-month and 3-month return rates)
 - Staff implementation consistency assessment
 
-<strong>Quarterly Review Activities:**
+<h6>Quarterly Review Activities:</h6>
 - Comprehensive retention rate analysis by demographic segments
 - CLV calculation updates and trend analysis
 - Customer satisfaction surveys (net promoter score, service quality ratings)
 - Staff feedback sessions on program implementation challenges
 
-<strong>Post-Implementation Evaluation (Months 6-12):</strong>
+<h5>Post-Implementation Evaluation (Months 6-12):</h5>
 
-<strong>6-Month Milestone Assessment:</strong>
-- **Target Check:** 50% progress toward final retention goals
-- **Evidence Validation:** Compare actual vs. predicted outcomes from scientific studies
-- **Adjustment Planning:** Modify program elements based on initial results
+<h6>6-Month Milestone Assessment:</h6>
+- <span class="label">Target Check:</span> 50% progress toward final retention goals
+- <span class="label">Evidence Validation:</span> Compare actual vs. predicted outcomes from scientific studies
+- <span class="label">Adjustment Planning:</span> Modify program elements based on initial results
 
-<strong>12-Month Final Evaluation:</strong>
-- **Outcome Achievement:** Final measurement against all evidence-based targets
-- **ROI Analysis:** Financial return calculation based on organizational evidence projections
-- **Stakeholder Impact Assessment:** Survey customer, staff, and business stakeholder satisfaction
+<h6>12-Month Final Evaluation:</h6>
+- <span class="label">Outcome Achievement:</span> Final measurement against all evidence-based targets
+- <span class="label">ROI Analysis:</span> Financial return calculation based on organizational evidence projections
+- <span class="label">Stakeholder Impact Assessment:</span> Survey customer, staff, and business stakeholder satisfaction
 
-<strong>## Data Collection Methods</strong>
+<h4>Data Collection Methods</h4>
 
-<strong>Quantitative Data Collection:</strong>
+<h5>Quantitative Data Collection:</h5>
 
-<strong>Customer Database Analytics:</strong>
-- **Appointment History:** Visit frequency, service types, revenue per visit
-- **Retention Tracking:** Time between visits, customer lifecycle stage
-- **Program Participation:** Loyalty program engagement levels, reward redemption
+<h5>Customer Database Analytics:</h5>
+- <span class="label">Appointment History:</span> Visit frequency, service types, revenue per visit
+- <span class="label">Retention Tracking:</span> Time between visits, customer lifecycle stage
+- <span class="label">Program Participation:</span> Loyalty program engagement levels, reward redemption
 
-<strong>Financial Performance Tracking:**
-- **Monthly Revenue:** Track revenue changes attributable to retention improvements
-- **Cost-Benefit Analysis:** Program costs vs. revenue increases from improved CLV
-- **Cash Flow Impact:** Monitor immediate vs. long-term financial benefits
+<h5>Financial Performance Tracking:</h5>- <span class="label">Monthly Revenue:</span> Track revenue changes attributable to retention improvements
+- <span class="label">Cost-Benefit Analysis:</span> Program costs vs. revenue increases from improved CLV
+- <span class="label">Cash Flow Impact:</span> Monitor immediate vs. long-term financial benefits
 
-<strong>Qualitative Data Collection:</strong>
+<h5>Qualitative Data Collection:</h5>
 
-<strong>Customer Experience Interviews:</strong>
-- **Sample Size:** 20-30 customers representing different demographic segments
-- **Timing:** 3, 6, and 12 months post-implementation
-- **Key Topics:** Program value perception, service quality changes, loyalty drivers
+<h5>Customer Experience Interviews:</h5>
+- <span class="label">Sample Size:</span> 20-30 customers representing different demographic segments
+- <span class="label">Timing:</span> 3, 6, and 12 months post-implementation
+- <span class="label">Key Topics:</span> Program value perception, service quality changes, loyalty drivers
 
-<strong>Staff Implementation Assessment:</strong>
-- **Method:** Monthly team meetings with structured feedback collection
-- **Focus Areas:** Training effectiveness, implementation challenges, customer response observations
-- **Documentation:** Written feedback summaries with improvement recommendations
+<h5>Staff Implementation Assessment:</h5>
+- <span class="label">Method:</span> Monthly team meetings with structured feedback collection
+- <span class="label">Focus Areas:</span> Training effectiveness, implementation challenges, customer response observations
+- <span class="label">Documentation:</span> Written feedback summaries with improvement recommendations
 
-<strong>## Success Criteria Framework</strong>
+<h4>Success Criteria Framework</h4>
 
-<strong>Must-Achieve Criteria (Implementation Success Requirements):</strong>
-1. **Retention Rate:** Achieve minimum 60% retention (50% improvement from baseline)
-2. **Customer Satisfaction:** Maintain 4.0+ average satisfaction score
-3. **Financial Viability:** Program costs remain under 3% of revenue
-4. **Staff Engagement:** 90%+ staff compliance with follow-up protocols
+<h5>Must-Achieve Criteria (Implementation Success Requirements):</h5>
+1. <span class="label">Retention Rate:</span> Achieve minimum 60% retention (50% improvement from baseline)
+2. <span class="label">Customer Satisfaction:</span> Maintain 4.0+ average satisfaction score
+3. <span class="label">Financial Viability:</span> Program costs remain under 3% of revenue
+4. <span class="label">Staff Engagement:</span> 90%+ staff compliance with follow-up protocols
 
-<strong>Target Achievement Criteria (Full Success Indicators):</strong>
-1. **Retention Rate:** Reach 75% retention target (87.5% improvement)
-2. **CLV Increase:** Achieve 29.5% CLV improvement as predicted by scientific evidence
-3. **Visit Frequency:** 40% increase in average visits per customer per year
-4. **Referral Growth:** 30% increase in referral-driven new customers
+<h5>Target Achievement Criteria (Full Success Indicators):</h5>
+1. <span class="label">Retention Rate:</span> Reach 75% retention target (87.5% improvement)
+2. <span class="label">CLV Increase:</span> Achieve 29.5% CLV improvement as predicted by scientific evidence
+3. <span class="label">Visit Frequency:</span> 40% increase in average visits per customer per year
+4. <span class="label">Referral Growth:</span> 30% increase in referral-driven new customers
 
-<strong>## Continuous Improvement Integration</strong>
+<h4>Continuous Improvement Integration</h4>
 
-<strong>Monthly Improvement Cycle:</strong>
-- **Data Review:** Analyze performance trends and identify improvement opportunities
-- **Staff Feedback:** Collect frontline insights on customer responses and operational challenges
-- **Program Adjustments:** Implement minor modifications based on evidence and feedback
-- **Best Practice Documentation:** Record successful strategies for replication and scaling
+<h5>Monthly Improvement Cycle:</h5>
+- <span class="label">Data Review:</span> Analyze performance trends and identify improvement opportunities
+- <span class="label">Staff Feedback:</span> Collect frontline insights on customer responses and operational challenges
+- <span class="label">Program Adjustments:</span> Implement minor modifications based on evidence and feedback
+- <span class="label">Best Practice Documentation:</span> Record successful strategies for replication and scaling
 
-<strong>Evidence-Based Adjustment Protocol:**
-- **Performance Below Targets:** Review original evidence assumptions, assess implementation fidelity
-- **Unexpected Results:** Document new insights, compare to literature for validation
-- **Stakeholder Feedback Integration:** Modify program elements based on customer and staff input
-- **Success Factor Amplification:** Identify and enhance most effective program components
+<h5>Evidence-Based Adjustment Protocol:</h5>- <span class="label">Performance Below Targets:</span> Review original evidence assumptions, assess implementation fidelity
+- <span class="label">Unexpected Results:</span> Document new insights, compare to literature for validation
+- <span class="label">Stakeholder Feedback Integration:</span> Modify program elements based on customer and staff input
+- <span class="label">Success Factor Amplification:</span> Identify and enhance most effective program components
 
-<strong>## Long-term Sustainability Assessment</strong>
+<h4>Long-term Sustainability Assessment</h4>
 
-<strong>12-Month Sustainability Evaluation:</strong>
-- **Financial Self-Sufficiency:** Assess whether retention improvements generate sufficient ROI
-- **Operational Integration:** Evaluate staff adoption and process standardization
-- **Customer Engagement Durability:** Analyze whether initial enthusiasm translates to long-term loyalty
-- **Scalability Potential:** Determine feasibility for program expansion or enhancement</strong></pre>
+<h5>12-Month Sustainability Evaluation:</h5>
+- <span class="label">Financial Self-Sufficiency:</span> Assess whether retention improvements generate sufficient ROI
+- <span class="label">Operational Integration:</span> Evaluate staff adoption and process standardization
+- <span class="label">Customer Engagement Durability:</span> Analyze whether initial enthusiasm translates to long-term loyalty
+- <span class="label">Scalability Potential:</span> Determine feasibility for program expansion or enhancement</strong></pre>
                     </div>
 
                     <div style="text-align: center; margin-top: 30px;">
@@ -3076,3 +3084,4 @@ Beauty service business experiencing industry-wide efficiency crisis (revenue de
     <!-- <script src="content-loader.js"></script> -->
 </body>
 </html>
+
